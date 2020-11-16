@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-scienceofsleep-starter",
+  "name": "Josh Steele's resume website",
   "private": true,
-  "description": "Includes my preferred SEO setup, Emotion, and Google Fonts",
+  "description": "Welcome to Josh Steele's resume website. Find out all the things Josh has done for money, all the things he'd do for money, and even a few things that he does for free.",
   "version": "0.1.0",
   "author": "Josh Steele",
   "dependencies": {

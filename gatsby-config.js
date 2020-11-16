@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby ScienceOfSleep Starter`,
-    description: `Includes my preferred SEO setup, Emotion, and Google Fonts`,
-    author: `@gatsbyjs`,
+    title: `Josh Steele's resume website`,
+    description: `Welcome to Josh Steele's resume website. Find out all the things Josh has done for money, all the things he'd do for money, and even a few things that he does for free.`,
+    author: `Josh Steele`,
     siteUrl: `https://www.example.com`,
   },
   plugins: [
@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "gatsby-scienceofsleep-starter",
-        short_name: "SOS-Starter",
+        name: "resume-site",
+        short_name: "resume",
         icon: "src/images/icon.png",
         start_url: "/",
         background_color: "#f7f0eb",
