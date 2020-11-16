@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-scienceofsleep-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Includes my preferred SEO setup, Emotion, and Google Fonts",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Josh Steele",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/styled": "^11.0.0",
@@ -31,7 +31,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ScienceOfSleep/gatsby-scienceofsleep-starter"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
