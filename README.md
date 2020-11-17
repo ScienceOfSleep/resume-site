@@ -1,15 +1,19 @@
-This is my preferred setup for Gatsby projects. 
+Narrowing the scope for my portfolio by splitting it up. This section is explicitly focused on job applications.
 
-Includes:
+Core Beats
 -
-Emotion
 
-PWA plugins
+Low upkeep Gatsby site.
 
-SEO plugins and component
+Show tech and design by doing.
 
-Google Fonts (prefetch)
+Have fun with it.
 
-Header with animated hamburger
+Future Work
+-
 
-React Helmet
+Hook up contentful, break the data structure down so there's a user friendly CMS setup if I want to monetize these.
+
+More animation work.
+
+Boil it down so I can sell these? Cheap and (ideally) easy gigs for friends and acquaintances.
