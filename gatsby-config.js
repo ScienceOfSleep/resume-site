@@ -5,6 +5,7 @@ module.exports = {
     author: `Josh Steele`,
     siteUrl: `https://www.example.com`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -13,6 +14,16 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     `gatsby-transformer-sharp`,
     {
@@ -26,26 +37,11 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "resume-site",
         short_name: "resume",
-        icon: "src/images/icon.png",
+        icon: "src/images/gatsby-icon.png",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",
