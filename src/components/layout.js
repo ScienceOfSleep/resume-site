@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
         <Global styles={css`
           :root{
             --shadow-color: #A8AFB5;
-          }
+            --site-width: 90vw;
+            --horizontal-margin: calc((100% - var(--site-width)) / 2);
+            }
            *{
             box-sizing: border-box;
             margin: 0;

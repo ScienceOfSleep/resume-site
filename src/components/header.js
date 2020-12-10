@@ -24,6 +24,8 @@ const Header = () => {
               color: #ffffff;
               display: flex;
               align-items: center;
+              padding: 0 var(--horizontal-margin);
+              font-family: 'Ubuntu', sans-serif;
             `}
     >
         <Img
@@ -35,6 +37,7 @@ const Header = () => {
         <h1
             css={css`
                 flex-grow: 5;
+                padding-left: 2rem;
             `}
         >
             Josh Steele's<br/>Resume Site
