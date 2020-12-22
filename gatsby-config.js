@@ -19,7 +19,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `limelight`,
+          `pacifico`,
+          `montserrat`,
           `Ubuntu\:medium` // you can also specify font weights and styles
         ],
         display: 'swap'

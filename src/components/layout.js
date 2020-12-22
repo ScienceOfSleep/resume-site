@@ -18,6 +18,9 @@ const Layout = ({ children }) => {
             box-sizing: border-box;
             margin: 0;
             }
+            p{
+              font-family: 'montserrat', serif;
+            }
         `}/>
     <main>{children}</main>
     </>
