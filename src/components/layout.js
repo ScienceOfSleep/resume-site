@@ -18,8 +18,11 @@ const Layout = ({ children }) => {
             box-sizing: border-box;
             margin: 0;
             }
-            p{
+            p, li{
               font-family: 'montserrat', serif;
+            }
+            ul{
+              padding: 0 0 0 20px;
             }
         `}/>
     <main>{children}</main>

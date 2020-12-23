@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import LaravelSVG from "../components/laravel-svg";
+import LogoCard from "../components/logo-card";
+import ReactSVG from "../components/react-svg";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -42,6 +44,7 @@ const IndexPage = ({data}) => (
               fluid={data.albertasaurus.childImageSharp.fluid}
               css={css`
                 width: 100%;
+                box-shadow: 0 4px 4px #333333;
             `}
           />
           <h1
@@ -80,21 +83,10 @@ const IndexPage = ({data}) => (
               <br/><br/>
               For more detail on my core and supporting skills checkout the breakdown on my Skills page!
           </p>
-          <div
-            css={css`
-                border: 6px solid #DB444A;
-                border-radius: 5%;
-                padding: 10%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #ffffff;
-                filter: drop-shadow(4px 4px 4px #3c3c3c);
-            `}
-          >
+          <LogoCard borderColor="#DB444A">
               <LaravelSVG/>
               <h3
-                css={css`
+                  css={css`
                   font-family: 'montserrat', sans-serif;
                   font-weight: 600;
                   font-size: 2rem;
@@ -102,13 +94,117 @@ const IndexPage = ({data}) => (
               >
                   Laravel
               </h3>
-          </div>
+              <ul>
+                  <li>
+                      The gold standard for PHP frameworks.
+                  </li>
+                  <li>
+                      Batteries included, building and debugging are a joy.
+                  </li>
+                  <li>
+                      Generates back-ends quickly and professionally.
+                  </li>
+              </ul>
+          </LogoCard>
+          <LogoCard borderColor="#2D9CDB">
+              <ReactSVG/>
+              <h3
+                  css={css`
+                  font-family: 'montserrat', sans-serif;
+                  font-weight: 600;
+                  font-size: 2rem;
+                `}
+              >
+                  React
+              </h3>
+              <ul>
+                  <li>
+                      The hot JS framework; very good resources and ecosystem as a result.
+                  </li>
+                  <li>
+                      Component focus feels natural for the modern web.
+                  </li>
+                  <li>
+                      I enjoy working with JSX and CSS-in-JS.
+                  </li>
+              </ul>
+          </LogoCard>
+          <LogoCard borderColor="#DBD718">
+              <Img
+                  fluid={data.emotion.childImageSharp.fluid}
+                  css={css`
+                      width: 100%;
+                  `}
+              />
+              <h3
+                  css={css`
+                  font-family: 'montserrat', sans-serif;
+                  font-weight: 600;
+                  font-size: 2rem;
+                `}
+              >
+                  Emotion JS
+              </h3>
+              <ul>
+                  <li>
+                      Perfectly complements my coding flow in React.
+                  </li>
+                  <li>
+                      Sidesteps scope and specificity problems.
+                  </li>
+                  <li>
+                      Has all the best parts of SASS and CSS combined with the dynamism of JS.
+                  </li>
+              </ul>
+          </LogoCard>
+          <LogoCard borderColor="#663399">
+              <Img
+                  fluid={data.gatsby.childImageSharp.fluid}
+                  css={css`
+                      width: 90%;
+                  `}
+              />
+              <h3
+                  css={css`
+                  font-family: 'montserrat', sans-serif;
+                  font-weight: 600;
+                  font-size: 2rem;
+                `}
+              >
+                  Gatsby
+              </h3>
+              <ul>
+                  <li>
+                      Low overhead and blazing speed right out of the box.
+                  </li>
+                  <li>
+                      Automated image processing and lazy loading is very slick.
+                  </li>
+                  <li>
+                      Secure and accessible by default.
+                  </li>
+              </ul>
+          </LogoCard>
       </section>
   </Layout>
 )
 export const query = graphql`
     query {
         albertasaurus: file(relativePath: { eq: "Albertasaurus.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        emotion: file(relativePath: { eq: "Emotion-Logo.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        gatsby: file(relativePath: { eq: "gatsby-icon.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
