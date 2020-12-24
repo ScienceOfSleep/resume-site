@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import LaravelSVG from "../components/laravel-svg";
 import LogoCard from "../components/logo-card";
 import ReactSVG from "../components/react-svg";
+import SectionHeading from "../components/section-heading";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -69,13 +70,7 @@ const IndexPage = ({data}) => (
               }
               `}
       >
-          <h2
-              css={css`
-                    font-family: 'pacifico', cursive;
-              `}
-          >
-              Tech I'm Using
-          </h2>
+          <SectionHeading/>
           <p>
               These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
               <br/><br/>
