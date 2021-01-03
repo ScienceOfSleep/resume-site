@@ -17,23 +17,23 @@ const IndexPage = ({data}) => (
         css={css`
               display: grid;
               grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-              > *:not(div){
+              > *:not(.image){
                 grid-column: 2;
               }
-              div{
+              .image{
                 grid-column: 1 / -1;
               }
               @media screen and (min-width: 1120px){
                 height: calc(100vh - 74px); //Add a header height variable
                 grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
                 grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
-                h1{
+                .heading{
                   grid-row: 3;
                 }
                 p{
                   grid-row: 4;
                 }
-                div{
+                .image{
                   grid-column: 3;
                   grid-row: 2 / 6;
                   justify-self: center;
@@ -43,18 +43,13 @@ const IndexPage = ({data}) => (
       >
           <Img
               fluid={data.albertasaurus.childImageSharp.fluid}
+              className="image"
               css={css`
                 width: 100%;
                 box-shadow: 0 4px 4px #333333;
             `}
           />
-          <h1
-            css={css`
-                  font-family: 'pacifico', cursive;
-                `}
-          >
-              Welcome to my CV
-          </h1>
+          <SectionHeading title="Welcome to my CV"/>
           <p>
               This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
               <br/> <br/>
@@ -70,7 +65,7 @@ const IndexPage = ({data}) => (
               }
               `}
       >
-          <SectionHeading/>
+          <SectionHeading title="Tech I'm Using"/>
           <p>
               These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
               <br/><br/>
