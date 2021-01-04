@@ -12,8 +12,7 @@ const LinkButton = styled(Link)`
   cursor: pointer;
   filter: drop-shadow(4px 4px 4px #3c3c3c);
   &:hover, &:focus{
-    filter: drop-shadow(1px 1px 1px #3c3c3c);
-    margin: 3px 0 0 3px;
+    filter: drop-shadow(4px 4px 4px var(--page-color));
   }
 `;
 
