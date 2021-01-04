@@ -9,10 +9,17 @@ import LaravelSVG from "../components/laravel-svg";
 import LogoCard from "../components/logo-card";
 import ReactSVG from "../components/react-svg";
 import SectionHeading from "../components/section-heading";
+import LinkButton from "../components/link-button";
 
-const IndexPage = ({data}) => (
-  <Layout>
+const IndexPage = ({data}) => {
+
+    return <Layout>
       {/*<SEO title="Josh's Resume Site" />*/}
+      <main
+        css={css`
+          --page-color: #2D9CDB;
+        `}
+      >
       <section
         css={css`
               display: grid;
@@ -66,13 +73,6 @@ const IndexPage = ({data}) => (
               `}
       >
           <SectionHeading title="Tech I'm Using"/>
-          <p>
-              These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
-              <br/><br/>
-              It’s fairly common that I won’t have a complete stack of my choosing though, and as a result I’ve worked with many other languages/frameworks/tools over my career.
-              <br/><br/>
-              For more detail on my core and supporting skills checkout the breakdown on my Skills page!
-          </p>
           <LogoCard borderColor="#DB444A">
               <LaravelSVG/>
               <h3
@@ -175,9 +175,30 @@ const IndexPage = ({data}) => (
                   </li>
               </ul>
           </LogoCard>
+          <p>
+              These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
+              <br/><br/>
+              It’s fairly common that I won’t have a complete stack of my choosing though, and as a result I’ve worked with many other languages/frameworks/tools over my career.
+              <br/><br/>
+              For more detail on my core and supporting skills checkout the breakdown on my Skills page!
+          </p>
+          <LinkButton to="/">Skills Breakdown</LinkButton>
       </section>
+      <section
+          css={css`
+              display: grid;
+              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
+              > *{
+                grid-column: 2;
+              }
+              `}
+      >
+          <SectionHeading title="Work Experience"/>
+
+      </section>
+      </main>
   </Layout>
-)
+}
 export const query = graphql`
     query {
         albertasaurus: file(relativePath: { eq: "Albertasaurus.png" }) {

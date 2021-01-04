@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
               padding: 0 0 0 20px;
             }
         `}/>
-    <main>{children}</main>
+    {children}
     </>
   )
 }
