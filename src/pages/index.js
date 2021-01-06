@@ -10,6 +10,7 @@ import LogoCard from "../components/logo-card";
 import ReactSVG from "../components/react-svg";
 import SectionHeading from "../components/section-heading";
 import LinkButton from "../components/link-button";
+import WorkContainer from "../components/work-container";
 
 const IndexPage = ({data}) => {
 
@@ -79,9 +80,6 @@ const IndexPage = ({data}) => {
                 grid-column: 2;
               }
               margin-top: 25px;
-              .heading{
-                --font-size: 1.6rem;
-              }
             `}
         >
             <SectionHeading title="Tech I'm Using"/>
@@ -219,15 +217,10 @@ const IndexPage = ({data}) => {
                 When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
             </p>
             <LinkButton to="/">Career Timeline</LinkButton>
-            <div
-            css={css`
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            `}
-            >
+            <WorkContainer>
                 <Img
                     fluid={data.dip.childImageSharp.fluid}
+                    alt="Draw It Paint"
                     css={css`
                       width: 80%;
                     `}
@@ -239,14 +232,8 @@ const IndexPage = ({data}) => {
                     <li>Custom CSS for tuning</li>
                     <li>All the pros and cons of a drag and drop site</li>
                 </ul>
-            </div>
-            <div
-            css={css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `}
-            >
+            </WorkContainer>
+            <WorkContainer>
                 <Img
                     fluid={data.silvertip.childImageSharp.fluid}
                     css={css`
@@ -260,14 +247,8 @@ const IndexPage = ({data}) => {
                     <li>Custom CSS for tuning</li>
                     <li>All the pros and cons of a drag and drop site</li>
                 </ul>
-            </div>
-            <div
-            css={css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `}
-            >
+            </WorkContainer>
+            <WorkContainer>
                 <Img
                     fluid={data.stepp.childImageSharp.fluid}
                     css={css`
@@ -281,7 +262,7 @@ const IndexPage = ({data}) => {
                     <li>Custom CSS for tuning</li>
                     <li>All the pros and cons of a drag and drop site</li>
                 </ul>
-            </div>
+            </WorkContainer>
         </section>
           <section
               css={css`
