@@ -15,23 +15,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: "pacifico",
-              variants: "400",
-            },
-            {
-              family: "montserrat",
-              variants: ["400", "600"],
-            },
-          ],
-        },
-      },
-    },
     `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-robots-txt',

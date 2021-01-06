@@ -1,5 +1,8 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
+import "@fontsource/pacifico"
+import "@fontsource/montserrat"
+import "@fontsource/montserrat/600.css"
 
 import Header from "./header"
 
