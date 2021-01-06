@@ -16,15 +16,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          `pacifico`,
-          `montserrat`,
-          `Ubuntu\:medium` // you can also specify font weights and styles
-        ],
-        display: 'swap'
-      }
+        fonts: {
+          google: [
+            {
+              family: "pacifico",
+              variants: "400",
+            },
+            {
+              family: "montserrat",
+              variants: ["400", "600"],
+            },
+          ],
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     {

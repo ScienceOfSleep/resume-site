@@ -22,39 +22,47 @@ const IndexPage = ({data}) => {
       >
         <section
             css={css`
-          display: grid;
-          grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-          > *:not(.image){
-            grid-column: 2;
-          }
-          .image{
-            grid-column: 1 / -1;
-          }
-          @media screen and (min-width: 1120px){
-            height: calc(100vh - 74px); //Add a header height variable
-            grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-            grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
-            .heading{
-              grid-row: 3;
-            }
-            p{
-              grid-row: 4;
-            }
-            .image{
-              grid-column: 3;
-              grid-row: 2 / 6;
-              justify-self: center;
-            }
-          }
-        `}
+              display: grid;
+              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
+              > *:not(.image){
+                grid-column: 2;
+              }
+              .image{
+                grid-column: 1 / -1; //full bleed hero image on mobile
+                margin-bottom: 15px;
+              }
+              .heading{
+                --font-size: 2rem;
+                margin-bottom: 1rem;
+              }
+              @media screen and (min-width: 1120px){
+                height: calc(100vh - 74px); //Add a header height variable
+                grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
+                grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
+                .heading{
+                  grid-row: 3;
+                  margin: 0 auto;
+                }
+                p{
+                  grid-row: 4;
+                }
+                .image{
+                  grid-column: 3;
+                  grid-row: 2 / 6;
+                  justify-self: center;
+                  margin: 0;
+                }
+              }
+            `}
         >
             <Img
                 fluid={data.albertasaurus.childImageSharp.fluid}
                 className="image"
+                alt="Happy Albertosaurus vector graphic. By Josh Steele."
                 css={css`
-            width: 100%;
-            box-shadow: 0 4px 4px #333333;
-        `}
+                  width: 100%;
+                  box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
+                `}
             />
             <SectionHeading title="Welcome to my CV"/>
             <p>
@@ -65,23 +73,21 @@ const IndexPage = ({data}) => {
         </section>
         <section
             css={css`
-          display: grid;
-          grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-          > *{
-            grid-column: 2;
-          }
-          `}
+              display: grid;
+              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
+              > *{
+                grid-column: 2;
+              }
+              margin-top: 25px;
+              .heading{
+                --font-size: 1.6rem;
+              }
+            `}
         >
             <SectionHeading title="Tech I'm Using"/>
             <LogoCard borderColor="#DB444A">
                 <LaravelSVG/>
-                <h3
-                    css={css`
-              font-family: 'montserrat', sans-serif;
-              font-weight: 600;
-              font-size: 2rem;
-            `}
-                >
+                <h3>
                     Laravel
                 </h3>
                 <ul>
@@ -98,13 +104,7 @@ const IndexPage = ({data}) => {
             </LogoCard>
             <LogoCard borderColor="#2D9CDB">
                 <ReactSVG/>
-                <h3
-                    css={css`
-              font-family: 'montserrat', sans-serif;
-              font-weight: 600;
-              font-size: 2rem;
-            `}
-                >
+                <h3>
                     React
                 </h3>
                 <ul>
@@ -122,17 +122,12 @@ const IndexPage = ({data}) => {
             <LogoCard borderColor="#DBD718">
                 <Img
                     fluid={data.emotion.childImageSharp.fluid}
+                    alt="Emotion JS Logo"
                     css={css`
-                  width: 100%;
-              `}
+                        width: 100%;
+                    `}
                 />
-                <h3
-                    css={css`
-              font-family: 'montserrat', sans-serif;
-              font-weight: 600;
-              font-size: 2rem;
-            `}
-                >
+                <h3>
                     Emotion JS
                 </h3>
                 <ul>
@@ -150,17 +145,12 @@ const IndexPage = ({data}) => {
             <LogoCard borderColor="#663399">
                 <Img
                     fluid={data.gatsby.childImageSharp.fluid}
+                    alt="GatsbyJS logo"
                     css={css`
-                  width: 90%;
-              `}
+                        width: 90%;
+                    `}
                 />
-                <h3
-                    css={css`
-              font-family: 'montserrat', sans-serif;
-              font-weight: 600;
-              font-size: 2rem;
-            `}
-                >
+                <h3>
                     Gatsby
                 </h3>
                 <ul>
@@ -186,38 +176,41 @@ const IndexPage = ({data}) => {
         </section>
         <section
             css={css`
-      display: grid;
-      grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-      > *:not(.image){
-        grid-column: 2;
-      }
-      .image{
-        grid-column: 1 / -1;
-      }
-      @media screen and (min-width: 1120px){
-        grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-        grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
-        .heading{
-          grid-row: 3;
-        }
-        p{
-          grid-row: 4;
-        }
-        .image{
-          grid-column: 3;
-          grid-row: 2 / 6;
-          justify-self: center;
-        }
-      }
-    `}
+              margin-top: 1rem;
+              display: grid;
+              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
+              > *:not(.image){
+                grid-column: 2;
+              }
+              .image{
+                grid-column: 1 / -1;
+                margin-bottom: 1rem;
+              }
+              @media screen and (min-width: 1120px){
+                grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
+                grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
+                .heading{
+                  grid-row: 3;
+                }
+                p{
+                  grid-row: 4;
+                }
+                .image{
+                  grid-column: 3;
+                  grid-row: 2 / 6;
+                  justify-self: center;
+                  margin: 0;
+                }
+              }
+            `}
         >
             <Img
                 fluid={data.orangecircles.childImageSharp.fluid}
                 className="image"
                 css={css`
-            width: 100%;
-            box-shadow: 0 4px 4px #3c3c3c, 0 -4px 4px #3c3c3c;
-        `}
+                    width: 100%;
+                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                `}
             />
             <SectionHeading title="Work Experience"/>
             <p>
@@ -228,16 +221,16 @@ const IndexPage = ({data}) => {
             <LinkButton to="/">Career Timeline</LinkButton>
             <div
             css={css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `}
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            `}
             >
                 <Img
                     fluid={data.dip.childImageSharp.fluid}
                     css={css`
-                width: 80%;
-              `}
+                      width: 80%;
+                    `}
                 />
                 <h3>Draw It Paint</h3>
                 <h4>February 2020 - Present</h4>
