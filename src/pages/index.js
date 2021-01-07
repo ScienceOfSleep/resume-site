@@ -59,7 +59,7 @@ const IndexPage = ({data}) => {
             <Img
                 fluid={data.albertasaurus.childImageSharp.fluid}
                 className="image"
-                alt="Happy Albertosaurus vector graphic. By Josh Steele."
+                alt="Happy Albertosaurus vector graphic. By yours truly, Josh Steele."
                 css={css`
                   width: 100%;
                   box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
@@ -205,9 +205,11 @@ const IndexPage = ({data}) => {
             <Img
                 fluid={data.orangecircles.childImageSharp.fluid}
                 className="image"
+                alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
                 css={css`
                     width: 100%;
                     box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                    margin: 1rem 0 1rem;
                 `}
             />
             <SectionHeading title="Work Experience"/>
@@ -294,15 +296,18 @@ const IndexPage = ({data}) => {
               <Img
                   fluid={data.greeneye.childImageSharp.fluid}
                   className="image"
+                  alt="Green eye in circles. Generative art by Josh Steele made using Canvas."
                   css={css`
-                      width: 100%;
-                      box-shadow: 0 4px 4px #3c3c3c, 0 -4px 4px #3c3c3c;
+                    width: 100%;
+                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                    margin: 1rem 0 1rem;
                   `}
               />
               <SectionHeading title="Recent Projects"/>
               <LogoCard borderColor="#DB444A">
                   <Img
                       fluid={data.dip.childImageSharp.fluid}
+                      alt="DIP Logo"
                       css={css`
                           width: 100%;
                       `}
@@ -331,6 +336,7 @@ const IndexPage = ({data}) => {
               <LogoCard borderColor="var(--index-blue)">
                   <Img
                       fluid={data.fua.childImageSharp.fluid}
+                      alt="Feminists at the University of Alberta logo"
                       css={css`
                           width: 100%;
                       `}
@@ -359,6 +365,7 @@ const IndexPage = ({data}) => {
               <LogoCard borderColor="#DBD718">
                   <Img
                       fluid={data.calgarystairs.childImageSharp.fluid}
+                      alt="Calgary Stairs logo"
                       css={css`
                           width: 100%;
                       `}
@@ -415,9 +422,11 @@ const IndexPage = ({data}) => {
               <Img
                   fluid={data.pinkeye.childImageSharp.fluid}
                   className="image"
+                  alt="Abstract generative art by Josh Steele, made using Canvas."
                   css={css`
-                      width: 100%;
-                      box-shadow: 0 4px 4px #3c3c3c, 0 -4px 4px #3c3c3c;
+                    width: 100%;
+                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                    margin: 1rem 0 1rem;
                   `}
               />
               <SectionHeading title="About Me"/>
