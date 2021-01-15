@@ -1,6 +1,7 @@
 import React from "react"
 import {css} from "@emotion/core"
 import { Link } from "gatsby"
+import blockCyclone from "../images/block-cyclone.gif"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -82,6 +83,16 @@ const IndexPage = ({data}) => {
               margin-top: 25px;
             `}
         >
+            <img
+                src={blockCyclone}
+                alt="Cyclone of blocks matching tech logo colors. Made with WebGL and Three JS by Josh Steele"
+                css={css`
+                  margin: 0 auto 1rem;
+                  border: 2px solid var(--page-color);
+                  border-radius: 100%;
+                  padding: 2px;
+                `}
+            />
             <SectionHeading title="Tech I'm Using"/>
             <LogoCard borderColor="#DB444A">
                 <LaravelSVG/>
