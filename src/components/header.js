@@ -29,7 +29,7 @@ const Header = () => {
               align-items: center;
               font-family: 'Ubuntu', sans-serif;
               grid-column: 3;
-              height: 80px;
+              height: var(--header-height);
               box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
             `}
     >

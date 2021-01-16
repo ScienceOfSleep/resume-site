@@ -19,6 +19,10 @@ const LogoCard = styled.div`
       font-weight: 600;
       font-size: 2rem;
     }
+  @media screen and (min-width: 1120px){
+    padding: 10px;
+    width: 20%;
+  }
 `
 
 export default LogoCard

@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
           :root{
             --site-width: 90vw;
             --horizontal-margin: calc((100% - var(--site-width)) / 2);
+            --header-height: 80px;
               @media screen and (min-width: 1120px){
                 --site-width: 1400px;
               }
