@@ -12,6 +12,7 @@ import ReactSVG from "../components/react-svg";
 import SectionHeading from "../components/section-heading";
 import LinkButton from "../components/link-button";
 import WorkContainer from "../components/work-container";
+import PageHeading from "../components/page-heading";
 
 const IndexPage = ({data}) => {
 
@@ -29,30 +30,16 @@ const IndexPage = ({data}) => {
               > *:not(.image){
                 grid-column: 2;
               }
-              .image{
-                grid-column: 1 / -1; //full bleed hero image on mobile
-                margin-bottom: 15px;
-              }
-              .heading{
-                --font-size: 2rem;
-                margin-bottom: 1rem;
-              }
               @media screen and (min-width: 1120px){
-                height: calc(100vh - 74px); //Add a header height variable
-                grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
+                height: 60vh; //Add a header height variable
+                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
+                grid-template-rows: 10vh 1fr 1fr auto auto 1fr 3fr 10vh;
                 .heading{
-                  grid-row: 3;
+                  grid-row: 4;
                   margin: 0 auto;
                 }
                 p{
-                  grid-row: 4;
-                }
-                .image{
-                  grid-column: 3;
-                  grid-row: 2 / 6;
-                  justify-self: center;
-                  margin: 0;
+                  grid-row: 5;
                 }
               }
             `}
@@ -64,9 +51,23 @@ const IndexPage = ({data}) => {
                 css={css`
                   width: 100%;
                   box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
+                  grid-column: 1 / -1; //full bleed hero image on mobile
+                  margin-bottom: 15px;
+                  @media screen and (min-width: 1120px){
+                    box-shadow: 3px 4px 4px hsl(202, 21%, 52%, 0.6);
+                    grid-column: 3;
+                    grid-row: 3 / 7;
+                    justify-self: end;
+                    align-self: center;
+                    margin: 0;
+                    border: 20px solid var(--page-color);
+                    border-radius: 20%;
+                    width: 65%;
+                    height: fit-content;
+                  }
                 `}
             />
-            <SectionHeading title="Welcome to my CV"/>
+            <PageHeading title="Welcome to my CV"/>
             <p>
                 This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
                 <br/> <br/>

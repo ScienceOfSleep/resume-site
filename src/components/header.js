@@ -3,6 +3,8 @@ import Navbar from "./navbar"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
+import "@fontsource/ubuntu"
+
 
 const Header = () => {
 
@@ -22,26 +24,38 @@ const Header = () => {
         css={css`
               background-color: #3C99CE;
               color: #ffffff;
-              display: flex;
+              display: grid;
+              grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
               align-items: center;
-              padding: 0 var(--horizontal-margin);
               font-family: 'Ubuntu', sans-serif;
+              grid-column: 3;
+              height: 80px;
+              box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
             `}
     >
-        <Img
-            fixed={data.logo.childImageSharp.fixed}
+        <div
             css={css`
-                width: 60px;
-            `}
-        />
-        <h1
-            css={css`
-                flex-grow: 5;
-                padding-left: 2rem;
+              display: flex;
+              grid-column: 2;
+              align-items: center;
             `}
         >
-            Josh Steele's<br/>Resume Site
-        </h1>
+            <Img
+                fixed={data.logo.childImageSharp.fixed}
+                css={css`
+                  width: 60px;
+                  box-shadow: 4px 4px 4px hsl(202, 21%, 52%, 0.9);
+              `}
+            />
+            <h2
+                css={css`
+                  padding-left: 1rem;
+                  font-size: 27px;
+              `}
+            >
+                Josh Steele's<br/>Resume Site
+            </h2>
+        </div>
         <Navbar/>
     </header>
 }

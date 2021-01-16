@@ -15,6 +15,9 @@ const Layout = ({ children }) => {
           :root{
             --site-width: 90vw;
             --horizontal-margin: calc((100% - var(--site-width)) / 2);
+              @media screen and (min-width: 1120px){
+                --site-width: 1400px;
+              }
             }
             html, body, div, span, applet, object, iframe,
             h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +36,6 @@ const Layout = ({ children }) => {
             padding: 0;
             border: 0;
             box-sizing: border-box;
-            font-size: 100%;
             vertical-align: baseline;
             }
             p{
