@@ -21,6 +21,9 @@ const WorkContainer = styled.div`
     width: 80%;
     margin-left: 20px;
   }
+  @media screen and (min-width: 1120px){
+    width: 55%;
+  }
 `
 
 export default WorkContainer

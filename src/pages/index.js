@@ -229,19 +229,19 @@ const IndexPage = ({data}) => {
                 margin-bottom: 1rem;
               }
               @media screen and (min-width: 1120px){
-                grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
+                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
+                grid-template-rows: 10vh 10vh 46px 200px auto 1fr;
+                .image{
+                  margin: 0;
+                }
                 .heading{
                   grid-row: 3;
                 }
                 p{
                   grid-row: 4;
                 }
-                .image{
-                  grid-column: 3;
-                  grid-row: 2 / 6;
-                  justify-self: center;
-                  margin: 0;
+                a{
+                  grid-row: 5;
                 }
               }
             `}
@@ -263,6 +263,17 @@ const IndexPage = ({data}) => {
                 When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
             </p>
             <LinkButton to="/">Career Timeline</LinkButton>
+            <div
+                css={css`
+                  display: flex;
+                  flex-direction: column;
+                  @media screen and (min-width: 1120px){
+                    grid-column: 3 !important;
+                    grid-row: 2/6;
+                    align-items: flex-end;
+                  }
+                `}
+            >
             <WorkContainer>
                 <Img
                     fluid={data.dip.childImageSharp.fluid}
@@ -294,21 +305,7 @@ const IndexPage = ({data}) => {
                     <li>All the pros and cons of a drag and drop site</li>
                 </ul>
             </WorkContainer>
-            <WorkContainer>
-                <Img
-                    fluid={data.stepp.childImageSharp.fluid}
-                    css={css`
-                width: 80%;
-              `}
-                />
-                <h3>Steppmedia</h3>
-                <h4>April 2019 - September 2019</h4>
-                <ul>
-                    <li>Built with Wordpress</li>
-                    <li>Custom CSS for tuning</li>
-                    <li>All the pros and cons of a drag and drop site</li>
-                </ul>
-            </WorkContainer>
+            </div>
         </section>
           <section
               css={css`
@@ -321,19 +318,8 @@ const IndexPage = ({data}) => {
                   grid-column: 1 / -1;
                 }
                 @media screen and (min-width: 1120px){
-                  grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                  grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
-                  .heading{
-                    grid-row: 3;
-                  }
-                  p{
-                    grid-row: 4;
-                  }
-                  .image{
-                    grid-column: 3;
-                    grid-row: 2 / 6;
-                    justify-self: center;
-                  }
+                  grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
+                  grid-template-rows: 10vh 1fr;
                 }
               `}
           >
@@ -348,6 +334,22 @@ const IndexPage = ({data}) => {
                   `}
               />
               <SectionHeading title="Recent Projects"/>
+              <p>
+                  This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                  <br/> <br/>
+                  When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+              </p>
+              <div
+                  css={css`
+                  display: flex;
+                  flex-direction: column;
+                  @media screen and (min-width: 1120px){
+                    flex-direction: row;
+                    grid-column: 2/4 !important;
+                    justify-content: space-between;
+                  }
+                `}
+              >
               <LogoCard borderColor="#DB444A">
                   <Img
                       fluid={data.dip.childImageSharp.fluid}
@@ -377,7 +379,7 @@ const IndexPage = ({data}) => {
                       </li>
                   </ul>
               </LogoCard>
-              <LogoCard borderColor="var(--index-blue)">
+              <LogoCard borderColor="var(--page-color)">
                   <Img
                       fluid={data.fua.childImageSharp.fluid}
                       alt="Feminists at the University of Alberta logo"
@@ -435,6 +437,7 @@ const IndexPage = ({data}) => {
                       </li>
                   </ul>
               </LogoCard>
+              </div>
           </section>
           <section
               css={css`
