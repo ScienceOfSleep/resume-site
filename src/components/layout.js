@@ -45,9 +45,14 @@ const Layout = ({ children }) => {
             p, li{
               font-family: 'montserrat', serif;
               font-weight: 400;
+              font-size: 18px;
             }
             ul{
               padding: 0 0 0 20px;
+            }
+            @media screen and (min-width: 1120px){
+              p{font-size: 20px}
+              li{font-size: 18px}
             }
         `}/>
     {children}

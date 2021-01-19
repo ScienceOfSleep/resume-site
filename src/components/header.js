@@ -22,7 +22,7 @@ const Header = () => {
 
     return <header
         css={css`
-              background-color: #3C99CE;
+              background-color: #2D9CDB;
               color: #ffffff;
               display: grid;
               grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));

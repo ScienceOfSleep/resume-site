@@ -12,10 +12,13 @@ const SectionHeading = (props) => (
           margin: 0 auto;
           svg{
             position: absolute;
-            top: calc(var(--font-size) * 1.33);
+            top: calc(var(--font-size) * 1.35);
             height: 3px;
             width: 100%;
             stroke: var(--page-color);
+          }
+          @media screen and (min-width: 1120px){
+            --font-size: 2rem;
           }
         `}
     >

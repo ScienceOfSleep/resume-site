@@ -18,7 +18,10 @@ const PageHeading = (props) => (
             stroke: var(--page-color);
           }
           @media screen and (min-width: 1120px){
-            --font-size: 2.5rem;
+            --font-size: 2.75rem;
+            svg{
+              height: 4px;
+            }
           }
         `}
     >
@@ -29,8 +32,8 @@ const PageHeading = (props) => (
         >
             {props.title}
         </h1>
-        <svg viewBox="0 0 300 3">
-            <path strokeWidth="100" d="M 0,2 L 300,2"/>
+        <svg viewBox="0 0 500 5">
+            <path strokeWidth="100" d="M 0,3 L 500,3"/>
         </svg>
     </div>
 )

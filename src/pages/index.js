@@ -1,6 +1,5 @@
 import React from "react"
 import {css} from "@emotion/core"
-import { Link } from "gatsby"
 import blockCyclone from "../images/block-cyclone.gif"
 
 import Layout from "../components/layout"
@@ -31,9 +30,9 @@ const IndexPage = ({data}) => {
                 grid-column: 2;
               }
               @media screen and (min-width: 1120px){
-                height: calc(80vh - var(--header-height)); //Add a header height variable
+                height: calc(115vh - var(--header-height)); //Add a header height variable
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 10vh 1fr 1fr auto auto 1fr 3fr 10vh;
+                grid-template-rows: 2fr 1fr 1fr auto auto 1fr 3fr 10vh 25vh;
                 .heading{
                   grid-row: 4;
                   margin: 0 auto;
@@ -44,6 +43,23 @@ const IndexPage = ({data}) => {
               }
             `}
         >
+            <Img
+                fluid={data.hero.childImageSharp.fluid}
+                className="image"
+                alt="'Random circles generated using canvas' by Josh Steele"
+                css={css`
+                  display: none;
+                  @media screen and (min-width: 1120px){
+                    display: initial;
+                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 4px hsl(202, 21%, 52%, 0.6);
+                    grid-column: 1/5;
+                    grid-row: 9;
+                    margin: 0;
+                    width: 100%;
+                    height: 25vh;
+                  }
+                `}
+            />
             <Img
                 fluid={data.albertasaurus.childImageSharp.fluid}
                 className="image"
@@ -487,6 +503,13 @@ export const query = graphql`
         albertasaurus: file(relativePath: { eq: "Albertasaurus.png" }) {
             childImageSharp {
                 fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        hero: file(relativePath: { eq: "web-circle-hero-0.8925212347623344.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
