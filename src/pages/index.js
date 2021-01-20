@@ -22,6 +22,14 @@ const IndexPage = ({data}) => {
             media: `(min-width: 1120px)`,
         },    ]
 
+    const aboutImage = [
+        data.pinkeye.childImageSharp.fluid,
+        {
+            ...data.aboutDesktop.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },    ]
+
+
     return <Layout>
       {/*<SEO title="Josh's Resume Site" />*/}
       <main
@@ -260,18 +268,9 @@ const IndexPage = ({data}) => {
               }
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 25vh 10vh 46px 200px auto 1fr;
+                grid-template-rows: 25vh auto;
                 .image{
                   margin: 0;
-                }
-                .heading{
-                  grid-row: 3;
-                }
-                p{
-                  grid-row: 4;
-                }
-                a{
-                  grid-row: 5;
                 }
               }
             `}
@@ -286,6 +285,18 @@ const IndexPage = ({data}) => {
                     margin: 1rem 0 1rem;
                 `}
             />
+            <div
+                css={css`
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  @media screen and (min-width: 1120px){
+                    grid-row: 2/4;
+                    justify-content: center;
+                    padding-bottom: 10%;
+                  }
+                `}
+            >
             <SectionHeading title="Work Experience"/>
             <p>
                 This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
@@ -293,13 +304,14 @@ const IndexPage = ({data}) => {
                 When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
             </p>
             <LinkButton to="/">Career Timeline</LinkButton>
+            </div>
             <div
                 css={css`
                   display: flex;
                   flex-direction: column;
                   @media screen and (min-width: 1120px){
                     grid-column: 3 !important;
-                    grid-row: 2/6;
+                    grid-row: 2;
                     align-items: flex-end;
                   }
                 `}
@@ -324,8 +336,8 @@ const IndexPage = ({data}) => {
                 <Img
                     fluid={data.silvertip.childImageSharp.fluid}
                     css={css`
-                width: 80%;
-              `}
+                      width: 80%;
+                    `}
                 />
                 <h3>Silvertip Advisory</h3>
                 <h4>April 2017 - January 2020</h4>
@@ -349,7 +361,7 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                  grid-template-rows: 25vh 1fr;
+                  grid-template-rows: 25vh auto auto;
                   .heading{
                     margin-top: 2rem;
                   }
@@ -369,12 +381,21 @@ const IndexPage = ({data}) => {
                     }
                   `}
               />
+              <div
+                css={css`
+                  @media screen and (min-width: 1120px){
+                    grid-row: 2;
+                    padding: 3rem 0 2rem;
+                  }
+                `}
+              >
               <SectionHeading title="Recent Projects"/>
               <p>
                   This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
                   <br/> <br/>
                   When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
               </p>
+              </div>
               <div
                   css={css`
                   display: flex;
@@ -382,6 +403,7 @@ const IndexPage = ({data}) => {
                   @media screen and (min-width: 1120px){
                     flex-direction: row;
                     grid-column: 2/4 !important;
+                    grid-row: 3;
                     justify-content: space-between;
                   }
                 `}
@@ -487,23 +509,18 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                  grid-template-rows: 10vh 2fr auto auto 3fr 10vh;
+                  grid-template-rows: 25vh 5vh auto auto;
                   .heading{
                     grid-row: 3;
                   }
                   p{
                     grid-row: 4;
                   }
-                  .image{
-                    grid-column: 3;
-                    grid-row: 2 / 6;
-                    justify-self: center;
-                  }
                 }
               `}
           >
               <Img
-                  fluid={data.pinkeye.childImageSharp.fluid}
+                  fluid={aboutImage}
                   className="image"
                   alt="Abstract generative art by Josh Steele, made using Canvas."
                   css={css`
@@ -534,7 +551,14 @@ export const query = graphql`
                 }
             }
         }
-        projectsDesktop: file(relativePath: { eq: "web-circle-divider-0.3090685037802223.png" }) {
+        projectsDesktop: file(relativePath: { eq: "web-circle-divider-0.2744687086502904.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        aboutDesktop: file(relativePath: { eq: "web-circle-divider-0.9241831149624944.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
@@ -569,7 +593,7 @@ export const query = graphql`
                 }
             }
         }
-        silvertip: file(relativePath: { eq: "Silvertip-Logo.png" }) {
+        silvertip: file(relativePath: { eq: "Silvertip.jpg" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
