@@ -12,7 +12,7 @@ const LinkButton = styled(Link)`
   height: fit-content;
   font-family: 'montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: #ffffff;
   border: 3px solid #000000;
   border-radius: 15px;

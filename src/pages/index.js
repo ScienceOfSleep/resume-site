@@ -15,6 +15,13 @@ import PageHeading from "../components/page-heading";
 
 const IndexPage = ({data}) => {
 
+    const projectsImage = [
+        data.greeneye.childImageSharp.fluid,
+        {
+            ...data.projectsDesktop.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },    ]
+
     return <Layout>
       {/*<SEO title="Josh's Resume Site" />*/}
       <main
@@ -100,9 +107,12 @@ const IndexPage = ({data}) => {
               margin-top: 20px;
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: auto 1fr 1fr auto;
+                grid-template-rows: 7vh auto auto 14vh auto 7vh;
                 .heading{
-                grid-row: 1;
+                grid-row: 2;
+                }
+                a{
+                  grid-row: 4;
                 }
               }
             `}
@@ -118,8 +128,10 @@ const IndexPage = ({data}) => {
                   @media screen and (min-width: 1120px){
                     grid-column: 3 !important;
                     grid-row: 2 / 4;
-                    margin-top: 3rem;
-                    width: 150px;
+                    margin-top: 10%;
+                    margin-left: 33%;
+                    width: 175px;
+                    border: 5px solid var(--page-color);
                   }
                 `}
             />
@@ -130,8 +142,8 @@ const IndexPage = ({data}) => {
                   flex-direction: column;
                   @media screen and (min-width: 1120px){
                     flex-direction: row;
-                    grid-row: 4;
-                    grid-column: 2/4;
+                    grid-row: 5;
+                    grid-column: 2/4 !important;
                     justify-content: space-between;
                   }
                 `}
@@ -221,6 +233,8 @@ const IndexPage = ({data}) => {
                 css={css`
                   @media screen and (min-width: 1120px){
                     padding-top: .25rem;
+                    padding-bottom: 1rem;
+                    grid-row: 3;
                   }
                 `}
             >
@@ -246,7 +260,7 @@ const IndexPage = ({data}) => {
               }
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 10vh 10vh 46px 200px auto 1fr;
+                grid-template-rows: 25vh 10vh 46px 200px auto 1fr;
                 .image{
                   margin: 0;
                 }
@@ -335,18 +349,24 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                  grid-template-rows: 10vh 1fr;
+                  grid-template-rows: 25vh 1fr;
+                  .heading{
+                    margin-top: 2rem;
+                  }
                 }
               `}
           >
               <Img
-                  fluid={data.greeneye.childImageSharp.fluid}
+                  fluid={projectsImage}
                   className="image"
-                  alt="Green eye in circles. Generative art by Josh Steele made using Canvas."
+                  alt="Random overlapping colorful circles. Generative art by Josh Steele made using Canvas."
                   css={css`
                     width: 100%;
                     box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
                     margin: 1rem 0 1rem;
+                    @media screen and (min-width: 1120px){
+                      height: 25vh;
+                    }
                   `}
               />
               <SectionHeading title="Recent Projects"/>
@@ -514,9 +534,16 @@ export const query = graphql`
                 }
             }
         }
+        projectsDesktop: file(relativePath: { eq: "web-circle-divider-0.3090685037802223.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         orangecircles: file(relativePath: { eq: "orange-crazy-circles.png" }) {
             childImageSharp {
-                fluid {
+                fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
                 }
             }
