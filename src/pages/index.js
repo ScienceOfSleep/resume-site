@@ -115,7 +115,7 @@ const IndexPage = ({data}) => {
               margin-top: 20px;
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 7vh auto auto 14vh auto 7vh;
+                grid-template-rows: 7vh auto auto 14vh auto 3.5vh;
                 .heading{
                 grid-row: 2;
                 }
@@ -156,41 +156,34 @@ const IndexPage = ({data}) => {
                   }
                 `}
             >
-            <LogoCard borderColor="#DB444A">
+            <LogoCard
+                borderColor="#DB444A"
+                pointOne="The gold standard for PHP frameworks."
+                pointTwo="Batteries included, building and debugging are a joy."
+                pointThree="Generates back-ends quickly and professionally."
+            >
                 <LaravelSVG/>
                 <h3>
                     Laravel
                 </h3>
-                <ul>
-                    <li>
-                        The gold standard for PHP frameworks.
-                    </li>
-                    <li>
-                        Batteries included, building and debugging are a joy.
-                    </li>
-                    <li>
-                        Generates back-ends quickly and professionally.
-                    </li>
-                </ul>
             </LogoCard>
-            <LogoCard borderColor="#2D9CDB">
+            <LogoCard
+                borderColor="#2D9CDB"
+                pointOne="The hot JS framework; very good resources and ecosystem as a result."
+                pointTwo="Component focus feels natural for the modern web."
+                pointThree="I enjoy working with JSX and CSS-in-JS."
+            >
                 <ReactSVG/>
                 <h3>
                     React
                 </h3>
-                <ul>
-                    <li>
-                        The hot JS framework; very good resources and ecosystem as a result.
-                    </li>
-                    <li>
-                        Component focus feels natural for the modern web.
-                    </li>
-                    <li>
-                        I enjoy working with JSX and CSS-in-JS.
-                    </li>
-                </ul>
             </LogoCard>
-            <LogoCard borderColor="#DBD718">
+            <LogoCard
+                borderColor="#DBD718"
+                pointOne="Emotion's flexibility perfectly complements my coding flow in React."
+                pointTwo="Sidesteps scope and specificity problems."
+                pointThree="Has all the best parts of SASS and CSS combined with the dynamism of JS."
+            >
                 <Img
                     fluid={data.emotion.childImageSharp.fluid}
                     alt="Emotion JS Logo"
@@ -201,19 +194,13 @@ const IndexPage = ({data}) => {
                 <h3>
                     Emotion JS
                 </h3>
-                <ul>
-                    <li>
-                        Perfectly complements my coding flow in React.
-                    </li>
-                    <li>
-                        Sidesteps scope and specificity problems.
-                    </li>
-                    <li>
-                        Has all the best parts of SASS and CSS combined with the dynamism of JS.
-                    </li>
-                </ul>
             </LogoCard>
-            <LogoCard borderColor="#663399">
+            <LogoCard
+                borderColor="#663399"
+                pointOne="Low overhead and blazing speed right out of the box."
+                pointTwo="Automated image processing and lazy loading is very slick."
+                pointThree="Secure and accessible by default."
+            >
                 <Img
                     fluid={data.gatsby.childImageSharp.fluid}
                     alt="GatsbyJS logo"
@@ -224,17 +211,6 @@ const IndexPage = ({data}) => {
                 <h3>
                     Gatsby
                 </h3>
-                <ul>
-                    <li>
-                        Low overhead and blazing speed right out of the box.
-                    </li>
-                    <li>
-                        Automated image processing and lazy loading is very slick.
-                    </li>
-                    <li>
-                        Secure and accessible by default.
-                    </li>
-                </ul>
             </LogoCard>
             </div>
             <p
@@ -322,6 +298,11 @@ const IndexPage = ({data}) => {
                     alt="Draw It Paint"
                     css={css`
                       width: 80%;
+                      @media screen and (min-width: 1120px){
+                        width: 50%;
+                        border: solid 4px #333333;
+                        margin-right: 3px;
+                      }
                     `}
                 />
                 <h3>Draw It Paint</h3>
@@ -337,6 +318,9 @@ const IndexPage = ({data}) => {
                     fluid={data.silvertip.childImageSharp.fluid}
                     css={css`
                       width: 80%;
+                      @media screen and (min-width: 1120px){
+                        width: 70%;
+                      }
                     `}
                 />
                 <h3>Silvertip Advisory</h3>
@@ -509,7 +493,7 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                  grid-template-rows: 25vh 5vh auto auto;
+                  grid-template-rows: 25vh 7vh auto auto;
                   .heading{
                     grid-row: 3;
                   }
@@ -527,6 +511,9 @@ const IndexPage = ({data}) => {
                     width: 100%;
                     box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
                     margin: 1rem 0 1rem;
+                    @media screen and (min-width: 1120px){
+                      height: 25vh;
+                    }
                   `}
               />
               <SectionHeading title="About Me"/>
@@ -600,9 +587,9 @@ export const query = graphql`
                 }
             }
         }
-        dip: file(relativePath: { eq: "steppmedia-logo.png" }) {
+        dip: file(relativePath: { eq: "dip-logo.png" }) {
             childImageSharp {
-                fluid {
+                fluid(quality:100) {
                     ...GatsbyImageSharpFluid
                 }
             }

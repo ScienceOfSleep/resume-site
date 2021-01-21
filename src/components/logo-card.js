@@ -1,28 +1,74 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "@emotion/styled";
+import {css} from  "@emotion/core";
 
-const LogoCard = styled.div`
-    margin: 1rem 0 2rem;
-    border: 6px solid ${props => props.borderColor || "#DB444A"};
-    border-radius: 5%;
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
-    li{
-      padding-top: .35rem;
+const Card = styled.div`
+  margin: 1rem 0 2rem;
+  border: 6px solid ${props => props.borderColor || "#DB444A"};
+  border-radius: 5%;
+  padding: 10px 10% 10px;
+  display: grid;
+  grid-template-rows: 260px 2rem auto 10px;
+  justify-items: center;
+  align-items: center;
+  background-color: #ffffff;
+  filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
+  position: relative;
+  height: calc(260px + 2rem + 50px);
+  &[data-opened='true']{
+    height: fit-content;
+  }
+  ul{
+    opacity: 0;
+    grid-row: 3;
+    &[data-opened='true']{
+      opacity: 1;
+  }
+  li{
+    padding-top: .35rem;
     }
-    h3{
-      font-family: 'montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 2rem;
-    }
+  }
+  h3{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
   @media screen and (min-width: 1120px){
     padding: 10px;
     width: 20%;
   }
 `
+
+const LogoCard = (props) => {
+    const [opened, setOpened] = useState(false)
+    const button = (opened ? "close" : "expand")
+
+    return <Card
+        borderColor={props.borderColor}
+        data-opened={opened}
+    >
+        {props.children}
+        <ul data-opened={opened}>
+            <li>{props.pointOne}</li>
+            <li>{props.pointTwo}</li>
+            <li>{props.pointThree}</li>
+        </ul>
+        <button
+            onClick={() => {
+                if (opened === true) {
+                    setOpened(false)
+                } else {
+                    setOpened(true)
+                }
+            }}
+            css={css`
+              position: absolute;
+              bottom: 0;
+            `}
+        >
+            {button}
+        </button>
+    </Card>
+}
 
 export default LogoCard
