@@ -15,14 +15,17 @@ const Card = styled.div`
   filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
   position: relative;
   height: calc(260px + 2rem + 50px);
+  transition: height .25s;
   &[data-opened='true']{
-    height: fit-content;
+    height: 560px;
   }
   ul{
     opacity: 0;
     grid-row: 3;
+    transition: opacity .1s ease 0s;
     &[data-opened='true']{
       opacity: 1;
+      transition: opacity .25s ease .15s;
   }
   li{
     padding-top: .35rem;
@@ -36,6 +39,9 @@ const Card = styled.div`
   @media screen and (min-width: 1120px){
     padding: 10px;
     width: 20%;
+    &[data-opened='true']{
+      height: 550px;
+    }
   }
 `
 

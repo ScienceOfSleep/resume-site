@@ -115,7 +115,7 @@ const IndexPage = ({data}) => {
               margin-top: 20px;
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 7vh auto auto 14vh auto 3.5vh;
+                grid-template-rows: 7vh auto auto 14vh 550px 7vh;
                 .heading{
                 grid-row: 2;
                 }
