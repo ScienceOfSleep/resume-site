@@ -115,7 +115,7 @@ const IndexPage = ({data}) => {
               margin-top: 20px;
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 7vh auto auto 14vh 550px 7vh;
+                grid-template-rows: 7vh auto auto 14vh 540px 7vh;
                 .heading{
                 grid-row: 2;
                 }
@@ -182,7 +182,7 @@ const IndexPage = ({data}) => {
                 borderColor="#DBD718"
                 pointOne="Emotion's flexibility perfectly complements my coding flow in React."
                 pointTwo="Sidesteps scope and specificity problems."
-                pointThree="Has all the best parts of SASS and CSS combined with the dynamism of JS."
+                pointThree="Combines the best parts of SASS and CSS with the dynamism of JS."
             >
                 <Img
                     fluid={data.emotion.childImageSharp.fluid}

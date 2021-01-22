@@ -14,15 +14,16 @@ const Card = styled.div`
   background-color: #ffffff;
   filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
   position: relative;
-  height: calc(260px + 2rem + 50px);
+  height: calc(260px + 2rem + 55px);
   transition: height .25s;
   &[data-opened='true']{
-    height: 560px;
+    height: 540px;
   }
   ul{
     opacity: 0;
     grid-row: 3;
     transition: opacity .1s ease 0s;
+    align-self: start;
     &[data-opened='true']{
       opacity: 1;
       transition: opacity .25s ease .15s;
@@ -40,14 +41,14 @@ const Card = styled.div`
     padding: 10px;
     width: 20%;
     &[data-opened='true']{
-      height: 550px;
+      height: 540px;
     }
   }
 `
 
 const LogoCard = (props) => {
     const [opened, setOpened] = useState(false)
-    const button = (opened ? "close" : "expand")
+    const button = (opened ? "Collapse" : "Expand")
 
     return <Card
         borderColor={props.borderColor}
@@ -69,10 +70,24 @@ const LogoCard = (props) => {
             }}
             css={css`
               position: absolute;
-              bottom: 0;
+              bottom: 4px;
+              background-color: #ffffff;
+              border-top: none;
+              border-bottom: none;
+              border-left: 4px solid ${props.borderColor};
+              border-right: 4px solid ${props.borderColor};
+              padding: 1px 6px 2px;
+              p{
+                font-size: 16px;
+                font-weight: 600;
+              }
+              &:focus, :hover{
+                background-color: ${props.borderColor};
+                color: #ffffff;
+              }
             `}
         >
-            {button}
+            <p>{button}</p>
         </button>
     </Card>
 }

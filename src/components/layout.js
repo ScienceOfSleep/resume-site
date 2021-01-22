@@ -44,7 +44,6 @@ const Layout = ({ children }) => {
             }
             p, li{
               font-family: 'montserrat', serif;
-              font-weight: 400;
               font-size: 18px;
             }
             ul{
