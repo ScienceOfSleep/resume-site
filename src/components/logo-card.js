@@ -84,6 +84,7 @@ const LogoCard = (props) => {
               &:focus, :hover{
                 background-color: ${props.borderColor};
                 color: #ffffff;
+                cursor: pointer;
               }
             `}
         >

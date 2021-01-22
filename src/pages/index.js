@@ -345,7 +345,7 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                  grid-template-rows: 25vh auto auto;
+                  grid-template-rows: 25vh auto 540px 7vh;
                   .heading{
                     margin-top: 2rem;
                   }
@@ -392,7 +392,12 @@ const IndexPage = ({data}) => {
                   }
                 `}
               >
-              <LogoCard borderColor="#DB444A">
+                  <LogoCard
+                      borderColor="#DB444A"
+                      pointOne="The gold standard for PHP frameworks."
+                      pointTwo="Batteries included, building and debugging are a joy."
+                      pointThree="Generates back-ends quickly and professionally."
+                  >
                   <Img
                       fluid={data.dip.childImageSharp.fluid}
                       alt="DIP Logo"
@@ -409,19 +414,13 @@ const IndexPage = ({data}) => {
                   >
                       Draw It Paint
                   </h3>
-                  <ul>
-                      <li>
-                          Perfectly complements my coding flow in React.
-                      </li>
-                      <li>
-                          Sidesteps scope and specificity problems.
-                      </li>
-                      <li>
-                          Has all the best parts of SASS and CSS combined with the dynamism of JS.
-                      </li>
-                  </ul>
               </LogoCard>
-              <LogoCard borderColor="var(--page-color)">
+                  <LogoCard
+                      borderColor="var(--page-color)"
+                      pointOne="The gold standard for PHP frameworks."
+                      pointTwo="Batteries included, building and debugging are a joy."
+                      pointThree="Generates back-ends quickly and professionally."
+                  >
                   <Img
                       fluid={data.fua.childImageSharp.fluid}
                       alt="Feminists at the University of Alberta logo"
@@ -438,19 +437,13 @@ const IndexPage = ({data}) => {
                   >
                       FUA Club Site
                   </h3>
-                  <ul>
-                      <li>
-                          Perfectly complements my coding flow in React.
-                      </li>
-                      <li>
-                          Sidesteps scope and specificity problems.
-                      </li>
-                      <li>
-                          Has all the best parts of SASS and CSS combined with the dynamism of JS.
-                      </li>
-                  </ul>
               </LogoCard>
-              <LogoCard borderColor="#DBD718">
+              <LogoCard
+                  borderColor="#DBD718"
+                  pointOne="The gold standard for PHP frameworks."
+                  pointTwo="Batteries included, building and debugging are a joy."
+                  pointThree="Generates back-ends quickly and professionally."
+              >
                   <Img
                       fluid={data.calgarystairs.childImageSharp.fluid}
                       alt="Calgary Stairs logo"
@@ -467,17 +460,29 @@ const IndexPage = ({data}) => {
                   >
                       Calgary Stairs
                   </h3>
-                  <ul>
-                      <li>
-                          Perfectly complements my coding flow in React.
-                      </li>
-                      <li>
-                          Sidesteps scope and specificity problems.
-                      </li>
-                      <li>
-                          Has all the best parts of SASS and CSS combined with the dynamism of JS.
-                      </li>
-                  </ul>
+              </LogoCard>
+              <LogoCard
+                  borderColor="green"
+                  pointOne="The gold standard for PHP frameworks."
+                  pointTwo="Batteries included, building and debugging are a joy."
+                  pointThree="Generates back-ends quickly and professionally."
+              >
+                  <Img
+                      fluid={data.calgarystairs.childImageSharp.fluid}
+                      alt="Calgary Stairs logo"
+                      css={css`
+                          width: 100%;
+                      `}
+                  />
+                  <h3
+                      css={css`
+                        font-family: 'montserrat', sans-serif;
+                        font-weight: 600;
+                        font-size: 2rem;
+                      `}
+                  >
+                      Calgary Stairs
+                  </h3>
               </LogoCard>
               </div>
           </section>
