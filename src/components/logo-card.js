@@ -39,6 +39,7 @@ const Card = styled.div`
   }
   @media screen and (min-width: 1120px){
     padding: 10px;
+    min-width: 280px;
     width: 20%;
     &[data-opened='true']{
       height: 540px;
