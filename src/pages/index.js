@@ -12,6 +12,7 @@ import SectionHeading from "../components/section-heading";
 import LinkButton from "../components/link-button";
 import WorkContainer from "../components/work-container";
 import PageHeading from "../components/page-heading";
+import Footer from "../components/footer";
 
 const IndexPage = ({data}) => {
 
@@ -115,7 +116,7 @@ const IndexPage = ({data}) => {
               margin-top: 20px;
               @media screen and (min-width: 1120px){
                 grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 7vh auto auto 14vh 540px 7vh;
+                grid-template-rows: 7vh auto auto 14vh 540px 5vh;
                 .heading{
                 grid-row: 2;
                 }
@@ -498,13 +499,7 @@ const IndexPage = ({data}) => {
                 }
                 @media screen and (min-width: 1120px){
                   grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                  grid-template-rows: 25vh 7vh auto auto;
-                  .heading{
-                    grid-row: 3;
-                  }
-                  p{
-                    grid-row: 4;
-                  }
+                  grid-template-rows: 25vh 7vh auto 7vh;
                 }
               `}
           >
@@ -521,9 +516,23 @@ const IndexPage = ({data}) => {
                     }
                   `}
               />
-              <SectionHeading title="About Me"/>
+              <div
+                  css={css`
+                    @media screen and (min-width: 1120px){
+                      grid-row: 3;
+                    }
+                  `}
+              >
+                <SectionHeading title="About Me"/>
+                <p>
+                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    <br/> <br/>
+                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                </p>
+              </div>
           </section>
       </main>
+    <Footer/>
   </Layout>
 }
 
