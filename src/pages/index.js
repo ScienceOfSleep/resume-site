@@ -276,10 +276,9 @@ const IndexPage = ({data}) => {
             >
             <SectionHeading title="Work Experience"/>
             <p>
-                This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                The nature of contract work makes it inconvenient to accurately sum up in a short section. I worked through technical school and the internship that followed. It’s also common for me to have a side gig or a pair of contracts going at the same time.
                 <br/> <br/>
-                When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-            </p>
+                These are the major themes, for more detail on them as well as my education and additional experience check out the timeline I’ve put together on the Experience page!            </p>
             <LinkButton to="/">Career Timeline</LinkButton>
             </div>
             <div
@@ -309,9 +308,9 @@ const IndexPage = ({data}) => {
                 <h3>Draw It Paint</h3>
                 <h4>February 2020 - Present</h4>
                 <ul>
-                    <li>Built with Wordpress</li>
-                    <li>Custom CSS for tuning</li>
-                    <li>All the pros and cons of a drag and drop site</li>
+                    <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
+                    <li>Internal workflow optimization and automation</li>
+                    <li>Coordinating graphics work</li>
                 </ul>
             </WorkContainer>
             <WorkContainer>
@@ -327,9 +326,9 @@ const IndexPage = ({data}) => {
                 <h3>Silvertip Advisory</h3>
                 <h4>April 2017 - January 2020</h4>
                 <ul>
-                    <li>Built with Wordpress</li>
-                    <li>Custom CSS for tuning</li>
-                    <li>All the pros and cons of a drag and drop site</li>
+                    <li>Designing a series of smart documents for estate planning and organization (Javascript and G-Suite)</li>
+                    <li>Advising on governance and transition planning</li>
+                    <li>Graphic design, responsive corporate branding</li>
                 </ul>
             </WorkContainer>
             </div>
@@ -376,9 +375,9 @@ const IndexPage = ({data}) => {
               >
               <SectionHeading title="Recent Projects"/>
               <p>
-                  This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                  Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
                   <br/> <br/>
-                  When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                  In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
               </p>
               </div>
               <div
@@ -395,9 +394,9 @@ const IndexPage = ({data}) => {
               >
                   <LogoCard
                       borderColor="#DB444A"
-                      pointOne="The gold standard for PHP frameworks."
-                      pointTwo="Batteries included, building and debugging are a joy."
-                      pointThree="Generates back-ends quickly and professionally."
+                      pointOne="Built with Shopify's Liquid framework."
+                      pointTwo="Most maintainable drag and drop code I've worked with."
+                      pointThree="No tech skills required for maintenance and editing."
                   >
                   <Img
                       fluid={data.dip.childImageSharp.fluid}
@@ -418,9 +417,9 @@ const IndexPage = ({data}) => {
               </LogoCard>
                   <LogoCard
                       borderColor="var(--page-color)"
-                      pointOne="The gold standard for PHP frameworks."
-                      pointTwo="Batteries included, building and debugging are a joy."
-                      pointThree="Generates back-ends quickly and professionally."
+                      pointOne="Gatsby frontend and Contentful backend."
+                      pointTwo="Super low upkeep costs to match their super low budget."
+                      pointThree="Love coding for causes, it's a big reason why I learned."
                   >
                   <Img
                       fluid={data.fua.childImageSharp.fluid}
@@ -441,9 +440,9 @@ const IndexPage = ({data}) => {
               </LogoCard>
               <LogoCard
                   borderColor="#DBD718"
-                  pointOne="The gold standard for PHP frameworks."
-                  pointTwo="Batteries included, building and debugging are a joy."
-                  pointThree="Generates back-ends quickly and professionally."
+                  pointOne="Generative art project. Spits out graphics based on code."
+                  pointTwo="Learning Canvas and WebGL with useful outputs."
+                  pointThree="Lets me create original graphics very quickly."
               >
                   <Img
                       fluid={data.calgarystairs.childImageSharp.fluid}
@@ -459,14 +458,14 @@ const IndexPage = ({data}) => {
                         font-size: 2rem;
                       `}
                   >
-                      Calgary Stairs
+                      Genart
                   </h3>
               </LogoCard>
               <LogoCard
                   borderColor="green"
-                  pointOne="The gold standard for PHP frameworks."
-                  pointTwo="Batteries included, building and debugging are a joy."
-                  pointThree="Generates back-ends quickly and professionally."
+                  pointOne="Built with WP, custom CSS for tuning."
+                  pointTwo="Hand-gathered stats and pics for stair workouts across Calgary."
+                  pointThree="All the up and down sides of a drag and drop project."
               >
                   <Img
                       fluid={data.calgarystairs.childImageSharp.fluid}
@@ -525,9 +524,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="About Me"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    Fun fact: I've listened to the audio edition of The Economist every week for the last ten years. You could say I'm a fan of current events.
                     <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    Gadgets and planning are also big hobbies of mine. I wake up to a fresh coffee synced to my alarm, and I've spent roughly as much time tinkering with automatic lighting as I've managed to save with it. Journaling is a big part of my personal knowledge management system, and when it's time to unwind I enjoy a good strategy game (video or board) with my friends.
                 </p>
               </div>
           </section>
