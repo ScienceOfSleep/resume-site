@@ -1,8 +1,8 @@
 import React from "react"
 import {css} from "@emotion/core"
-import blockCyclone from "../images/block-cyclone.gif"
-
 import Layout from "../components/layout"
+
+import blockCyclone from "../images/block-cyclone.gif"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import LaravelSVG from "../components/laravel-svg";
@@ -13,6 +13,7 @@ import LinkButton from "../components/link-button";
 import WorkContainer from "../components/work-container";
 import PageHeading from "../components/page-heading";
 import Footer from "../components/footer";
+import Header from "../components/header";
 
 const IndexPage = ({data}) => {
 
@@ -33,12 +34,13 @@ const IndexPage = ({data}) => {
 
     return <Layout>
       {/*<SEO title="Josh's Resume Site" />*/}
-      <main
+        <Header/>
+        <main
         css={css`
           --page-color: #2D9CDB;
         `}
       >
-        <section
+          <section
             css={css`
               display: grid;
               grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);

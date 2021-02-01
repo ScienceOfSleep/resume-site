@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header/>
         <Global styles={css`
           :root{
             --site-width: 90vw;
