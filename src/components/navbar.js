@@ -172,11 +172,9 @@ const Navbar = (props) => {
             `}
         >
             <ListLink to="/">Home</ListLink>
-            <ListLink to="/features">Features</ListLink>
-            <ListLink to="/pastcustomers">Past Customers</ListLink>
-            <ListLink to="/shop">Shop</ListLink>
-            <ListLink to="/blog">Blog</ListLink>
-            <ListLink to="/contact">Contact</ListLink>
+            <ListLink to="/skills">Skills</ListLink>
+            <ListLink to="/experience">Experience</ListLink>
+            <ListLink to="/about">About</ListLink>
             <li
                 css={css`
                       list-style: none;

@@ -15,6 +15,8 @@ const Layout = ({ children }) => {
             --site-width: 90vw;
             --horizontal-margin: calc((100% - var(--site-width)) / 2);
             --header-height: 80px;
+            --landing-blue: #2D9CDB;
+            --experience-red: #EB5757;
               @media screen and (min-width: 1120px){
                 --site-width: 1400px;
               }

@@ -1,6 +1,7 @@
 import React from "react"
 import {css} from "@emotion/core"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 import blockCyclone from "../images/block-cyclone.gif"
 import SEO from "../components/seo"
@@ -14,6 +15,7 @@ import WorkContainer from "../components/work-container";
 import PageHeading from "../components/page-heading";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import LandingFold from "../components/landing-fold";
 
 const IndexPage = ({data}) => {
 
@@ -33,73 +35,18 @@ const IndexPage = ({data}) => {
 
 
     return <Layout>
+
+      <Header pageColor="var(--landing-blue)"/>
       {/*<SEO title="Josh's Resume Site" />*/}
-        <Header/>
-        <main
+      <main
         css={css`
-          --page-color: #2D9CDB;
+          --page-color: var(--landing-blue);
         `}
       >
-          <section
-            css={css`
-              display: grid;
-              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-              > *:not(.image){
-                grid-column: 2;
-              }
-              @media screen and (min-width: 1120px){
-                height: calc(115vh - var(--header-height)); //Add a header height variable
-                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 2fr 1fr 1fr auto auto 1fr 3fr 10vh 25vh;
-                .heading{
-                  grid-row: 4;
-                  margin: 0 auto;
-                }
-                p{
-                  grid-row: 5;
-                }
-              }
-            `}
-        >
-            <Img
-                fluid={data.hero.childImageSharp.fluid}
-                className="image"
-                alt="'Random circles generated using canvas' by Josh Steele"
-                css={css`
-                  display: none;
-                  @media screen and (min-width: 1120px){
-                    display: initial;
-                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 4px hsl(202, 21%, 52%, 0.6);
-                    grid-column: 1/5;
-                    grid-row: 9;
-                    margin: 0;
-                    width: 100%;
-                    height: 25vh;
-                  }
-                `}
-            />
+        <LandingFold>
             <Img
                 fluid={data.albertasaurus.childImageSharp.fluid}
-                className="image"
                 alt="Happy Albertosaurus vector graphic. By yours truly, Josh Steele."
-                css={css`
-                  width: 100%;
-                  box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
-                  grid-column: 1 / -1; //full bleed hero image on mobile
-                  margin-bottom: 15px;
-                  @media screen and (min-width: 1120px){
-                    box-shadow: 3px 4px 4px hsl(202, 21%, 52%, 0.6);
-                    grid-column: 3;
-                    grid-row: 3 / 7;
-                    justify-self: end;
-                    align-self: center;
-                    margin: 0;
-                    border: 20px solid var(--page-color);
-                    border-radius: 20%;
-                    width: 65%;
-                    height: fit-content;
-                  }
-                `}
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
@@ -107,7 +54,11 @@ const IndexPage = ({data}) => {
                 <br/> <br/>
                 When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
             </p>
-        </section>
+            <Img
+                fluid={data.hero.childImageSharp.fluid}
+                alt="'Random circles generated using canvas' by Josh Steele"
+            />
+        </LandingFold>
         <section
             css={css`
               display: grid;
