@@ -24,14 +24,16 @@ const IndexPage = ({data}) => {
         {
             ...data.projectsDesktop.childImageSharp.fluid,
             media: `(min-width: 1120px)`,
-        },    ]
+        },
+    ]
 
     const aboutImage = [
         data.pinkeye.childImageSharp.fluid,
         {
             ...data.aboutDesktop.childImageSharp.fluid,
             media: `(min-width: 1120px)`,
-        },    ]
+        },
+    ]
 
 
     return <Layout>

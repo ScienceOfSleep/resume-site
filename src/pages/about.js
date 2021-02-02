@@ -7,20 +7,20 @@ import LandingFold from "../components/landing-fold";
 import Img from "gatsby-image";
 import PageHeading from "../components/page-heading";
 
-const ExperiencePage = ({data}) => {
+const AboutPage = ({data}) => {
     return <Layout>
-        <Header pageColor="var(--experience-red)"/>
+        <Header pageColor="var(--about-orange)"/>
         <main
             css={css`
-            --page-color: var(--experience-red);
+            --page-color: var(--about-orange);
           `}
         >
             <LandingFold>
                 <Img
-                    fluid={data.bunicula.childImageSharp.fluid}
+                    fluid={data.hotTub.childImageSharp.fluid}
                     alt="Happy Albertosaurus vector graphic. By yours truly, Josh Steele."
                 />
-                <PageHeading title="Work Experience"/>
+                <PageHeading title="More About Josh"/>
                 <p>
                     This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
                     <br/> <br/>
@@ -37,7 +37,7 @@ const ExperiencePage = ({data}) => {
 
 export const query = graphql`
     query {
-        bunicula: file(relativePath: { eq: "Bunicula.png" }) {
+        hotTub: file(relativePath: { eq: "Hot-Tub.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
@@ -54,4 +54,4 @@ export const query = graphql`
     }
 `
 
-export default ExperiencePage
+export default AboutPage

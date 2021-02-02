@@ -17,6 +17,8 @@ const Layout = ({ children }) => {
             --header-height: 80px;
             --landing-blue: #2D9CDB;
             --experience-red: #EB5757;
+            --skills-green: #219653;
+            --about-orange: #F58443;
               @media screen and (min-width: 1120px){
                 --site-width: 1400px;
               }
