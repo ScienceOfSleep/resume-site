@@ -22,15 +22,18 @@ const Header = (props) => {
 
     return <header
         css={css`
-              background-color: ${props.pageColor};
+              --page-color: ${props.pageColor};
+              background-color: var(--page-color);
               color: #ffffff;
               display: grid;
-              grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
+              grid-template-columns: var(--horizontal-margin) auto 1fr;
               align-items: center;
               font-family: 'Ubuntu', sans-serif;
-              grid-column: 3;
               height: var(--header-height);
               box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6);
+              @media screen and (min-width: 1120px){
+                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
+              }
             `}
     >
         <div
