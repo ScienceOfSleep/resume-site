@@ -32,7 +32,7 @@ const Navbar = () => {
                   color: #ffffff;
                   background-color: transparent;
                   border: none;
-                  padding-top: 14%;
+                  padding: 14% 0 0 17%; //Animation room means svg will appear off center. To-do a more elegant solution
                   &:focus{
                     outline: none;
                   }
