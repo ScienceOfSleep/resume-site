@@ -44,7 +44,7 @@ export const query = graphql`
                 }
             }
         }
-        landingDivider: file(relativePath: { eq: "web-circle-hero-0.8925212347623344.png" }) {
+        landingDivider: file(relativePath: { eq: "about-circle-divider-0.5237896631094954.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
