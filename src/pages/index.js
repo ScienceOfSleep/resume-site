@@ -16,6 +16,7 @@ import PageHeading from "../components/page-heading";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import LandingFold from "../components/landing-fold";
+import BodyFold from "../components/body-fold";
 
 const IndexPage = ({data}) => {
 
@@ -61,26 +62,7 @@ const IndexPage = ({data}) => {
                 alt="'Random circles generated using canvas' by Josh Steele"
             />
         </LandingFold>
-        <section
-            css={css`
-              display: grid;
-              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-              > *{
-                grid-column: 2;
-              }
-              margin-top: 20px;
-              @media screen and (min-width: 1120px){
-                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 7vh auto auto 14vh 540px 5vh;
-                .heading{
-                grid-row: 2;
-                }
-                a{
-                  grid-row: 4;
-                }
-              }
-            `}
-        >
+        <BodyFold>
             <img
                 src={blockCyclone}
                 alt="Cyclone of blocks matching tech logo colors. Made with WebGL and Three JS by Josh Steele"
@@ -92,8 +74,8 @@ const IndexPage = ({data}) => {
                   @media screen and (min-width: 1120px){
                     grid-column: 3 !important;
                     grid-row: 2 / 4;
-                    margin-top: 10%;
-                    margin-left: 33%;
+                    margin-top: 14%;
+                    margin-left: 31%;
                     width: 175px;
                     border: 5px solid var(--page-color);
                   }
@@ -109,6 +91,8 @@ const IndexPage = ({data}) => {
                     grid-row: 5;
                     grid-column: 2/4 !important;
                     justify-content: space-between;
+                    height: 540px;
+                    margin-bottom: 5vh;
                   }
                 `}
             >
@@ -169,15 +153,7 @@ const IndexPage = ({data}) => {
                 </h3>
             </LogoCard>
             </div>
-            <p
-                css={css`
-                  @media screen and (min-width: 1120px){
-                    padding-top: .25rem;
-                    padding-bottom: 1rem;
-                    grid-row: 3;
-                  }
-                `}
-            >
+            <p>
                 These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
                 <br/><br/>
                 It’s fairly common that I won’t have a complete stack of my choosing though, and as a result I’ve worked with many other languages/frameworks/tools over my career.
@@ -185,37 +161,12 @@ const IndexPage = ({data}) => {
                 For more detail on my core and supporting skills checkout the breakdown on my Skills page!
             </p>
             <LinkButton to="/">Skills Breakdown</LinkButton>
-        </section>
-        <section
-            css={css`
-              margin-top: 1rem;
-              display: grid;
-              grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-              > *:not(.image){
-                grid-column: 2;
-              }
-              .image{
-                grid-column: 1 / -1;
-                margin-bottom: 1rem;
-              }
-              @media screen and (min-width: 1120px){
-                grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                grid-template-rows: 25vh auto;
-                .image{
-                  margin: 0;
-                }
-              }
-            `}
-        >
+        </BodyFold>
+        <BodyFold>
             <Img
                 fluid={data.orangecircles.childImageSharp.fluid}
-                className="image"
+                className="full-bleed"
                 alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
-                css={css`
-                    width: 100%;
-                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
-                    margin: 1rem 0 1rem;
-                `}
             />
             <div
                 css={css`
@@ -223,7 +174,7 @@ const IndexPage = ({data}) => {
                   flex-direction: column;
                   align-items: center;
                   @media screen and (min-width: 1120px){
-                    grid-row: 2/4;
+                    grid-row: 2;
                     justify-content: center;
                     padding-bottom: 10%;
                   }
@@ -287,43 +238,16 @@ const IndexPage = ({data}) => {
                 </ul>
             </WorkContainer>
             </div>
-        </section>
-          <section
-              css={css`
-                display: grid;
-                grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-                > *:not(.image){
-                  grid-column: 2;
-                }
-                .image{
-                  grid-column: 1 / -1;
-                }
-                @media screen and (min-width: 1120px){
-                  grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-                  grid-template-rows: 25vh auto 540px 7vh;
-                  .heading{
-                    margin-top: 2rem;
-                  }
-                }
-              `}
-          >
+        </BodyFold>
+        <BodyFold>
               <Img
                   fluid={projectsImage}
-                  className="image"
+                  className="full-bleed"
                   alt="Random overlapping colorful circles. Generative art by Josh Steele made using Canvas."
-                  css={css`
-                    width: 100%;
-                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
-                    margin: 1rem 0 1rem;
-                    @media screen and (min-width: 1120px){
-                      height: 25vh;
-                    }
-                  `}
               />
               <div
                 css={css`
                   @media screen and (min-width: 1120px){
-                    grid-row: 2;
                     padding: 3rem 0 2rem;
                   }
                 `}
@@ -344,6 +268,8 @@ const IndexPage = ({data}) => {
                     grid-column: 2/4 !important;
                     grid-row: 3;
                     justify-content: space-between;
+                    height: 540px;
+                    margin-bottom: 5vh;
                   }
                 `}
               >
@@ -360,13 +286,7 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3
-                      css={css`
-                        font-family: 'montserrat', sans-serif;
-                        font-weight: 600;
-                        font-size: 2rem;
-                      `}
-                  >
+                  <h3>
                       Draw It Paint
                   </h3>
               </LogoCard>
@@ -383,13 +303,7 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3
-                      css={css`
-                        font-family: 'montserrat', sans-serif;
-                        font-weight: 600;
-                        font-size: 2rem;
-                      `}
-                  >
+                  <h3>
                       FUA Club Site
                   </h3>
               </LogoCard>
@@ -406,13 +320,7 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3
-                      css={css`
-                        font-family: 'montserrat', sans-serif;
-                        font-weight: 600;
-                        font-size: 2rem;
-                      `}
-                  >
+                  <h3>
                       Genart
                   </h3>
               </LogoCard>
@@ -429,51 +337,22 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3
-                      css={css`
-                        font-family: 'montserrat', sans-serif;
-                        font-weight: 600;
-                        font-size: 2rem;
-                      `}
-                  >
+                  <h3>
                       Calgary Stairs
                   </h3>
               </LogoCard>
               </div>
-          </section>
-          <section
-              css={css`
-                display: grid;
-                grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
-                > *:not(.image){
-                  grid-column: 2;
-                }
-                .image{
-                  grid-column: 1 / -1;
-                }
-                @media screen and (min-width: 1120px){
-                  grid-template-columns: var(--horizontal-margin) 1fr 1fr var(--horizontal-margin);
-                  grid-template-rows: 25vh 7vh auto 7vh;
-                }
-              `}
-          >
+          </BodyFold>
+          <BodyFold>
               <Img
                   fluid={aboutImage}
-                  className="image"
+                  className="full-bleed"
                   alt="Abstract generative art by Josh Steele, made using Canvas."
-                  css={css`
-                    width: 100%;
-                    box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
-                    margin: 1rem 0 1rem;
-                    @media screen and (min-width: 1120px){
-                      height: 25vh;
-                    }
-                  `}
               />
               <div
                   css={css`
                     @media screen and (min-width: 1120px){
-                      grid-row: 3;
+                      padding: 3rem 0 2rem;
                     }
                   `}
               >
@@ -484,7 +363,7 @@ const IndexPage = ({data}) => {
                     Gadgets and planning are also big hobbies of mine. I wake up to a fresh coffee synced to my alarm, and I've spent roughly as much time tinkering with automatic lighting as I've managed to save with it. Journaling is a big part of my personal knowledge management system, and when it's time to unwind I enjoy a good strategy game (video or board) with my friends.
                 </p>
               </div>
-          </section>
+          </BodyFold>
       </main>
     <Footer/>
   </Layout>

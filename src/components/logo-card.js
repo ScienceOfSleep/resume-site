@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import styled from "@emotion/styled";
-import {css} from  "@emotion/core";
 
 const Card = styled.div`
   margin: 1rem 0 2rem;
@@ -37,6 +36,24 @@ const Card = styled.div`
     font-weight: 600;
     font-size: 2rem;
   }
+  button{
+    position: absolute;
+    bottom: 4px;
+    background-color: #ffffff;
+    border-top: none;
+    border-bottom: none;
+    border-left: 4px solid ${props => props.borderColor};
+    border-right: 4px solid ${props => props.borderColor};
+    padding: 1px 6px 2px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'montserrat', serif;
+    &:focus, :hover{
+      background-color: ${props => props.borderColor};
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
   @media screen and (min-width: 1120px){
     padding: 10px;
     min-width: 280px;
@@ -62,6 +79,7 @@ const LogoCard = (props) => {
             <li>{props.pointThree}</li>
         </ul>
         <button
+            borderColor={props.borderColor}
             onClick={() => {
                 if (opened === true) {
                     setOpened(false)
@@ -69,27 +87,8 @@ const LogoCard = (props) => {
                     setOpened(true)
                 }
             }}
-            css={css`
-              position: absolute;
-              bottom: 4px;
-              background-color: #ffffff;
-              border-top: none;
-              border-bottom: none;
-              border-left: 4px solid ${props.borderColor};
-              border-right: 4px solid ${props.borderColor};
-              padding: 1px 6px 2px;
-              p{
-                font-size: 16px;
-                font-weight: 600;
-              }
-              &:focus, :hover{
-                background-color: ${props.borderColor};
-                color: #ffffff;
-                cursor: pointer;
-              }
-            `}
         >
-            <p>{button}</p>
+            {button}
         </button>
     </Card>
 }
