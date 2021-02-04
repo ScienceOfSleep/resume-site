@@ -12,7 +12,7 @@ const Navbar = () => {
     return <nav
         css={css`
               display: flex;
-              justify-content: center;
+              justify-content: flex-end;
               align-self: center;
               z-index: 999;
               grid-column: 3;
@@ -32,7 +32,7 @@ const Navbar = () => {
                   color: #ffffff;
                   background-color: transparent;
                   border: none;
-                  padding: 14% 0 0 17%; //Animation room means svg will appear off center. To-do a more elegant solution
+                  padding: 14% calc(50% - 50px + 13px) 0 0; //Center justifies the left edge then adds about half the stationary hamburger width (animation room leaves the full svg off center)
                   &:focus{
                     outline: none;
                   }
