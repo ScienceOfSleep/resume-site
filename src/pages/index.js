@@ -17,6 +17,8 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import LandingFold from "../components/landing-fold";
 import BodyFold from "../components/body-fold";
+import CardContainer from "../components/card-container";
+import TechGif from "../components/tech-gif";
 
 const IndexPage = ({data}) => {
 
@@ -63,96 +65,69 @@ const IndexPage = ({data}) => {
             />
         </LandingFold>
         <BodyFold>
-            <img
+            <TechGif
                 src={blockCyclone}
                 alt="Cyclone of blocks matching tech logo colors. Made with WebGL and Three JS by Josh Steele"
-                css={css`
-                  margin: 0 auto 1rem;
-                  border: 2px solid var(--page-color);
-                  border-radius: 100%;
-                  padding: 2px;
-                  @media screen and (min-width: 1120px){
-                    grid-column: 3 !important;
-                    grid-row: 2 / 4;
-                    margin-top: 14%;
-                    margin-left: 31%;
-                    width: 175px;
-                    border: 5px solid var(--page-color);
-                  }
-                `}
             />
             <SectionHeading title="Tech I'm Using"/>
-            <div
-                css={css`
-                  display: flex;
-                  flex-direction: column;
-                  @media screen and (min-width: 1120px){
-                    flex-direction: row;
-                    grid-row: 5;
-                    grid-column: 2/4 !important;
-                    justify-content: space-between;
-                    height: 540px;
-                    margin-bottom: 5vh;
-                  }
-                `}
-            >
-            <LogoCard
-                borderColor="#DB444A"
-                pointOne="The gold standard for PHP frameworks."
-                pointTwo="Batteries included, building and debugging are a joy."
-                pointThree="Generates back-ends quickly and professionally."
-            >
-                <LaravelSVG/>
-                <h3>
-                    Laravel
-                </h3>
-            </LogoCard>
-            <LogoCard
-                borderColor="#2D9CDB"
-                pointOne="The hot JS framework; very good resources and ecosystem as a result."
-                pointTwo="Component focus feels natural for the modern web."
-                pointThree="I enjoy working with JSX and CSS-in-JS."
-            >
-                <ReactSVG/>
-                <h3>
-                    React
-                </h3>
-            </LogoCard>
-            <LogoCard
-                borderColor="#DBD718"
-                pointOne="Emotion's flexibility perfectly complements my coding flow in React."
-                pointTwo="Sidesteps scope and specificity problems."
-                pointThree="Combines the best parts of SASS and CSS with the dynamism of JS."
-            >
-                <Img
-                    fluid={data.emotion.childImageSharp.fluid}
-                    alt="Emotion JS Logo"
-                    css={css`
-                        width: 100%;
-                    `}
-                />
-                <h3>
-                    Emotion JS
-                </h3>
-            </LogoCard>
-            <LogoCard
-                borderColor="#663399"
-                pointOne="Low overhead and blazing speed right out of the box."
-                pointTwo="Automated image processing and lazy loading is very slick."
-                pointThree="Secure and accessible by default."
-            >
-                <Img
-                    fluid={data.gatsby.childImageSharp.fluid}
-                    alt="GatsbyJS logo"
-                    css={css`
-                        width: 90%;
-                    `}
-                />
-                <h3>
-                    Gatsby
-                </h3>
-            </LogoCard>
-            </div>
+            <CardContainer>
+                <LogoCard
+                    borderColor="#DB444A"
+                    pointOne="The gold standard for PHP frameworks."
+                    pointTwo="Batteries included, building and debugging are a joy."
+                    pointThree="Generates back-ends quickly and professionally."
+                >
+                    <LaravelSVG/>
+                    <h3>
+                        Laravel
+                    </h3>
+                </LogoCard>
+                <LogoCard
+                    borderColor="#2D9CDB"
+                    pointOne="The hot JS framework; very good resources and ecosystem as a result."
+                    pointTwo="Component focus feels natural for the modern web."
+                    pointThree="I enjoy working with JSX and CSS-in-JS."
+                >
+                    <ReactSVG/>
+                    <h3>
+                        React
+                    </h3>
+                </LogoCard>
+                <LogoCard
+                    borderColor="#DBD718"
+                    pointOne="Emotion's flexibility perfectly complements my coding flow in React."
+                    pointTwo="Sidesteps scope and specificity problems."
+                    pointThree="Combines the best parts of SASS and CSS with the dynamism of JS."
+                >
+                    <Img
+                        fluid={data.emotion.childImageSharp.fluid}
+                        alt="Emotion JS Logo"
+                        css={css`
+                          width: 100%;
+                        `}
+                    />
+                    <h3>
+                        Emotion JS
+                    </h3>
+                </LogoCard>
+                <LogoCard
+                    borderColor="#663399"
+                    pointOne="Low overhead and blazing speed right out of the box."
+                    pointTwo="Automated image processing and lazy loading is very slick."
+                    pointThree="Secure and accessible by default."
+                >
+                    <Img
+                        fluid={data.gatsby.childImageSharp.fluid}
+                        alt="GatsbyJS logo"
+                        css={css`
+                          width: 90%;
+                        `}
+                    />
+                    <h3>
+                        Gatsby
+                    </h3>
+                </LogoCard>
+            </CardContainer>
             <p>
                 These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what typically brings home the (vegetarian) bacon.
                 <br/><br/>
@@ -252,44 +227,31 @@ const IndexPage = ({data}) => {
                   }
                 `}
               >
-              <SectionHeading title="Recent Projects"/>
-              <p>
-                  Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
-                  <br/> <br/>
-                  In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
-              </p>
+                <SectionHeading title="Recent Projects"/>
+                <p>
+                    Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
+                    <br/> <br/>
+                    In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
+                </p>
               </div>
-              <div
-                  css={css`
-                  display: flex;
-                  flex-direction: column;
-                  @media screen and (min-width: 1120px){
-                    flex-direction: row;
-                    grid-column: 2/4 !important;
-                    grid-row: 3;
-                    justify-content: space-between;
-                    height: 540px;
-                    margin-bottom: 5vh;
-                  }
-                `}
-              >
+              <CardContainer>
                   <LogoCard
                       borderColor="#DB444A"
                       pointOne="Built with Shopify's Liquid framework."
                       pointTwo="Most maintainable drag and drop code I've worked with."
                       pointThree="No tech skills required for maintenance and editing."
                   >
-                  <Img
-                      fluid={data.dip.childImageSharp.fluid}
-                      alt="DIP Logo"
-                      css={css`
-                          width: 100%;
-                      `}
-                  />
-                  <h3>
-                      Draw It Paint
-                  </h3>
-              </LogoCard>
+                    <Img
+                        fluid={data.dip.childImageSharp.fluid}
+                        alt="DIP Logo"
+                        css={css`
+                            width: 100%;
+                        `}
+                    />
+                    <h3>
+                        Draw It Paint
+                    </h3>
+                  </LogoCard>
                   <LogoCard
                       borderColor="var(--page-color)"
                       pointOne="Gatsby frontend and Contentful backend."
@@ -341,7 +303,7 @@ const IndexPage = ({data}) => {
                       Calgary Stairs
                   </h3>
               </LogoCard>
-              </div>
+              </CardContainer>
           </BodyFold>
           <BodyFold>
               <Img
