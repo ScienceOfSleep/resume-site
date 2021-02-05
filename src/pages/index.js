@@ -2,10 +2,10 @@ import React from "react"
 import {css} from "@emotion/core"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import blockCyclone from "../images/block-cyclone.gif"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
 import LaravelSVG from "../components/laravel-svg";
 import LogoCard from "../components/logo-card";
 import ReactSVG from "../components/react-svg";

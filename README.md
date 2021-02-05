@@ -9,6 +9,8 @@ Show tech and design by doing.
 
 Have fun with it.
 
+Identify improvements that I can make to my starter boilerplate.
+
 Future Work
 -
 
@@ -16,4 +18,4 @@ Hook up contentful, break the data structure down so there's a user friendly CMS
 
 More animation work.
 
-Boil it down so I can sell these? Cheap and (ideally) easy gigs for friends and acquaintances.
+Boil it down so I can sell these? Cheap and (ideally) easy gigs for friends and acquaintances. 
