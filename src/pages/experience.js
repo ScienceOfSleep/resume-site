@@ -35,57 +35,33 @@ const ExperiencePage = ({data}) => {
                 />
             </LandingFold>
             <BodyFold>
-                <div
+                <Img
+                    fluid={data.dip.childImageSharp.fluid}
+                    alt="Draw It Paint"
                     css={css`
-                      border: 5px solid var(--page-color);
-                      border-radius: 10px;
-                      background-color: #ffffff;
-                      filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
-                      display: grid;
-                      grid-template-columns: 5px 1fr 5px;
-                      justify-items: center;
-                      *{
-                        grid-column: 2;
-                      }
+                      width: 150px;
+                      height: fit-content;
                       @media screen and (min-width: 1120px){
-                        grid-column: 2/4 !important;
                       }
                     `}
-                >
-                    <Img
-                        fluid={data.dip.childImageSharp.fluid}
-                        alt="Draw It Paint"
-                        css={css`
-                          width: 150px;
-                          @media screen and (min-width: 1120px){
-                          }
-                        `}
-                    />
-                    <div
-                        className="titleBox"
-                        css={css`
-                          display: flex;
-                          flex-direction: column;
-                          align-items: center;
-                        `}
-                    >
-                    <SectionHeading title="Draw It Paint"/>
-                    <h3 css={css`text-align: center`}>
-                        Web Developer
-                    </h3>
-                    <h3 css={css`text-align: center`}>
-                        February 2020 - Present
-                    </h3>
-                    </div>
-                    <p css={css`margin: 5px 0 10px`}>
-                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                    </p>
-                    <ul>
-                        <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
-                        <li>Coordinating graphics work to meet site, project, and social media specifications</li>
-                        <li>Internal workflow optimization and automation</li>
-                    </ul>
+                />
+                <SectionHeading title="Draw It Paint"/>
+                <h3 css={css`text-align: center`}>
+                    Web Developer
+                </h3>
+                <h3 css={css`text-align: center`}>
+                    February 2020 - Present
+                </h3>
                 </div>
+                <div className="copy">
+                <p css={css`margin: 5px 0 10px`}>
+                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                </p>
+                <ul>
+                    <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
+                    <li>Coordinating graphics work to meet site, project, and social media specifications</li>
+                    <li>Internal workflow optimization and automation</li>
+                </ul>
             </BodyFold>
         </main>
     </Layout>
