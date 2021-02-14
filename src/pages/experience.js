@@ -9,6 +9,9 @@ import LandingFold from "../components/landing-fold";
 import PageHeading from "../components/page-heading";
 import BodyFold from "../components/body-fold";
 import SectionHeading from "../components/section-heading";
+import CardContainer from "../components/card-container";
+import LogoCard from "../components/logo-card";
+import Footer from "../components/footer";
 
 const ExperiencePage = ({data}) => {
     return <Layout>
@@ -117,7 +120,99 @@ const ExperiencePage = ({data}) => {
                     </ul>
                 </div>
             </BodyFold>
+            <BodyFold>
+                <Img
+                    fluid={data.contractDivider.childImageSharp.fluid}
+                    className="full-bleed"
+                    alt="Random overlapping colorful circles. Generative art by Josh Steele made using Canvas."
+                />
+                <div
+                    css={css`
+                  @media screen and (min-width: 1120px){
+                    padding: 3rem 0 2rem;
+                  }
+                `}
+                >
+                    <SectionHeading title="Contract Work"/>
+                    <p>
+                        Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
+                        <br/> <br/>
+                        In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
+                    </p>
+                </div>
+                <CardContainer>
+                    <LogoCard
+                        borderColor="#DB444A"
+                        pointOne="Built with Shopify's Liquid framework."
+                        pointTwo="Most maintainable drag and drop code I've worked with."
+                        pointThree="No tech skills required for maintenance and editing."
+                    >
+                        <Img
+                            fluid={data.dip.childImageSharp.fluid}
+                            alt="DIP Logo"
+                            css={css`
+                            width: 100%;
+                        `}
+                        />
+                        <h3>
+                            Draw It Paint
+                        </h3>
+                    </LogoCard>
+                    <LogoCard
+                        borderColor="var(--page-color)"
+                        pointOne="Gatsby frontend and Contentful backend."
+                        pointTwo="Super low upkeep costs to match their super low budget."
+                        pointThree="Love coding for causes, it's a big reason why I learned."
+                    >
+                        <Img
+                            fluid={data.dip.childImageSharp.fluid}
+                            alt="Feminists at the University of Alberta logo"
+                            css={css`
+                          width: 100%;
+                      `}
+                        />
+                        <h3>
+                            FUA Club Site
+                        </h3>
+                    </LogoCard>
+                    <LogoCard
+                        borderColor="#DBD718"
+                        pointOne="Generative art project. Spits out graphics based on code."
+                        pointTwo="Learning Canvas and WebGL with useful outputs."
+                        pointThree="Lets me create original graphics very quickly."
+                    >
+                        <Img
+                            fluid={data.dip.childImageSharp.fluid}
+                            alt="Calgary Stairs logo"
+                            css={css`
+                          width: 100%;
+                      `}
+                        />
+                        <h3>
+                            Genart
+                        </h3>
+                    </LogoCard>
+                    <LogoCard
+                        borderColor="green"
+                        pointOne="Built with WP, custom CSS for tuning."
+                        pointTwo="Hand-gathered stats and pics for stair workouts across Calgary."
+                        pointThree="All the up and down sides of a drag and drop project."
+                    >
+                        <Img
+                            fluid={data.dip.childImageSharp.fluid}
+                            alt="Calgary Stairs logo"
+                            css={css`
+                          width: 100%;
+                      `}
+                        />
+                        <h3>
+                            Calgary Stairs
+                        </h3>
+                    </LogoCard>
+                </CardContainer>
+            </BodyFold>
         </main>
+        <Footer/>
     </Layout>
 }
 
@@ -138,6 +233,13 @@ export const query = graphql`
             }
         }
         silvertipDivider: file(relativePath: { eq: "experience-circle-divider-0.6177054668795865.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        contractDivider: file(relativePath: { eq: "experience-circle-divider-0.24364911449809123.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
