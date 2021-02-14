@@ -49,7 +49,13 @@ const ExperiencePage = ({data}) => {
                       }
                     `}
                 />
-                <div>
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        height: 75vh;
+                      }
+                    `}
+                >
                     <SectionHeading title="Draw It Paint"/>
                     <h3 css={css`text-align: center`}>
                         Web Developer
@@ -69,21 +75,32 @@ const ExperiencePage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.dip.childImageSharp.fluid}
-                    alt="Draw It Paint"
+                    fluid={data.silvertipDivider.childImageSharp.fluid}
+                    className="full-bleed"
+                    alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
+                />
+                <Img
+                    fluid={data.silvertip.childImageSharp.fluid}
+                    alt="Silvertip logo, by Josh Steele"
                     css={css`
-                      width: 250px;
+                      width: 350px;
                       height: fit-content;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
-                        grid-row: 1/4;
+                        grid-row: 2/4;
                         align-self: center;
                         justify-self: center;
                       }
                     `}
                 />
-                <div>
-                    <SectionHeading title="Draw It Paint"/>
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        height: 75vh;
+                      }
+                    `}
+                >
+                    <SectionHeading title="Silvertip"/>
                     <h3 css={css`text-align: center`}>
                         Web Developer
                     </h3>
@@ -120,9 +137,23 @@ export const query = graphql`
                 }
             }
         }
+        silvertipDivider: file(relativePath: { eq: "experience-circle-divider-0.6177054668795865.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         dip: file(relativePath: { eq: "dip-logo.png" }) {
             childImageSharp {
                 fluid(quality:100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        silvertip: file(relativePath: { eq: "Silvertip-Logo-with-text.jpg" }) {
+            childImageSharp {
+                fluid {
                     ...GatsbyImageSharpFluid
                 }
             }
