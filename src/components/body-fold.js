@@ -22,7 +22,8 @@ const BodyFold = styled.section`
       height: 25vh;
     }
     //Styles for switch-up on tech fold
-    //The only child elements of their type
+    //The only child elements of their type on the site
+    //heading hits all contained headings, figure out a more elegant rule
     .heading{
       grid-row: 2;
       margin-top: 7vh;

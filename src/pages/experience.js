@@ -21,7 +21,7 @@ const ExperiencePage = ({data}) => {
             <LandingFold>
                 <Img
                     fluid={data.bunicula.childImageSharp.fluid}
-                    alt="Happy Albertosaurus vector graphic. By yours truly, Josh Steele."
+                    alt="Bunicula. Demonstrating both lived and professional experience, by Josh Steele."
                 />
                 <PageHeading title="Work Experience"/>
                 <p>
@@ -39,29 +39,66 @@ const ExperiencePage = ({data}) => {
                     fluid={data.dip.childImageSharp.fluid}
                     alt="Draw It Paint"
                     css={css`
-                      width: 150px;
+                      width: 250px;
                       height: fit-content;
                       @media screen and (min-width: 1120px){
+                        grid-column: 3 !important;
+                        grid-row: 1/4;
+                        align-self: center;
+                        justify-self: center;
                       }
                     `}
                 />
-                <SectionHeading title="Draw It Paint"/>
-                <h3 css={css`text-align: center`}>
-                    Web Developer
-                </h3>
-                <h3 css={css`text-align: center`}>
-                    February 2020 - Present
-                </h3>
+                <div>
+                    <SectionHeading title="Draw It Paint"/>
+                    <h3 css={css`text-align: center`}>
+                        Web Developer
+                    </h3>
+                    <h3 css={css`text-align: center`}>
+                        February 2020 - Present
+                    </h3>
+                    <p css={css`margin: 5px 0 10px`}>
+                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    </p>
+                    <ul>
+                        <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
+                        <li>Coordinating graphics work to meet site, project, and social media specifications</li>
+                        <li>Internal workflow optimization and automation</li>
+                    </ul>
                 </div>
-                <div className="copy">
-                <p css={css`margin: 5px 0 10px`}>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                </p>
-                <ul>
-                    <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
-                    <li>Coordinating graphics work to meet site, project, and social media specifications</li>
-                    <li>Internal workflow optimization and automation</li>
-                </ul>
+            </BodyFold>
+            <BodyFold>
+                <Img
+                    fluid={data.dip.childImageSharp.fluid}
+                    alt="Draw It Paint"
+                    css={css`
+                      width: 250px;
+                      height: fit-content;
+                      @media screen and (min-width: 1120px){
+                        grid-column: 3 !important;
+                        grid-row: 1/4;
+                        align-self: center;
+                        justify-self: center;
+                      }
+                    `}
+                />
+                <div>
+                    <SectionHeading title="Draw It Paint"/>
+                    <h3 css={css`text-align: center`}>
+                        Web Developer
+                    </h3>
+                    <h3 css={css`text-align: center`}>
+                        February 2020 - Present
+                    </h3>
+                    <p css={css`margin: 5px 0 10px`}>
+                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    </p>
+                    <ul>
+                        <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
+                        <li>Coordinating graphics work to meet site, project, and social media specifications</li>
+                        <li>Internal workflow optimization and automation</li>
+                    </ul>
+                </div>
             </BodyFold>
         </main>
     </Layout>
