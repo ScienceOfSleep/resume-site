@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {css} from "@emotion/core"
 import Hamburger from "./hamburger"
-import ListLink from "./list-link";
+import NavbarListLink from "./navbar--list-link";
 
 const Navbar = () => {
 
@@ -20,7 +20,6 @@ const Navbar = () => {
                 justify-content: flex-end;
                 font-size: inherit;
                 padding-left: 1rem;
-                padding-bottom: 1rem;
               }
             `}
     >
@@ -76,10 +75,10 @@ const Navbar = () => {
               }
             `}
         >
-            <ListLink to="/">Home</ListLink>
-            <ListLink to="/skills">Skills</ListLink>
-            <ListLink to="/experience">Experience</ListLink>
-            <ListLink to="/about">About</ListLink>
+            <NavbarListLink to="/">Home</NavbarListLink>
+            <NavbarListLink to="/skills">Skills</NavbarListLink>
+            <NavbarListLink to="/experience">Experience</NavbarListLink>
+            <NavbarListLink to="/about">About</NavbarListLink>
         </ul>
         {/*Active menu dark backdrop/alternate exit button*/}
         <button

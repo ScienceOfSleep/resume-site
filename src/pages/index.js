@@ -135,6 +135,7 @@ const IndexPage = ({data}) => {
                 <br/><br/>
                 For more detail on my core and supporting skills checkout the breakdown on my Skills page!
             </p>
+            {/*tab focus on desktop needs adjusting*/}
             <LinkButton to="/">Skills Breakdown</LinkButton>
         </BodyFold>
         <BodyFold>

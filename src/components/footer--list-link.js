@@ -4,24 +4,16 @@ import styled from "@emotion/styled"
 import {Link} from "gatsby";
 
 const StyledLink = styled(Link)`
-  display: block;
   text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
   width: fit-content;
+  font-family: Ubuntu, sans-serif;
   &.currentPage{
-    border-bottom: 2px solid #000000;
-  }
-  @media only screen and (min-width: 1120px) {
-    color: #ffffff;
-    background-color: transparent;
-    &.currentPage{
-      border-bottom: 2px solid #ffffff;
-    }
+    border-bottom: 2px solid #ffffff;
   }
 `;
 
-const ListLink = props => (
+const FooterListLink = props => (
     <li css={css`
               display: block;
               padding-top: .2rem;
@@ -40,4 +32,4 @@ const ListLink = props => (
     </li>
 );
 
-export default ListLink
+export default FooterListLink
