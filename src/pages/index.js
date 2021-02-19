@@ -55,9 +55,9 @@ const IndexPage = ({data}) => {
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
-                This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
                 <br/> <br/>
-                When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                After skimming the home page you should have a general idea what I like to do and where I’ve done it in the past. For more detail you can check out each section’s dedicated page where I dig into the topic.
             </p>
             <Img
                 fluid={data.hero.childImageSharp.fluid}
@@ -158,9 +158,10 @@ const IndexPage = ({data}) => {
             >
             <SectionHeading title="Work Experience"/>
             <p>
-                The nature of contract work makes it inconvenient to accurately sum up in a short section. I worked through technical school and the internship that followed. It’s also common for me to have a side gig or a pair of contracts going at the same time.
+                Initially self-educated on everything tech related, I got my start in 2016 through freelance marketing and graphic design contracts. One of those turned into a full time position at Silvertip, a consultancy startup focusing on family business and estate transfers.
                 <br/> <br/>
-                These are the major themes, for more detail on them as well as my education and additional experience check out the timeline I’ve put together on the Experience page!            </p>
+                Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP’s no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
+            </p>
             <LinkButton to="/">Career Timeline</LinkButton>
             </div>
             <div
@@ -230,9 +231,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="Recent Projects"/>
                 <p>
-                    Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
+                    Personal projects help me stay sharp while at the same time ideally producing something useful. I haven’t run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
                     <br/> <br/>
-                    In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
+                    To deal with the time bottleneck I sort projects by utility, and try to chip in at least five minutes of work every day. This lets me tackle goals over weeks or months that I wouldn’t be able to approach in a couple sessions. Even on days when I’m not able to sit down at a computer, a bit of time visualizing problems keeps the project present, and on a good day can even lead to a breakthrough.
                 </p>
               </div>
               <CardContainer>
@@ -321,9 +322,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="About Me"/>
                 <p>
-                    Fun fact: I've listened to the audio edition of The Economist every week for the last ten years. You could say I'm a fan of current events.
+                    Big fan of politics, but not in the way that I want to debate my coworkers don’t worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I’ll be able to support all sorts of interesting organizations.
                     <br/> <br/>
-                    Gadgets and planning are also big hobbies of mine. I wake up to a fresh coffee synced to my alarm, and I've spent roughly as much time tinkering with automatic lighting as I've managed to save with it. Journaling is a big part of my personal knowledge management system, and when it's time to unwind I enjoy a good strategy game (video or board) with my friends.
+                    Outside the deep stuff I’m super into fantasy and sci-fi novels, and we’re living in a golden age for them. I’ll typically polish off a book a month on my ereader/public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
                 </p>
               </div>
           </BodyFold>
