@@ -231,7 +231,7 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="Recent Projects"/>
                 <p>
-                    Personal projects help me stay sharp while at the same time ideally producing something useful. I haven’t run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
+                    Personal projects help me stay sharp while at the same time, ideally, producing something useful. I haven’t run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
                     <br/> <br/>
                     To deal with the time bottleneck I sort projects by utility, and try to chip in at least five minutes of work every day. This lets me tackle goals over weeks or months that I wouldn’t be able to approach in a couple sessions. Even on days when I’m not able to sit down at a computer, a bit of time visualizing problems keeps the project present, and on a good day can even lead to a breakthrough.
                 </p>
@@ -324,7 +324,7 @@ const IndexPage = ({data}) => {
                 <p>
                     Big fan of politics, but not in the way that I want to debate my coworkers don’t worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I’ll be able to support all sorts of interesting organizations.
                     <br/> <br/>
-                    Outside the deep stuff I’m super into fantasy and sci-fi novels, and we’re living in a golden age for them. I’ll typically polish off a book a month on my ereader/public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
+                    Outside the deep stuff I’m super into fantasy and sci-fi novels; we’re living in a golden age for them. I’ll typically polish off a book a month with my trusty ereader/public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
                 </p>
               </div>
           </BodyFold>
