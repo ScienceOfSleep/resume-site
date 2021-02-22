@@ -67,7 +67,11 @@ const ExperiencePage = ({data}) => {
                         February 2020 - Present
                     </h3>
                     <p css={css`margin: 5px 0 10px`}>
-                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        Moved back to Edmonton and started work at Draw It Paint just as covid-19 was really starting to take off. There were plenty of interesting challenges, both of traditional and new varieties. My first day was spent evaluating a stereotypical WordPress behemoth, with page load times stretching into the 20+ second range.
+                        <br/><br/>
+                        I proposed rebuilding the site in GatsbyJS, keeping the blog and store as a backend CMS. The transition went well, and we were able to hit the 2 second target I’d set for initial load time. though the blog ended up not being a priority moving forward. This was one of the less serious issues that could’ve been solved by more thoroughly exploring our business needs before starting.
+                        <br/><br/>
+                        About 6 months into the new setup concerns were raised about the experience required to modify and maintain a site written in React. It’s a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. Coordinated work for this project with my boss as well as our marketing team and video editor.
                     </p>
                     <ul>
                         <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
@@ -111,7 +115,7 @@ const ExperiencePage = ({data}) => {
                         February 2020 - Present
                     </h3>
                     <p css={css`margin: 5px 0 10px`}>
-                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        As is common in startups, I wore a lot of hats. While working on the website and some smart documents (google docs & javascript) I discovered my passion for coding. I was lucky enough to qualify for a government sponsored fast-track program at SAIT to bring me up to speed on industry standards, and resumed full-time once I finished.
                     </p>
                     <ul>
                         <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
@@ -135,9 +139,9 @@ const ExperiencePage = ({data}) => {
                 >
                     <SectionHeading title="Contract Work"/>
                     <p>
-                        Here are a few of my recent highlight projects. I want my projects to be useful, and not just as learning experiences. That desire keeps me out of the rut of calculator/to-do style tutorial-projects, and helps me stay motivated on long days.
+                        Graduating into an oil crash and public sector freeze with a History degree was an interesting experience. By 2015 the writing was on the wall for the Albertan economy so sticking it out for another boom seemed unwise. Self-improvement through tech was one of the few bright paths I could see for myself, so I took a risk and went for it.
                         <br/> <br/>
-                        In the absence of inspiration, iteration will do just fine. That's the motto I stick to when pushing through brain fog or bad days. I make a point to do at least 5 minutes of code a day. Usually 5 minutes of code turns into more, but even when it doesn't that's still an updated readme or a new graphic that I have ready for when things are clicking.
+                        One of the beautiful things about tech is that all experience is relevant experience. Research skills are excellent for sorting valuable information from blogspam. History and current events help tremendously with identifying business needs and solutions. Building around those skills let me break into the very saturated lower end of the industry and support myself until I landed a full time gig.
                     </p>
                 </div>
                 <CardContainer>
