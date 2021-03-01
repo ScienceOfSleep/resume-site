@@ -9,6 +9,7 @@ import PageHeading from "../components/page-heading";
 import BodyFold from "../components/body-fold";
 import SectionHeading from "../components/section-heading";
 import Footer from "../components/footer";
+import SkillsList from "../components/skills-list";
 
 const SkillsPage = ({data}) => {
     return <Layout>
@@ -40,13 +41,14 @@ const SkillsPage = ({data}) => {
                     This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
+                <SkillsList>
+                    <li>React</li>
+                    <li>Gatsby JS</li>
+                    <li>Emotion JS</li>
+                    <li>Next.js</li>
+                    <li>Laravel</li>
+                </SkillsList>
             </BodyFold>
             <BodyFold>
                 <Img
@@ -66,6 +68,17 @@ const SkillsPage = ({data}) => {
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
+                <SkillsList>
+                    <li>Github</li>
+                    <li>GraphQL</li>
+                    <li>REST APIs</li>
+                    <li>Technical SEO</li>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>AdWords</li>
+                    <li>Google Analytics</li>
+                    <li>JetBrains IDEs</li>
+                </SkillsList>
             </BodyFold>
             <BodyFold>
                 <Img
@@ -85,6 +98,14 @@ const SkillsPage = ({data}) => {
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
+                <SkillsList>
+                    <li>Copy Writing</li>
+                    <li>Corporate Branding</li>
+                    <li>Wordpress</li>
+                    <li>A11y Accessibility</li>
+                    <li>Woo Commerce</li>
+                    <li>Shopify</li>
+                </SkillsList>
             </BodyFold>
         </main>
         <Footer/>
