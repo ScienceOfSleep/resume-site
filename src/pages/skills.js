@@ -36,12 +36,24 @@ const SkillsPage = ({data}) => {
                 />
             </LandingFold>
             <BodyFold>
-                <SectionHeading title="Core Competencies"/>
-                <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                </p>
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      }
+                    `}
+                >
+                    <SectionHeading title="Core Competencies"/>
+                    <p>
+                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        <br/> <br/>
+                        When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    </p>
+                </div>
                 <SkillsList>
                     <li>React</li>
                     <li>Gatsby JS</li>
@@ -56,18 +68,24 @@ const SkillsPage = ({data}) => {
                     className="full-bleed"
                     alt="Generative art of overlapping green circles. Made by Josh Steele using Canvas."
                 />
-                <SectionHeading title="Supporting Skills"/>
-                <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                </p>
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      }
+                    `}
+                >
+                    <SectionHeading title="Supporting Skills"/>
+                    <p>
+                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        <br/> <br/>
+                        When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    </p>
+                </div>
                 <SkillsList>
                     <li>Github</li>
                     <li>GraphQL</li>
@@ -86,18 +104,24 @@ const SkillsPage = ({data}) => {
                     className="full-bleed"
                     alt="Generative art of overlapping green circles. Made by Josh Steele using Canvas."
                 />
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      }
+                    `}
+                >
                 <SectionHeading title="General Experience"/>
                 <p>
                     This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
+                </div>
                 <SkillsList>
                     <li>Copy Writing</li>
                     <li>Corporate Branding</li>

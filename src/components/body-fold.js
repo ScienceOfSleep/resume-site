@@ -16,7 +16,7 @@ const BodyFold = styled.section`
   }
   @media screen and (min-width: 1120px){
     grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto 7vh auto auto auto auto 7vh;
     .full-bleed{
       margin: 0;
       height: 25vh;
@@ -25,16 +25,15 @@ const BodyFold = styled.section`
     //The only child elements of their type on the site
     //heading hits all contained headings, figure out a more elegant rule
     .heading{
-      grid-row: 2;
-      margin-top: 7vh;
+      grid-row: 3;
     }
     p{
       padding-top: .25rem;
       padding-bottom: 1rem;
-      grid-row: 3;
+      grid-row: 4;
     }
     a{
-      grid-row: 4;
+      grid-row: 5;
       margin-bottom: 5vh;
     }
   }

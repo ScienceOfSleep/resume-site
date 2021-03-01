@@ -8,7 +8,7 @@ const TechGif = styled.img`
   padding: 2px;
   @media screen and (min-width: 1120px){
     grid-column: 3 !important;
-    grid-row: 2 / 4;
+    grid-row: 3 / 6;
     margin-top: 14%;
     margin-left: 31%;
     width: 175px;

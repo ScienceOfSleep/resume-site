@@ -47,7 +47,6 @@ const Header = (props) => {
                 fixed={data.logo.childImageSharp.fixed}
                 css={css`
                   width: 60px;
-                  box-shadow: 4px 4px 4px hsl(202, 21%, 52%, 0.9);
               `}
             />
             <h2

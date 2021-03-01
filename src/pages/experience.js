@@ -44,7 +44,7 @@ const ExperiencePage = ({data}) => {
                       height: fit-content;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
-                        grid-row: 1/4;
+                        grid-row: 3/5;
                         align-self: center;
                         justify-self: center;
                       }
@@ -53,7 +53,11 @@ const ExperiencePage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 75vh;
+                        height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                       }
                     `}
                 >
@@ -71,11 +75,6 @@ const ExperiencePage = ({data}) => {
                         <br/><br/>
                         About 6 months into the new setup concerns were raised about the experience required to modify and maintain a site written in React. It’s a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. Coordinated work for this project with my boss as well as our marketing team and video editor.
                     </p>
-                    <ul>
-                        <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
-                        <li>Coordinating graphics work to meet site, project, and social media specifications</li>
-                        <li>Internal workflow optimization and automation</li>
-                    </ul>
                 </div>
             </BodyFold>
             <BodyFold>
@@ -92,7 +91,7 @@ const ExperiencePage = ({data}) => {
                       height: fit-content;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
-                        grid-row: 2/4;
+                        grid-row: 3/5;
                         align-self: center;
                         justify-self: center;
                       }
@@ -101,7 +100,11 @@ const ExperiencePage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 75vh;
+                        height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                       }
                     `}
                 >
@@ -119,11 +122,6 @@ const ExperiencePage = ({data}) => {
                         <br/><br/>
                         We did estate planning and family business governance consulting, so as part of my job I got to speak with a bunch of successful business owners about what got them where they were and where they wanted to go next. I was also working my way through a Trust and Estate Practitioner (TEP) certificate, and had passed the trust law exam when one of the founders passed and the business started to wind down.
                     </p>
-                    <ul>
-                        <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
-                        <li>Coordinating graphics work to meet site, project, and social media specifications</li>
-                        <li>Internal workflow optimization and automation</li>
-                    </ul>
                 </div>
             </BodyFold>
             <BodyFold>
@@ -134,8 +132,8 @@ const ExperiencePage = ({data}) => {
                 />
                 <div
                     css={css`
-                  @media screen and (min-width: 1120px){
-                    padding: 3rem 0 2rem;
+                    @media screen and (min-width: 1120px){
+                        grid-row: 3;
                   }
                 `}
                 >

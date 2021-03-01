@@ -150,7 +150,7 @@ const IndexPage = ({data}) => {
                   flex-direction: column;
                   align-items: center;
                   @media screen and (min-width: 1120px){
-                    grid-row: 2;
+                    grid-row: 3;
                     justify-content: center;
                     padding-bottom: 10%;
                   }
@@ -170,7 +170,7 @@ const IndexPage = ({data}) => {
                   flex-direction: column;
                   @media screen and (min-width: 1120px){
                     grid-column: 3 !important;
-                    grid-row: 2;
+                    grid-row: 3;
                     align-items: flex-end;
                   }
                 `}
@@ -225,7 +225,7 @@ const IndexPage = ({data}) => {
               <div
                 css={css`
                   @media screen and (min-width: 1120px){
-                    padding: 3rem 0 2rem;
+                    grid-row: 3;
                   }
                 `}
               >
@@ -316,7 +316,7 @@ const IndexPage = ({data}) => {
               <div
                   css={css`
                     @media screen and (min-width: 1120px){
-                      padding: 3rem 0 2rem;
+                      grid-row: 3;
                     }
                   `}
               >

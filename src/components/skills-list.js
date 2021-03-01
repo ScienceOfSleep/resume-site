@@ -17,7 +17,7 @@ const SkillsList = styled.li`
   }
   @media screen and (min-width: 1120px){
     grid-column: 3 !important;
-    grid-row: 2/4;
+    grid-row: 3;
   }
 `
 
