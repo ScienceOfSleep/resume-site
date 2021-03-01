@@ -25,9 +25,7 @@ const AboutPage = ({data}) => {
                 />
                 <PageHeading title="More About Josh"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    I am an optimizer. For as long as I can remember I’ve been fascinated by plans and strategies; figuring out why some plans work while others fail has been a focus of my studies for as long as I’ve been able to direct them. With that in mind, going from history to tech seemed downright intuitive.
                 </p>
                 <Img
                     fluid={data.landingDivider.childImageSharp.fluid}
@@ -37,15 +35,9 @@ const AboutPage = ({data}) => {
             <BodyFold>
                 <SectionHeading title="My Hobbies"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    I enjoy board games, video games, and fantasy football as natural extensions of my love of strategy. I devour business and political news as an extension of my loves of plans. On any given week I’ll have a fun fact from the newest edition of The Economist. For example: on the island of Zanzibar you cannot own land, only lease it from the government. But you can own trees, which are commonly passed down through generations. I love that because it’s so unique, makes large scale property developments a pain too because it’s such a strange concept for foreign firms.
                     <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    There’s a pretty predictable set of spreadsheets organizing my finances, I use Notion to organize my thoughts, and I’ve got a Home Assistant server making sure all my lights and my coffee are on schedule.
                 </p>
             </BodyFold>
             <BodyFold>
