@@ -19,6 +19,7 @@ import LandingFold from "../components/landing-fold";
 import BodyFold from "../components/body-fold";
 import CardContainer from "../components/card-container";
 import TechGif from "../components/tech-gif";
+import DIPSVG from "../components/dip-svg";
 
 const IndexPage = ({data}) => {
 
@@ -176,18 +177,7 @@ const IndexPage = ({data}) => {
                 `}
             >
             <WorkContainer>
-                <Img
-                    fluid={data.dip.childImageSharp.fluid}
-                    alt="Draw It Paint"
-                    css={css`
-                      width: 80%;
-                      @media screen and (min-width: 1120px){
-                        width: 50%;
-                        border: solid 4px #333333;
-                        margin-right: 3px;
-                      }
-                    `}
-                />
+                <DIPSVG width="55%"/>
                 <h3>Draw It Paint</h3>
                 <h4>February 2020 - Present</h4>
                 <ul>
@@ -243,13 +233,7 @@ const IndexPage = ({data}) => {
                       pointTwo="Most maintainable drag and drop code I've worked with."
                       pointThree="No tech skills required for maintenance and editing."
                   >
-                    <Img
-                        fluid={data.dip.childImageSharp.fluid}
-                        alt="DIP Logo"
-                        css={css`
-                            width: 100%;
-                        `}
-                    />
+                    <DIPSVG width="90%"/>
                     <h3>
                         Draw It Paint
                     </h3>

@@ -12,6 +12,8 @@ import SectionHeading from "../components/section-heading";
 import CardContainer from "../components/card-container";
 import LogoCard from "../components/logo-card";
 import Footer from "../components/footer";
+import DIPSVG from "../components/dip-svg";
+import PulmanairSVG from "../components/pulmanair-svg";
 
 const ExperiencePage = ({data}) => {
     return <Layout>
@@ -36,20 +38,22 @@ const ExperiencePage = ({data}) => {
                 />
             </LandingFold>
             <BodyFold>
-                <Img
-                    fluid={data.dip.childImageSharp.fluid}
-                    alt="Draw It Paint"
+                <div
                     css={css`
                       width: 250px;
                       height: fit-content;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
-                        grid-row: 3/5;
+                        grid-row: 2/5;
                         align-self: center;
                         justify-self: center;
                       }
                     `}
+                >
+                <DIPSVG
+                    width="100%"
                 />
+                </div>
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
@@ -151,15 +155,9 @@ const ExperiencePage = ({data}) => {
                         pointTwo="Most maintainable drag and drop code I've worked with."
                         pointThree="No tech skills required for maintenance and editing."
                     >
-                        <Img
-                            fluid={data.dip.childImageSharp.fluid}
-                            alt="DIP Logo"
-                            css={css`
-                            width: 100%;
-                        `}
-                        />
+                        <PulmanairSVG/>
                         <h3>
-                            Draw It Paint
+                            Pulman Air
                         </h3>
                     </LogoCard>
                     <LogoCard
