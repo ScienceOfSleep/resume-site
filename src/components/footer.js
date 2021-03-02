@@ -1,10 +1,8 @@
 import React from "react"
-import Navbar from "./navbar"
-import Img from "gatsby-image"
 import { css } from "@emotion/core"
 import "@fontsource/ubuntu"
-import GithubSVG from "./github-svg";
-import LinkedInSVG from "./linkedin-svg";
+import GithubSVG from "./svgs/github-svg";
+import LinkedInSVG from "./svgs/linkedin-svg";
 import FooterListLink from "./footer--list-link";
 
 
@@ -56,7 +54,7 @@ const Footer = () => {
               }
             `}
         >
-            <GithubSVG/>
+            <GithubSVG width="24px" color="#ffffff"/>
             <LinkedInSVG/>
         </div>
     </footer>

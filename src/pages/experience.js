@@ -12,8 +12,8 @@ import SectionHeading from "../components/section-heading";
 import CardContainer from "../components/card-container";
 import LogoCard from "../components/logo-card";
 import Footer from "../components/footer";
-import DIPSVG from "../components/dip-svg";
-import PulmanairSVG from "../components/pulmanair-svg";
+import DIPSVG from "../components/svgs/dip-svg";
+import PulmanairSVG from "../components/svgs/pulmanair-svg";
 
 const ExperiencePage = ({data}) => {
     return <Layout>

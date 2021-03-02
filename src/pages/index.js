@@ -6,9 +6,9 @@ import Img from "gatsby-image"
 
 import blockCyclone from "../images/block-cyclone.gif"
 import SEO from "../components/seo"
-import LaravelSVG from "../components/laravel-svg";
+import LaravelSVG from "../components/svgs/laravel-svg";
 import LogoCard from "../components/logo-card";
-import ReactSVG from "../components/react-svg";
+import ReactSVG from "../components/svgs/react-svg";
 import SectionHeading from "../components/section-heading";
 import LinkButton from "../components/link-button";
 import WorkContainer from "../components/work-container";
@@ -19,7 +19,8 @@ import LandingFold from "../components/landing-fold";
 import BodyFold from "../components/body-fold";
 import CardContainer from "../components/card-container";
 import TechGif from "../components/tech-gif";
-import DIPSVG from "../components/dip-svg";
+import DIPSVG from "../components/svgs/dip-svg";
+import GithubSVG from "../components/svgs/github-svg";
 
 const IndexPage = ({data}) => {
 
@@ -256,24 +257,18 @@ const IndexPage = ({data}) => {
                   </h3>
               </LogoCard>
               <LogoCard
-                  borderColor="#DBD718"
+                  borderColor="#4A434A"
                   pointOne="Generative art project. Spits out graphics based on code."
                   pointTwo="Learning Canvas and WebGL with useful outputs."
                   pointThree="Lets me create original graphics very quickly."
               >
-                  <Img
-                      fluid={data.calgarystairs.childImageSharp.fluid}
-                      alt="Calgary Stairs logo"
-                      css={css`
-                          width: 100%;
-                      `}
-                  />
+                  <GithubSVG width="85%" color="#000000"/>
                   <h3>
                       Genart
                   </h3>
               </LogoCard>
               <LogoCard
-                  borderColor="green"
+                  borderColor="#DBD718"
                   pointOne="Built with WP, custom CSS for tuning."
                   pointTwo="Hand-gathered stats and pics for stair workouts across Calgary."
                   pointThree="All the up and down sides of a drag and drop project."
