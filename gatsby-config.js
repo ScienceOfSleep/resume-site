@@ -31,7 +31,7 @@ module.exports = {
       options: {
         name: "resume-site",
         short_name: "resume",
-        icon: "src/images/gatsby-icon.png",
+        icon: "src/images/JS-White-Fill.png",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",

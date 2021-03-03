@@ -152,8 +152,8 @@ const ExperiencePage = ({data}) => {
                     <LogoCard
                         borderColor="#4A434A"
                         pointOne="Built with Shopify's Liquid framework."
-                        pointTwo="Most maintainable drag and drop code I've worked with."
-                        pointThree="No tech skills required for maintenance and editing."
+                        pointTwo="Side project from the same group as Draw It Paint."
+                        pointThree="Only did the code, noted the copy and design need work."
                     >
                         <PulmanairSVG/>
                         <h3>
@@ -162,9 +162,9 @@ const ExperiencePage = ({data}) => {
                     </LogoCard>
                     <LogoCard
                         borderColor="#67aa8b"
-                        pointOne="Gatsby frontend and Contentful backend."
-                        pointTwo="Super low upkeep costs to match their super low budget."
-                        pointThree="Love coding for causes, it's a big reason why I learned."
+                        pointOne="Smart content calendar system to bring the 23 committees together."
+                        pointTwo="Membership card design."
+                        pointThree="Promotional material design for a variety of events."
                     >
                         <Img
                             fluid={data.mlca.childImageSharp.fluid}
@@ -179,9 +179,9 @@ const ExperiencePage = ({data}) => {
                     </LogoCard>
                     <LogoCard
                         borderColor="#e99b27"
-                        pointOne="Generative art project. Spits out graphics based on code."
-                        pointTwo="Learning Canvas and WebGL with useful outputs."
-                        pointThree="Lets me create original graphics very quickly."
+                        pointOne="Internship as part of my SAIT program."
+                        pointTwo="Developed and maintained a variety of WP sites."
+                        pointThree="Created and monitored Google AdWords campaigns."
                     >
                         <Img
                             fluid={data.steppmedia.childImageSharp.fluid}
@@ -196,9 +196,9 @@ const ExperiencePage = ({data}) => {
                     </LogoCard>
                     <LogoCard
                         borderColor="#534744"
-                        pointOne="Built with WP, custom CSS for tuning."
-                        pointTwo="Hand-gathered stats and pics for stair workouts across Calgary."
-                        pointThree="All the up and down sides of a drag and drop project."
+                        pointOne="My first contract applying graphic design and marketing skills."
+                        pointTwo="Business card and logo design."
+                        pointThree="Recently updated material for Bison Low Carbon Ventures."
                     >
                         <Img
                             fluid={data.bison.childImageSharp.fluid}

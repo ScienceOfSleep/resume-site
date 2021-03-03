@@ -33,12 +33,42 @@ const AboutPage = ({data}) => {
                 />
             </LandingFold>
             <BodyFold>
+                <Img
+                    fluid={data.construction.childImageSharp.fluid}
+                    alt="Silvertip logo, by Josh Steele"
+                    css={css`
+                      width: 70%;
+                      height: fit-content;
+                      @media screen and (min-width: 1120px){
+                        grid-column: 3 !important;
+                        grid-row: 3/5;
+                        align-self: center;
+                        justify-self: end;
+                        border: 5px solid #7a6a53;
+                        border-radius: 3px;
+                        box-shadow: 4px 5px 4px hsl(202, 21%, 52%, 0.6);
+                      }
+                    `}
+                />
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        grid-row: 2/5;
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+                      }
+                    `}
+                >
                 <SectionHeading title="My Hobbies"/>
                 <p>
                     I enjoy board games, video games, and fantasy football as natural extensions of my love of strategy. I devour business and political news as an extension of my loves of plans. On any given week I’ll have a fun fact from the newest edition of The Economist. For example: on the island of Zanzibar you cannot own land, only lease it from the government. But you can own trees, which are commonly passed down through generations. I love that because it’s so unique, makes large scale property developments a pain too because it’s such a strange concept for foreign firms.
                     <br/> <br/>
                     There’s a pretty predictable set of spreadsheets organizing my finances, I use Notion to organize my thoughts, and I’ve got a Home Assistant server making sure all my lights and my coffee are on schedule.
+                    <br/><br/>
+                    Design is always fun to mess around with too. I learned how to use Illustrator making hype posters for house parties, and though those aren't on the menu anymore it's always fun to take some zoom event to the next level with a custom banner.
                 </p>
+                </div>
             </BodyFold>
             <BodyFold>
                 <Img
@@ -48,15 +78,11 @@ const AboutPage = ({data}) => {
                 />
                 <SectionHeading title="My Values"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
-                    <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that back and helping other people have the same opportunities I have. Had a great time in school, so I got involved in student government to foster and preserve the culture.
+                    <br/><br/>
+                    Unfortunately in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational course for me, it really drove home the fact that you need to know your stuff in order to do good, or even to avoid causing harm. So I learn because it’s fun and because it’s necessary to have the type of impact I want.
+                    <br/><br/>
+                    In 15-20 years I plan on ‘retiring’ to work/volunteer in the nonprofit sector. What exactly that’ll look like depends a lot on what I pick up in the meantime. Over the course of that 15-20 I’ll absorb everything I can and help out a bit on the side so that I can really give it my best shot when I get there.
                 </p>
             </BodyFold>
         </main>
@@ -67,6 +93,13 @@ const AboutPage = ({data}) => {
 export const query = graphql`
     query {
         hotTub: file(relativePath: { eq: "Hot-Tub.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        construction: file(relativePath: { eq: "Construction-Party-Poster.jpg" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid

@@ -2,7 +2,6 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const BodyFold = styled.section`
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
   > *:not(.full-bleed){
