@@ -117,10 +117,10 @@ const ExperiencePage = ({data}) => {
                         Web Developer
                     </h3>
                     <h3 css={css`text-align: center`}>
-                        February 2020 - Present
+                        April 2017 - January 2020
                     </h3>
                     <p css={css`margin: 5px 0 10px`}>
-                        My time at Silvertip started as a simple business card contract, which then evolved into a logo contract, which in turn evolved into a full time general purpose 'computer person' role.
+                        My time at Silvertip started as a simple business card contract, which evolved into a logo contract, which then in turn evolved into a full time general purpose 'computer person' role.
                         <br/><br/>
                         As is common in startups, I wore a lot of hats. While working on the website and some smart documents (google docs & javascript) I discovered my passion for coding. I was lucky enough to qualify for a government sponsored fast-track program at SAIT to bring me up to speed on industry standards, and resumed full-time once I finished.
                         <br/><br/>
@@ -150,7 +150,7 @@ const ExperiencePage = ({data}) => {
                 </div>
                 <CardContainer>
                     <LogoCard
-                        borderColor="#DB444A"
+                        borderColor="#4A434A"
                         pointOne="Built with Shopify's Liquid framework."
                         pointTwo="Most maintainable drag and drop code I've worked with."
                         pointThree="No tech skills required for maintenance and editing."
@@ -161,54 +161,54 @@ const ExperiencePage = ({data}) => {
                         </h3>
                     </LogoCard>
                     <LogoCard
-                        borderColor="var(--page-color)"
+                        borderColor="#67aa8b"
                         pointOne="Gatsby frontend and Contentful backend."
                         pointTwo="Super low upkeep costs to match their super low budget."
                         pointThree="Love coding for causes, it's a big reason why I learned."
                     >
                         <Img
-                            fluid={data.dip.childImageSharp.fluid}
-                            alt="Feminists at the University of Alberta logo"
+                            fluid={data.mlca.childImageSharp.fluid}
+                            alt="Marda Loop Community Association logo"
                             css={css`
                           width: 100%;
                       `}
                         />
                         <h3>
-                            FUA Club Site
+                            MLCA
                         </h3>
                     </LogoCard>
                     <LogoCard
-                        borderColor="#DBD718"
+                        borderColor="#e99b27"
                         pointOne="Generative art project. Spits out graphics based on code."
                         pointTwo="Learning Canvas and WebGL with useful outputs."
                         pointThree="Lets me create original graphics very quickly."
                     >
                         <Img
-                            fluid={data.dip.childImageSharp.fluid}
-                            alt="Calgary Stairs logo"
+                            fluid={data.steppmedia.childImageSharp.fluid}
+                            alt="Stepp Media logo"
                             css={css`
-                          width: 100%;
-                      `}
+                                  width: 100%;
+                                `}
                         />
                         <h3>
-                            Genart
+                            Stepp Media
                         </h3>
                     </LogoCard>
                     <LogoCard
-                        borderColor="green"
+                        borderColor="#534744"
                         pointOne="Built with WP, custom CSS for tuning."
                         pointTwo="Hand-gathered stats and pics for stair workouts across Calgary."
                         pointThree="All the up and down sides of a drag and drop project."
                     >
                         <Img
-                            fluid={data.dip.childImageSharp.fluid}
-                            alt="Calgary Stairs logo"
+                            fluid={data.bison.childImageSharp.fluid}
+                            alt="Bison Oil and Gas logo by Josh Steele"
                             css={css`
-                          width: 100%;
-                      `}
+                              width: 73%;
+                            `}
                         />
                         <h3>
-                            Calgary Stairs
+                            Bison Oil & Gas
                         </h3>
                     </LogoCard>
                 </CardContainer>
@@ -256,6 +256,27 @@ export const query = graphql`
             }
         }
         silvertip: file(relativePath: { eq: "Silvertip-Logo-with-text.jpg" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        steppmedia: file(relativePath: { eq: "steppmedia-logo.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        bison: file(relativePath: { eq: "Bison-Logo.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        mlca: file(relativePath: { eq: "MLCA-Logo.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
