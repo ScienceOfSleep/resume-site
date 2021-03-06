@@ -26,7 +26,7 @@ const SkillsPage = ({data}) => {
                 />
                 <PageHeading title="Skills Breakdown"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    This page is broken into three sections, the core competencies that I focus on in my work, the skills that support them, and finally stuff that I've worked on and am familiar with but haven't based an entire position around.
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
@@ -49,7 +49,7 @@ const SkillsPage = ({data}) => {
                 >
                     <SectionHeading title="Core Competencies"/>
                     <p>
-                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        When learning I pick out tech that fits where I think the market is going. These days that's mostly JavaScript.
                         <br/> <br/>
                         When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                     </p>
@@ -81,7 +81,7 @@ const SkillsPage = ({data}) => {
                 >
                     <SectionHeading title="Supporting Skills"/>
                     <p>
-                        This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                        Graphic design is a lot of fun as a hobby or a change of pace job. It's always handy to be able to crank out a quick graphic myself instead of waiting for a 3rd party.
                         <br/> <br/>
                         When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                     </p>
@@ -117,7 +117,7 @@ const SkillsPage = ({data}) => {
                 >
                 <SectionHeading title="General Experience"/>
                 <p>
-                    This is the overview/elevator pitch page. I’ll give you a quick rundown on what I’ve done and what I prioritise while the site will give you an idea of what I’m like and what I can do.
+                    I've worked with WordPress on a bunch of projects, and consider myself fairly handy with the framework. But there is such a wide range of material in the ecosystem that's either niche or unmaintained that I prefer to avoid it when possible.
                     <br/> <br/>
                     When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
                 </p>
