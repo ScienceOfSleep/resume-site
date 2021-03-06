@@ -26,9 +26,9 @@ const SkillsPage = ({data}) => {
                 />
                 <PageHeading title="Skills Breakdown"/>
                 <p>
-                    This page is broken into three sections, the core competencies that I focus on in my work, the skills that support them, and finally stuff that I've worked on and am familiar with but haven't based an entire position around.
+                    The page below is broken into three sections, the core competencies that I focus on in my work, the skills that support them, and finally stuff that I've worked on and am familiar with but haven't based an entire position around.
                     <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    I've written a bit about why I've put different tools at different levels, as well as how they fit into my workflow as a whole. Underlying all of this is the guiding philosophy that self-sufficiency is key for the place I'm at in my career. Adaptability is another core concept, and so I'll typically focus more time on skill sets with a high degree of transferability.
                 </p>
                 <Img
                     fluid={data.landingDivider.childImageSharp.fluid}
@@ -49,9 +49,11 @@ const SkillsPage = ({data}) => {
                 >
                     <SectionHeading title="Core Competencies"/>
                     <p>
-                        When learning I pick out tech that fits where I think the market is going. These days that's mostly JavaScript.
+                        When learning I pick out tech that fits where I think the market is going. These days that's mostly JavaScript. In my experience the perks of the JS ecosystem outweigh any idiosyncrasies that come with it.
                         <br/> <br/>
-                        When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                        The profession is all about constant learning. It may not be feasible to stay up to date on every new framework, build tool, css trick, animation library, design system, project management methodology, etc. It still makes sense to stay up to date on one of each though, and it tends to make the work easier rather than harder in my experience.
+                        <br/><br/>
+                        Laravel was the first framework that I learned, and thanks to the remarkable DX it still holds a fond place in my heart. It's rare that I have to do a lot of back-end work from scratch, but when I do it's a real treat using Laravel to do it.
                     </p>
                 </div>
                 <SkillsList>
@@ -83,7 +85,9 @@ const SkillsPage = ({data}) => {
                     <p>
                         Graphic design is a lot of fun as a hobby or a change of pace job. It's always handy to be able to crank out a quick graphic myself instead of waiting for a 3rd party.
                         <br/> <br/>
-                        When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                        When learning APIs, I started with GraphQL funnily enough; the way Gatsby integrates with it made it a breeze. GraphQL priority made some technical interviews unnecessarily complicated though, so in the name of job security I brought my REST API knowledge up to par as well.
+                        <br/><br/>
+                        I've got experience in a wide range of SEO techniques, from well researched keywords and eloquent schema to generic keyword stuffing. It's not an area I'm passionate about, but having someone else in a dedicated marketing role is a luxury so I make a point of staying on top of Moz standards.
                     </p>
                 </div>
                 <SkillsList>
@@ -119,7 +123,7 @@ const SkillsPage = ({data}) => {
                 <p>
                     I've worked with WordPress on a bunch of projects, and consider myself fairly handy with the framework. But there is such a wide range of material in the ecosystem that's either niche or unmaintained that I prefer to avoid it when possible.
                     <br/> <br/>
-                    When sorting through applicants, you need to kiss a lot of frogs to find your metaphorical prince, or really even a decent looking frog. I appreciate your time here, so I’ll limit any long form text content to (appropriately flagged) sections on pages further in.
+                    Accessibility is a focus for me personally, though it is not always a priority for my employers. I do my best to pick tools that come with a high level of compliance by default (Gatsby is excellent for this), and I keep the DOM semantics and tab order in mind as I design my sites. That all being said, it's a big field and because it's so important I need an excellent command of the topic before I'm comfortable citing this as one of my main selling points.
                 </p>
                 </div>
                 <SkillsList>
