@@ -78,7 +78,7 @@ const AboutPage = ({data}) => {
                 />
                 <SectionHeading title="My Values"/>
                 <p>
-                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that back and helping other people have the same opportunities I have. Had a great time in school, so I got involved in student government to foster and preserve the culture.
+                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that forward and helping other people have the same opportunities I have. Had a great time in school, so I got involved in student government to foster and preserve the culture.
                     <br/><br/>
                     Unfortunately in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational course for me, it really drove home the fact that you need to know your stuff in order to do good, or even to avoid causing harm. So I learn because it’s fun and because it’s necessary to have the type of impact I want.
                     <br/><br/>

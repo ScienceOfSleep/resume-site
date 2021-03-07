@@ -7,13 +7,13 @@ const Card = styled.div`
   border-radius: 5%;
   padding: 10px 10% 10px;
   display: grid;
-  grid-template-rows: 260px 2rem auto 10px;
+  grid-template-rows: 72vw 2rem auto 10px;
   justify-items: center;
   align-items: center;
   background-color: #ffffff;
   filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
   position: relative;
-  height: calc(260px + 2rem + 55px);
+  height: calc(72vw + 2rem + 55px);
   transition: height .25s;
   &[data-opened='true']{
     height: 540px;
@@ -58,6 +58,8 @@ const Card = styled.div`
     padding: 10px;
     min-width: 280px;
     width: 20%;
+    height: calc(260px + 2rem + 55px);
+    grid-template-rows: 260px 2rem auto 10px;
     &[data-opened='true']{
       height: 540px;
     }

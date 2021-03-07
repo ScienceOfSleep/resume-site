@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 const BodyFold = styled.section`
   display: grid;
   grid-template-columns: var(--horizontal-margin) 1fr var(--horizontal-margin);
+  margin-bottom: 1rem;
   > *:not(.full-bleed){
     grid-column: 2;
   }
@@ -16,6 +17,7 @@ const BodyFold = styled.section`
   @media screen and (min-width: 1120px){
     grid-template-columns: minmax(10%, var(--horizontal-margin)) 1fr 1fr minmax(10%, var(--horizontal-margin));
     grid-template-rows: auto 7vh auto auto auto auto 7vh;
+    margin-bottom: 0;
     .full-bleed{
       margin: 0;
       height: 25vh;

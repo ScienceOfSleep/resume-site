@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const TechGif = styled.img`
-  margin: 0 auto 1rem;
+  margin: 1.25rem auto 1rem;
   border: 2px solid var(--page-color);
   border-radius: 100%;
   padding: 2px;
