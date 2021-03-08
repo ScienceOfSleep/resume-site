@@ -16,6 +16,22 @@ import DIPSVG from "../components/svgs/dip-svg";
 import PulmanairSVG from "../components/svgs/pulmanair-svg";
 
 const ExperiencePage = ({data}) => {
+    const silvertipDivider = [
+        data.silvertipDividerMobile.childImageSharp.fluid,
+        {
+            ...data.silvertipDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
+    const contractDivider = [
+        data.contractDividerMobile.childImageSharp.fluid,
+        {
+            ...data.contractDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
     return <Layout>
         <Header pageColor="var(--experience-red)"/>
         <main
@@ -37,16 +53,29 @@ const ExperiencePage = ({data}) => {
                     alt="'Random circles generated using canvas' by Josh Steele"
                 />
             </LandingFold>
+            <Img
+                fluid={data.landingDividerMobile.childImageSharp.fluid}
+                alt="'Random circles generated using canvas' by Josh Steele"
+                css={css`
+                      grid-column: 1 / -1 !important;
+                      margin: 1.5rem 0 1rem;
+                      box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                      width: 100%;
+                      @media screen and (min-width: 1120px){
+                        display: none;
+                      }
+                    `}
+            />
             <BodyFold>
                 <div
                     css={css`
                       width: 250px;
                       height: fit-content;
+                      justify-self: center;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
                         grid-row: 2/5;
                         align-self: center;
-                        justify-self: center;
                       }
                     `}
                 >
@@ -83,7 +112,7 @@ const ExperiencePage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.silvertipDivider.childImageSharp.fluid}
+                    fluid={silvertipDivider}
                     className="full-bleed"
                     alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
                 />
@@ -93,11 +122,11 @@ const ExperiencePage = ({data}) => {
                     css={css`
                       width: 350px;
                       height: fit-content;
+                      justify-self: center;
                       @media screen and (min-width: 1120px){
                         grid-column: 3 !important;
                         grid-row: 3/5;
                         align-self: center;
-                        justify-self: center;
                       }
                     `}
                 />
@@ -130,7 +159,7 @@ const ExperiencePage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.contractDivider.childImageSharp.fluid}
+                    fluid={contractDivider}
                     className="full-bleed"
                     alt="Random overlapping colorful circles. Generative art by Josh Steele made using Canvas."
                 />
@@ -234,6 +263,13 @@ export const query = graphql`
                 }
             }
         }
+        landingDividerMobile: file(relativePath: { eq: "experience-circle-divider-mobile-0.26409089864366986.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         silvertipDivider: file(relativePath: { eq: "experience-circle-divider-0.6177054668795865.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
@@ -241,7 +277,21 @@ export const query = graphql`
                 }
             }
         }
+        silvertipDividerMobile: file(relativePath: { eq: "experience-circle-divider-mobile-0.8683339630064288.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         contractDivider: file(relativePath: { eq: "experience-circle-divider-0.24364911449809123.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        contractDividerMobile: file(relativePath: { eq: "experience-circle-divider-mobile-0.5146572532874458.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
