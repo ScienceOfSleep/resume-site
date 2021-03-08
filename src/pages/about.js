@@ -53,7 +53,7 @@ const AboutPage = ({data}) => {
                         display: none;
                       }
                     `}
-                    />
+                />
                 <Img
                     fluid={data.construction.childImageSharp.fluid}
                     alt="Construction party promo poster"

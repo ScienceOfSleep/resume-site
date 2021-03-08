@@ -12,6 +12,22 @@ import Footer from "../components/footer";
 import SkillsList from "../components/skills-list";
 
 const SkillsPage = ({data}) => {
+    const supportingDivider = [
+        data.supportingDividerMobile.childImageSharp.fluid,
+        {
+            ...data.supportingDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
+    const generalDivider = [
+        data.generalDividerMobile.childImageSharp.fluid,
+        {
+            ...data.generalDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
     return <Layout>
         <Header pageColor="var(--skills-green)"/>
         <main
@@ -36,6 +52,19 @@ const SkillsPage = ({data}) => {
                 />
             </LandingFold>
             <BodyFold>
+                <Img
+                    fluid={data.landingDividerMobile.childImageSharp.fluid}
+                    alt="'Random circles generated using canvas' by Josh Steele"
+                    css={css`
+                      grid-column: 1 / -1 !important;
+                      margin: 1.5rem 0 1rem;
+                      box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                      width: 100%;
+                      @media screen and (min-width: 1120px){
+                        display: none;
+                      }
+                    `}
+                />
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
@@ -66,7 +95,7 @@ const SkillsPage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.supportingDivider.childImageSharp.fluid}
+                    fluid={supportingDivider}
                     className="full-bleed"
                     alt="Generative art of overlapping green circles. Made by Josh Steele using Canvas."
                 />
@@ -104,7 +133,7 @@ const SkillsPage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.generalDivider.childImageSharp.fluid}
+                    fluid={generalDivider}
                     className="full-bleed"
                     alt="Generative art of overlapping green circles. Made by Josh Steele using Canvas."
                 />
@@ -156,6 +185,13 @@ export const query = graphql`
                 }
             }
         }
+        landingDividerMobile: file(relativePath: { eq: "skills-circle-divider-mobile-0.1276152478482826.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         supportingDivider: file(relativePath: { eq: "skills-circle-divider-0.8367436603112071.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
@@ -163,7 +199,21 @@ export const query = graphql`
                 }
             }
         }
+        supportingDividerMobile: file(relativePath: { eq: "skills-circle-divider-mobile-0.7833632694060264.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         generalDivider: file(relativePath: { eq: "skills-circle-divider-0.6791828960244695.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        generalDividerMobile: file(relativePath: { eq: "skills-circle-divider-mobile-0.8919031689749717.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
