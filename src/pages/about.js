@@ -11,6 +11,14 @@ import SectionHeading from "../components/section-heading";
 import Footer from "../components/footer";
 
 const AboutPage = ({data}) => {
+    const valuesDivider = [
+        data.valuesDividerMobile.childImageSharp.fluid,
+        {
+            ...data.valuesDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
     return <Layout>
         <Header pageColor="var(--about-orange)"/>
         <main
@@ -34,12 +42,27 @@ const AboutPage = ({data}) => {
             </LandingFold>
             <BodyFold>
                 <Img
+                    fluid={data.landingDividerMobile.childImageSharp.fluid}
+                    alt="'Random circles generated using canvas' by Josh Steele"
+                    css={css`
+                      grid-column: 1 / -1 !important;
+                      margin: 1.5rem 0 1rem;
+                      box-shadow: 0 4px 4px hsl(202, 21%, 52%, 0.6), 0 -4px 5px hsl(202, 21%, 52%, 0.6);
+                      width: 100%;
+                      @media screen and (min-width: 1120px){
+                        display: none;
+                      }
+                    `}
+                    />
+                <Img
                     fluid={data.construction.childImageSharp.fluid}
-                    alt="Silvertip logo, by Josh Steele"
+                    alt="Construction party promo poster"
                     css={css`
                       width: 70%;
                       height: fit-content;
+                      display: none;
                       @media screen and (min-width: 1120px){
+                        display: initial;
                         grid-column: 3 !important;
                         grid-row: 3/5;
                         align-self: center;
@@ -72,9 +95,9 @@ const AboutPage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={data.valuesDivider.childImageSharp.fluid}
+                    fluid={valuesDivider}
                     className="full-bleed"
-                    alt="Generative art of overlapping green circles. Made by Josh Steele using Canvas."
+                    alt="Generative art of overlapping orange and green circles. Made by Josh Steele using Canvas."
                 />
                 <SectionHeading title="My Values"/>
                 <p>
@@ -113,7 +136,21 @@ export const query = graphql`
                 }
             }
         }
+        landingDividerMobile: file(relativePath: { eq: "about-circle-divider-mobile-0.9030915610258381.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         valuesDivider: file(relativePath: { eq: "about-circle-divider-0.16669958042057553.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        valuesDividerMobile: file(relativePath: { eq: "about-circle-divider-mobile-0.6400125353479997.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
