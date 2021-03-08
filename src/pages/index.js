@@ -88,7 +88,7 @@ const IndexPage = ({data}) => {
                     borderColor="#2D9CDB"
                     pointOne="The hot JS framework; very good resources and ecosystem as a result."
                     pointTwo="Component focus feels natural for the modern web."
-                    pointThree="I enjoy working with JSX and CSS-in-JS."
+                    pointThree="I like working with JSX and CSS-in-JS."
                 >
                     <ReactSVG/>
                     <h3>
@@ -97,7 +97,7 @@ const IndexPage = ({data}) => {
                 </LogoCard>
                 <LogoCard
                     borderColor="#DBD718"
-                    pointOne="Emotion's flexibility perfectly complements my coding flow in React."
+                    pointOne="Emotion's flexibility perfectly complements my flow in React."
                     pointTwo="Sidesteps scope and specificity problems."
                     pointThree="Combines the best parts of SASS and CSS with the dynamism of JS."
                 >
@@ -262,7 +262,7 @@ const IndexPage = ({data}) => {
                   pointTwo="Learning Canvas and WebGL with useful outputs."
                   pointThree="Lets me create original graphics very quickly."
               >
-                  <GithubSVG width="85%" color="#000000"/>
+                  <GithubSVG width="83%" color="#000000"/>
                   <h3>
                       Genart
                   </h3>

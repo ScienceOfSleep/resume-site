@@ -5,36 +5,39 @@ const Card = styled.div`
   margin: 1rem 0 2rem;
   border: 6px solid ${props => props.borderColor || "#DB444A"};
   border-radius: 5%;
-  padding: 10px 10% 10px;
+  padding: 20px 6% 10px;
   display: grid;
-  grid-template-rows: 72vw 2rem auto 10px;
+  grid-template-rows: 72vw 2.7rem auto 10px;
   justify-items: center;
   align-items: center;
   background-color: #ffffff;
   filter: drop-shadow(4px 4px 4px hsl(202, 21%, 52%, 0.9));
   position: relative;
-  height: calc(72vw + 2rem + 55px);
+  height: calc(72vw + 2.7rem + 65px);
   transition: height .25s;
   &[data-opened='true']{
-    height: 540px;
+    height: calc(72vw + 250px);
   }
   ul{
     opacity: 0;
     grid-row: 3;
     transition: opacity .1s ease 0s;
-    align-self: start;
     &[data-opened='true']{
       opacity: 1;
       transition: opacity .25s ease .15s;
   }
   li{
     padding-top: .35rem;
+    :first-of-type{
+      padding-top: 0;
+    }
     }
   }
   h3{
     font-family: 'montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
+    margin-top: .7rem;
   }
   button{
     position: absolute;
