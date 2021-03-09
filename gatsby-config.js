@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Josh Steele's resume website`,
+    title: `Josh Steele's Resume`,
     description: `Welcome to Josh Steele's resume website. Find out all the things Josh has done for money, all the things he'd do for money, and even a few things that he does for free.`,
     author: `Josh Steele`,
-    siteUrl: `https://www.example.com`,
+    siteUrl: `https://www.jjsteele.ca`,
+    siteLanguage: `en`,
+    image: `/Albertasaurus.png`,
+
   },
 
   plugins: [
@@ -19,8 +22,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.example.com',
-        sitemap: 'https://www.example.com/sitemap.xml',
+        host: 'https://www.jjsteele.ca',
+        sitemap: 'https://www.jjsteele.ca/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

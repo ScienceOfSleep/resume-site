@@ -44,7 +44,7 @@ const IndexPage = ({data}) => {
     return <Layout>
 
       <Header pageColor="var(--landing-blue)"/>
-      {/*<SEO title="Josh's Resume Site" />*/}
+      <SEO title="Home" />
       <main
         css={css`
           --page-color: var(--landing-blue);
@@ -138,7 +138,7 @@ const IndexPage = ({data}) => {
                 For more detail on my core and supporting skills checkout the breakdown on my Skills page!
             </p>
             {/*tab focus on desktop needs adjusting*/}
-            <LinkButton to="/">Skills Breakdown</LinkButton>
+            <LinkButton to="/skills">Skills Breakdown</LinkButton>
         </BodyFold>
         <BodyFold>
             <Img
@@ -164,7 +164,7 @@ const IndexPage = ({data}) => {
                 <br/> <br/>
                 Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP’s no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
             </p>
-            <LinkButton to="/">Career Timeline</LinkButton>
+            <LinkButton to="/experience">Career Timeline</LinkButton>
             </div>
             <div
                 css={css`

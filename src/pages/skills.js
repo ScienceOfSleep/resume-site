@@ -10,6 +10,7 @@ import BodyFold from "../components/body-fold";
 import SectionHeading from "../components/section-heading";
 import Footer from "../components/footer";
 import SkillsList from "../components/skills-list";
+import SEO from "../components/seo";
 
 const SkillsPage = ({data}) => {
     const supportingDivider = [
@@ -30,6 +31,11 @@ const SkillsPage = ({data}) => {
 
     return <Layout>
         <Header pageColor="var(--skills-green)"/>
+        <SEO
+            title="Skills"
+            description="The different tools at I have experience with, as well as how they fit into my workflow as a whole. Sprinkled in some of my guiding philosophy for making decisions too."
+            image="/Frog.png"
+        />
         <main
             css={css`
             --page-color: var(--skills-green);

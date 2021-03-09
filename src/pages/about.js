@@ -9,6 +9,7 @@ import PageHeading from "../components/page-heading";
 import BodyFold from "../components/body-fold";
 import SectionHeading from "../components/section-heading";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 const AboutPage = ({data}) => {
     const valuesDivider = [
@@ -21,6 +22,11 @@ const AboutPage = ({data}) => {
 
     return <Layout>
         <Header pageColor="var(--about-orange)"/>
+        <SEO
+            title="About"
+            description="Who is Josh Steele? What does he like to do? What does he believe in? Find out on the About page!"
+            image="/Hot-Tub.png"
+        />
         <main
             css={css`
             --page-color: var(--about-orange);

@@ -14,6 +14,7 @@ import LogoCard from "../components/logo-card";
 import Footer from "../components/footer";
 import DIPSVG from "../components/svgs/dip-svg";
 import PulmanairSVG from "../components/svgs/pulmanair-svg";
+import SEO from "../components/seo";
 
 const ExperiencePage = ({data}) => {
     const silvertipDivider = [
@@ -34,6 +35,11 @@ const ExperiencePage = ({data}) => {
 
     return <Layout>
         <Header pageColor="var(--experience-red)"/>
+        <SEO
+            title="Experience"
+            description="The different places I've worked, as well as a sample of significant contracts I've gotten over the course of my career."
+            image="/Bunicula.png"
+        />
         <main
             css={css`
               --page-color: var(--experience-red);
@@ -102,7 +108,7 @@ const ExperiencePage = ({data}) => {
                         February 2020 - Present
                     </h3>
                     <p css={css`margin: 5px 0 10px`}>
-                        Moved back to Edmonton and started work at Draw It Paint just as covid-19 was really starting to take off. There were plenty of interesting challenges, both of traditional and new varieties. My first day was spent evaluating a stereotypical WordPress behemoth, with page load times stretching into the 20+ second range.
+                        Returned to Edmonton and started work at Draw It Paint just as covid-19 was really starting to take off. There were plenty of interesting challenges, both traditional and new varieties. My first day was spent evaluating a stereotypical WordPress behemoth, with page load times stretching into the 20+ second range.
                         <br/><br/>
                         I proposed rebuilding the site in GatsbyJS, keeping the blog and store as a backend CMS. The transition went well, and we were able to hit the 2 second target I’d set for initial load time. though the blog ended up not being a priority moving forward. This was one of the less serious issues that could’ve been solved by more thoroughly exploring our business needs before starting.
                         <br/><br/>
@@ -143,7 +149,7 @@ const ExperiencePage = ({data}) => {
                 >
                     <SectionHeading title="Silvertip"/>
                     <h3 css={css`text-align: center`}>
-                        Web Developer
+                        Graphic & Web Designer
                     </h3>
                     <h3 css={css`text-align: center`}>
                         April 2017 - January 2020
@@ -172,7 +178,7 @@ const ExperiencePage = ({data}) => {
                 >
                     <SectionHeading title="Contract Work"/>
                     <p>
-                        Graduating into an oil crash and public sector freeze with a History degree was an interesting experience. By 2015 the writing was on the wall for the Albertan economy so sticking it out for another boom seemed unwise. Self-improvement through tech was one of the few bright paths I could see for myself, so I took a risk and went for it.
+                        Graduating into an oil crash and public sector freeze was an interesting experience. By 2015 the writing was on the wall for the Albertan economy so sticking it out for another boom seemed unwise. Self-improvement through tech was one of the few bright paths I could see for myself, so I took a risk and went for it.
                         <br/> <br/>
                         One of the beautiful things about tech is that all experience is relevant experience. Research skills are excellent for sorting valuable information from blogspam. History and current events help tremendously with identifying business needs and solutions. Building around those skills let me break into the very saturated lower end of the industry and support myself until I landed a full time gig.
                     </p>
