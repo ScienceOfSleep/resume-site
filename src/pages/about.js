@@ -33,7 +33,9 @@ const AboutPage = ({data}) => {
                 />
                 <PageHeading title="More About Josh"/>
                 <p>
-                    I am an optimizer. For as long as I can remember I’ve been fascinated by plans and strategies; figuring out why some plans work while others fail has been a focus of my studies for as long as I’ve been able to direct them. With that in mind, going from history to tech seemed downright intuitive.
+                    I am an optimizer. For as long as I can remember I’ve been fascinated by plans and strategies; figuring out why some plans work while others fail has been a focus of my studies for as long as I’ve been able to direct them.
+                    <br/><br/>
+                    Whether it's historical patterns, video games, or fantasy football, I really enjoy picking out trends and getting ahead of the curve. With that in mind, going from history to tech seemed downright intuitive.
                 </p>
                 <Img
                     fluid={data.landingDivider.childImageSharp.fluid}
