@@ -33,13 +33,20 @@ const IndexPage = ({data}) => {
     ]
 
     const aboutImage = [
-        data.pinkeye.childImageSharp.fluid,
+        data.aboutDividerMobile.childImageSharp.fluid,
         {
             ...data.aboutDesktop.childImageSharp.fluid,
             media: `(min-width: 1120px)`,
         },
     ]
 
+    const experienceDivider = [
+        data.orangecircles.childImageSharp.fluid,
+        {
+            ...data.experienceDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
 
     return <Layout>
 
@@ -142,7 +149,7 @@ const IndexPage = ({data}) => {
         </BodyFold>
         <BodyFold>
             <Img
-                fluid={data.orangecircles.childImageSharp.fluid}
+                fluid={experienceDivider}
                 className="full-bleed"
                 alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
             />
@@ -335,7 +342,7 @@ export const query = graphql`
                 }
             }
         }
-        aboutDesktop: file(relativePath: { eq: "web-circle-divider-0.9241831149624944.png" }) {
+        aboutDesktop: file(relativePath: { eq: "index-circle-divider-0.9160890170272444.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
@@ -405,7 +412,14 @@ export const query = graphql`
                 }
             }
         }
-        pinkeye: file(relativePath: { eq: "pink-crazy-eye.png" }) {
+        aboutDividerMobile: file(relativePath: { eq: "index-circle-divider-mobile-0.7556794498232269.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        experienceDivider: file(relativePath: { eq: "index-circle-divider-0.5841806488392223.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
