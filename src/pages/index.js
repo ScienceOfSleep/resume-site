@@ -170,6 +170,8 @@ const IndexPage = ({data}) => {
                 Initially self-educated on everything tech related, I got my start in 2016 through freelance marketing and graphic design contracts. One of those turned into a full time position at Silvertip, a consultancy startup focusing on family business and estate transfers.
                 <br/> <br/>
                 Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP’s no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
+                <br/> <br/>
+                I've also done quite a few short term contracts over the course of my career. To read about those or to get more details on my full time work check out my dedicated Career Timeline page!
             </p>
             <LinkButton to="/experience">Career Timeline</LinkButton>
             </div>
