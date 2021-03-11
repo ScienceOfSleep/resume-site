@@ -64,7 +64,7 @@ const IndexPage = ({data}) => {
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
-                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
+                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. The longer form content on who I am and what I can do can be found on each section's dedicated page. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
                 <br/> <br/>
                 After skimming the home page you should have a general idea what I like to do and where I’ve done it in the past. For more detail you can check out each section’s dedicated page where I dig into the topic.
             </p>
