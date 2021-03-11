@@ -93,11 +93,11 @@ const AboutPage = ({data}) => {
                 >
                 <SectionHeading title="My Hobbies"/>
                 <p>
-                    I enjoy board games, video games, and fantasy football as natural extensions of my love of strategy. I devour business and political news as an extension of my loves of plans. On any given week I’ll have a fun fact from the newest edition of The Economist. For example: on the island of Zanzibar you cannot own land, only lease it from the government. But you can own trees, which are commonly passed down through generations. I love that because it’s so unique, makes large scale property developments a pain too because it’s such a strange concept for foreign firms.
+                    I enjoy board games, video games, and fantasy football as natural extensions of my love of strategy. I devour business and political news for much of the same reason. On any given week I’ll have a fun fact from the newest edition of The Economist, feel free to ask me for one during the interview!
                     <br/> <br/>
                     There’s a pretty predictable set of spreadsheets organizing my finances, I use Notion to organize my thoughts, and I’ve got a Home Assistant server making sure all my lights and my coffee are on schedule.
                     <br/><br/>
-                    Design is always fun to mess around with too. I learned how to use Illustrator making hype posters for house parties, and though those aren't on the menu anymore it's always fun to take some zoom event to the next level with a custom banner.
+                    Design is always fun to mess around with too. I learned how to use Illustrator making hype posters for house parties, and though those aren't on the itinerary anymore it's always fun to take some zoom event to the next level with a custom banner.
                 </p>
                 </div>
             </BodyFold>
@@ -109,11 +109,11 @@ const AboutPage = ({data}) => {
                 />
                 <SectionHeading title="My Values"/>
                 <p>
-                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that forward and helping other people have the same opportunities I have. Had a great time in school, so I got involved in student government to foster and preserve the culture.
+                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that forward and helping other people have the same opportunities I've had. Had a great time in school, so I got involved in student government to foster and preserve that culture.
                     <br/><br/>
-                    Unfortunately in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational course for me, it really drove home the fact that you need to know your stuff in order to do good, or even to avoid causing harm. So I learn because it’s fun and because it’s necessary to have the type of impact I want.
+                    Unfortunately in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational university course for me, it really drove home the fact that you <i>need</i> to know your stuff in order to do good, or even to avoid causing harm. So I plan to learn for the rest of my life both because it’s fun and because it’s necessary to have the type of impact I want.
                     <br/><br/>
-                    In 15-20 years I plan on ‘retiring’ to work/volunteer in the nonprofit sector. What exactly that’ll look like depends a lot on what I pick up in the meantime. Over the course of that 15-20 I’ll absorb everything I can and help out a bit on the side so that I can really give it my best shot when I get there.
+                    In 15-20 years I plan on ‘retiring’ to work / volunteer in the nonprofit sector. What exactly that’ll look like depends a lot on what I pick up in the meantime. Over the course of that 15-20 I’ll absorb everything I can and help out a bit on the side so that I can really give it my best shot when I get there.
                 </p>
             </BodyFold>
         </main>

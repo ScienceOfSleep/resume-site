@@ -138,9 +138,9 @@ const IndexPage = ({data}) => {
                 </LogoCard>
             </CardContainer>
             <p>
-                These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka I count on to bring home the (vegetarian) bacon.
+                These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what I count on to bring home the (vegetarian) bacon.
                 <br/><br/>
-                It’s fairly common that I won’t have a complete stack of my choosing though, and as a result I’ve worked with many other languages/frameworks/tools over my career.
+                It’s fairly common that I won’t have a complete stack of my choosing to work with, and as a result I’ve worked with many other languages/frameworks/tools over my career.
                 <br/><br/>
                 For more detail on my core and supporting skills checkout the breakdown on my Skills page!
             </p>
