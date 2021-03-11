@@ -39,9 +39,9 @@ const AboutPage = ({data}) => {
                 />
                 <PageHeading title="More About Josh"/>
                 <p>
-                    I am an optimizer. For as long as I can remember I’ve been fascinated by plans and strategies; figuring out why some plans work while others fail has been a focus of my studies for as long as I’ve been able to direct them.
+                    I am an optimizer. For as long as I can remember I’ve been fascinated by plans and strategies. Figuring out why some plans work while others fail has been a focus of my studies for as long as I’ve been able to direct them.
                     <br/><br/>
-                    Whether it's historical patterns, video games, or fantasy football, I really enjoy picking out trends and getting ahead of the curve. With that in mind, going from history to tech seemed downright intuitive.
+                    Whether it's historical patterns, video games, or fantasy football, I really enjoy picking out trends and getting ahead of the curve. With that in mind, going from a bachelors degree in history to tech seemed downright intuitive.
                 </p>
                 <Img
                     fluid={data.landingDivider.childImageSharp.fluid}
@@ -95,7 +95,7 @@ const AboutPage = ({data}) => {
                 <p>
                     I enjoy board games, video games, and fantasy football as natural extensions of my love of strategy. I devour business and political news for much of the same reason. On any given week I’ll have a fun fact from the newest edition of The Economist, feel free to ask me for one during the interview!
                     <br/> <br/>
-                    There’s a pretty predictable set of spreadsheets organizing my finances, I use Notion to organize my thoughts, and I’ve got a Home Assistant server making sure all my lights and my coffee are on schedule.
+                    An interest in strategy and optimization have a multitude of applications to my own life planning as well. There’s a pretty predictable set of spreadsheets organizing my finances, I use Notion to organize my thoughts, and I’ve got a Home Assistant server making sure all my lights and my coffee are on schedule.
                     <br/><br/>
                     Design is always fun to mess around with too. I learned how to use Illustrator making hype posters for house parties, and though those aren't on the itinerary anymore it's always fun to take some zoom event to the next level with a custom banner.
                 </p>
@@ -109,11 +109,11 @@ const AboutPage = ({data}) => {
                 />
                 <SectionHeading title="My Values"/>
                 <p>
-                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that forward and helping other people have the same opportunities I've had. Had a great time in school, so I got involved in student government to foster and preserve that culture.
+                    I’m a pretty lucky guy and I’ve had a lot of advantages in life, so a lot of what I do is oriented around paying that forward and helping other people have the same opportunities I've had. I had a great time in school, so I got involved in student government to foster and preserve that culture.
                     <br/><br/>
-                    Unfortunately in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational university course for me, it really drove home the fact that you <i>need</i> to know your stuff in order to do good, or even to avoid causing harm. So I plan to learn for the rest of my life both because it’s fun and because it’s necessary to have the type of impact I want.
+                    Unfortunately, in the wider world doing good is a bit more complicated than being a fun person with good intentions. “The Ethics of Foreign Aid” was a foundational university course for me, it really drove home the fact that you <i>need</i> to know your stuff in order to do good, or even to avoid causing harm. So I plan to learn for the rest of my life both because it’s fun and because it’s necessary to have the type of impact I want.
                     <br/><br/>
-                    In 15-20 years I plan on ‘retiring’ to work / volunteer in the nonprofit sector. What exactly that’ll look like depends a lot on what I pick up in the meantime. Over the course of that 15-20 I’ll absorb everything I can and help out a bit on the side so that I can really give it my best shot when I get there.
+                    In 15-20 years I plan on ‘retiring’ to work / volunteer in the nonprofit sector. What exactly that’ll look like depends a lot on what I pick up in the meantime. Over the course of that 15-20 I’ll absorb everything I can, and help out a bit on the side, so that I can really give it my best shot when I get there.
                 </p>
             </BodyFold>
         </main>

@@ -52,7 +52,7 @@ const ExperiencePage = ({data}) => {
                 />
                 <PageHeading title="Work Experience"/>
                 <p>
-                    I describe myself as a front end developer as that's my primary focus, but in practice I've done everything tech and graphic design related that would be required at a small firm. Anything from responsive branding to small scale back end and dev-ops work I have a working knowledge of and can jump on when the situation calls for it. That's the small business life, and getting to the point where I can comfortably manage all that has been really interesting.
+                    I describe myself as a front end developer as that's my primary focus, but in practice I've done everything tech and graphic design related that would be required at a small firm. I have a working knowledge of everything from responsive branding to small scale back end and dev-ops work, and have jumped in to do patch work in those areas when called upon. That's the small business life, and getting to the point where I can comfortably manage all that has been really interesting.
                 </p>
                 <Img
                     fluid={data.landingDivider.childImageSharp.fluid}
@@ -112,7 +112,7 @@ const ExperiencePage = ({data}) => {
                         <br/><br/>
                         I proposed rebuilding the site in GatsbyJS, keeping the blog and store as a backend CMS. The transition went well, and we were able to hit the 2 second target I’d set for initial load time. though the blog ended up not being a priority moving forward. This was one of the less serious issues that could’ve been solved by more thoroughly exploring our business needs before starting.
                         <br/><br/>
-                        About 6 months into the new setup concerns were raised about the experience required to modify and maintain a site written in React. It’s a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. I coordinated work for this project with my boss as well as our marketing team and video editor / graphic designer.
+                        About 6 months into the new setup, concerns were raised about the experience required to modify and maintain a site written in React. It’s a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. I coordinated work for this project with my boss as well as our marketing team and video editor / graphic designer.
                     </p>
                 </div>
             </BodyFold>
@@ -157,9 +157,9 @@ const ExperiencePage = ({data}) => {
                     <p css={css`margin: 5px 0 10px`}>
                         My time at Silvertip started as a simple business card contract, which evolved into a logo contract, which then in turn evolved into a full time general purpose 'computer person' role.
                         <br/><br/>
-                        As is common in startups, I wore a lot of hats. While working on the website and some smart documents (google docs & javascript) I discovered my passion for coding. I was lucky enough to qualify for a government sponsored fast-track program at SAIT to bring me up to speed on industry standards, and resumed full-time once I finished.
+                        As is common in startups, I wore a lot of hats. While working on the website and some smart documents (Google Docs & Javascript) I discovered my passion for coding. I was lucky enough to qualify for a government sponsored fast-track program at SAIT to bring me up to speed on industry standards, and resumed full-time work once I finished.
                         <br/><br/>
-                        We did estate planning and family business governance consulting, so as part of my job I got to speak with a bunch of successful business owners about what got them where they were and where they wanted to go next. I was also working my way through a Trust and Estate Practitioner (TEP) certificate, and had passed the trust law exam when one of the founders passed and the business started to wind down.
+                        We did estate planning and family business governance consulting, so as part of my job I got to speak with a series of successful business owners about what got them where they were and where they wanted to go next. I was also working my way through a Trust and Estate Practitioner (TEP) certificate, and had passed the trust law exam when one of the founders passed and the business started to wind down.
                     </p>
                 </div>
             </BodyFold>

@@ -64,7 +64,7 @@ const IndexPage = ({data}) => {
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
-                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. The longer form content on who I am and what I can do can be found on each section's dedicated page. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
+                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
                 <br/> <br/>
                 After skimming the home page you should have a general idea what I like to do and where I’ve done it in the past. For more detail you can check out each section’s dedicated page where I dig into the topic.
             </p>
@@ -142,7 +142,7 @@ const IndexPage = ({data}) => {
                 <br/><br/>
                 It’s fairly common that I won’t have a complete stack of my choosing to work with, and as a result I’ve worked with many other languages/frameworks/tools over my career.
                 <br/><br/>
-                For more detail on my core and supporting skills checkout the breakdown on my Skills page!
+                For more detail on my core and supporting skills checkout my Skills Breakdown page!
             </p>
             {/*tab focus on desktop needs adjusting*/}
             <LinkButton to="/skills">Skills Breakdown</LinkButton>
@@ -173,6 +173,7 @@ const IndexPage = ({data}) => {
                 <br/> <br/>
                 I've also done quite a few short term contracts over the course of my career. To read about those or to get more details on my full time work check out my dedicated Career Timeline page!
             </p>
+            {/*Expand on contract work experience?*/}
             <LinkButton to="/experience">Career Timeline</LinkButton>
             </div>
             <div
@@ -310,9 +311,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="About Me"/>
                 <p>
-                    Big fan of politics, but not in the way that I want to debate my coworkers don’t worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I’ll be able to support all sorts of interesting organizations.
+                    Big fan of politics, but not in the way that I want to debate my coworkers don’t worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I’ll be able to use the skills I've acquired to support all sorts of interesting organizations.
                     <br/> <br/>
-                    Outside the deep stuff I’m super into fantasy and sci-fi novels; we’re living in a golden age for them. I’ll typically polish off a book a month with my trusty ereader/public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
+                    Outside the deep stuff I’m super into fantasy and sci-fi novels; we’re living in a golden age for them. I’ll typically polish off a book a month with my trusty ereader / public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
                 </p>
               </div>
           </BodyFold>
