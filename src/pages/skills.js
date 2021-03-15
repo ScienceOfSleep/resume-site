@@ -74,7 +74,7 @@ const SkillsPage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 65vh;
+                        min-height: 65vh;
                         grid-row: 3;
                         display: flex;
                         flex-direction: column;
@@ -108,7 +108,7 @@ const SkillsPage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 65vh;
+                        min-height: 65vh;
                         grid-row: 3;
                         display: flex;
                         flex-direction: column;
@@ -146,7 +146,7 @@ const SkillsPage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 65vh;
+                        min-height: 65vh;
                         grid-row: 3;
                         display: flex;
                         flex-direction: column;

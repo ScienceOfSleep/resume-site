@@ -92,7 +92,7 @@ const ExperiencePage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 65vh;
+                        min-height: 65vh;
                         grid-row: 3;
                         display: flex;
                         flex-direction: column;
@@ -139,7 +139,7 @@ const ExperiencePage = ({data}) => {
                 <div
                     css={css`
                       @media screen and (min-width: 1120px){
-                        height: 65vh;
+                        min-height: 65vh;
                         grid-row: 3;
                         display: flex;
                         flex-direction: column;
