@@ -54,8 +54,12 @@ const Footer = () => {
               }
             `}
         >
-            <GithubSVG width="24px" color="#ffffff"/>
-            <LinkedInSVG/>
+            <a href="https://github.com/ScienceOfSleep" rel="external">
+                <GithubSVG width="24px" color="#ffffff"/>
+            </a>
+            <a href="https://www.linkedin.com/in/josh-steele-codes/" rel="external">
+                <LinkedInSVG/>
+            </a>
         </div>
     </footer>
 }
