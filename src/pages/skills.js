@@ -156,7 +156,7 @@ const SkillsPage = ({data}) => {
                 >
                 <SectionHeading title="General Experience"/>
                 <p>
-                    I've worked with WordPress on a bunch of projects, and consider myself fairly handy with the framework. However, there is such a wide range of material in the ecosystem that's either niche or unmaintained that I prefer to avoid it when possible.
+                    I've worked with WordPress on a bunch of projects, and consider myself fairly handy with the framework. However, there is such a wide range of niche or poorly maintained code in the WP ecosystem that as a result I prefer to avoid it for more complicated work.
                     <br/> <br/>
                     Accessibility is a focus for me personally, though it is not always a priority for my employers. I do my best to pick tools that come with a high level of compliance by default (Gatsby is excellent for this), and I keep the DOM semantics and tab order in mind as I design my sites. That all being said, it's a big field and because it's so important I need an excellent command of the topic before I'm comfortable citing this as one of my main selling points.
                 </p>
