@@ -239,14 +239,20 @@ const IndexPage = ({data}) => {
               </div>
               <CardContainer>
                   <LogoCard
-                      borderColor="#DB444A"
-                      pointOne="Built with Shopify's Liquid framework."
-                      pointTwo="Most maintainable drag and drop code I've worked with."
-                      pointThree="No tech skills required for maintenance and editing."
+                      borderColor="#349465"
+                      pointOne="Demo App built with NextJS and MongoDB."
+                      pointTwo="DB is referenced at build, then pages are served statically."
+                      pointThree="Built the reference tool I wanted when playing LoL."
                   >
-                    <DIPSVG width="90%"/>
+                      <Img
+                          fluid={data.namimain.childImageSharp.fluid}
+                          alt="Logo for Josh's 'Nami Main' App"
+                          css={css`
+                            width: 100%;
+                          `}
+                      />
                     <h3>
-                        Draw It Paint
+                        Nami Main
                     </h3>
                   </LogoCard>
                   <LogoCard
@@ -395,6 +401,13 @@ export const query = graphql`
             }
         }
         stepp: file(relativePath: { eq: "steppmedia-logo.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        namimain: file(relativePath: { eq: "Nami-Main.png" }) {
             childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid
