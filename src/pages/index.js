@@ -251,9 +251,11 @@ const IndexPage = ({data}) => {
                             width: 100%;
                           `}
                       />
-                    <h3>
-                        Nami Main
-                    </h3>
+                      <a href="https://www.namimain.com">
+                        <h3>
+                            Nami Main
+                        </h3>
+                      </a>
                   </LogoCard>
                   <LogoCard
                       borderColor="var(--page-color)"
@@ -268,9 +270,11 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3>
-                      FUA Club Site
-                  </h3>
+                  <a href="https://www.feministsuofa.com/">
+                    <h3>
+                        FUA Club Site
+                    </h3>
+                  </a>
               </LogoCard>
               <LogoCard
                   borderColor="#4A434A"
@@ -279,9 +283,11 @@ const IndexPage = ({data}) => {
                   pointThree="Lets me create original graphics very quickly."
               >
                   <GithubSVG width="83%" color="#000000"/>
-                  <h3>
-                      Genart
-                  </h3>
+                  <a href="https://github.com/ScienceOfSleep/genart">
+                    <h3>
+                        Genart
+                    </h3>
+                  </a>
               </LogoCard>
               <LogoCard
                   borderColor="#DBD718"
@@ -296,9 +302,11 @@ const IndexPage = ({data}) => {
                           width: 100%;
                       `}
                   />
-                  <h3>
-                      Calgary Stairs
-                  </h3>
+                  <a href="https://calgarystairs.com/">
+                    <h3>
+                        Calgary Stairs
+                    </h3>
+                  </a>
               </LogoCard>
               </CardContainer>
           </BodyFold>

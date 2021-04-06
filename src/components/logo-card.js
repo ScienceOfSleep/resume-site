@@ -39,6 +39,14 @@ const Card = styled.div`
     font-size: 2rem;
     margin-top: .7rem;
   }
+  a{
+    text-decoration: none;
+    color: #000000;
+    grid-row: 2;
+    &:focus, :hover{
+      text-decoration: black underline;
+    }
+  }
   button{
     position: absolute;
     bottom: 4px;
@@ -65,6 +73,9 @@ const Card = styled.div`
     grid-template-rows: 260px 2rem auto 10px;
     &[data-opened='true']{
       height: 540px;
+    }
+    a{
+      margin-top: 15%;
     }
   }
 `
