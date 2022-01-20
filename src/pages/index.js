@@ -144,7 +144,6 @@ const IndexPage = ({data}) => {
                 <br/><br/>
                 For more detail on my core and supporting skills checkout my Skills Breakdown page!
             </p>
-            {/*tab focus on desktop needs adjusting*/}
             <LinkButton to="/skills">Skills Breakdown</LinkButton>
         </BodyFold>
         <BodyFold>
@@ -160,8 +159,10 @@ const IndexPage = ({data}) => {
                   align-items: center;
                   @media screen and (min-width: 1120px){
                     grid-row: 3;
+                    grid-column: 2/4 !important;
                     justify-content: center;
-                    padding-bottom: 10%;
+                    justify-self: center;
+                    max-width: 800px;
                   }
                 `}
             >
@@ -181,20 +182,39 @@ const IndexPage = ({data}) => {
                   display: flex;
                   flex-direction: column;
                   @media screen and (min-width: 1120px){
-                    grid-column: 3 !important;
-                    grid-row: 3;
-                    align-items: flex-end;
+                    grid-row: 4;
+                    grid-column: 2/4 !important;
+                    flex-direction: row;
+                    justify-content: center;
                   }
                 `}
             >
             <WorkContainer>
+            <Img
+                    fluid={data.creologic.childImageSharp.fluid}
+                    css={css`
+                      width: 80%;
+                      @media screen and (min-width: 1120px){
+                        width: 55%;
+                      }
+                    `}
+                />
+                <h3>Creologic Design Inc.</h3>
+                <h4>April 2021 - Present</h4>
+                <ul>
+                    <li>Developing & maintaining a group of 30+ websites</li>
+                    <li>Proposed, designed, and developed testing infrastructure</li>
+                    <li>Building and designing new sites</li>
+                </ul>
+            </WorkContainer>
+            <WorkContainer>
                 <DIPSVG width="55%"/>
                 <h3>Draw It Paint</h3>
-                <h4>February 2020 - Present</h4>
+                <h4>February 2020 - March 2021</h4>
                 <ul>
-                    <li>Building/maintaining eCommerce sites in GatsbyJS & Shopify</li>
+                    <li>Built + maintained eCommerce sites in GatsbyJS & Shopify</li>
                     <li>Internal workflow optimization and automation</li>
-                    <li>Coordinating graphics work</li>
+                    <li>Coordinated graphic design work</li>
                 </ul>
             </WorkContainer>
             <WorkContainer>
@@ -210,8 +230,7 @@ const IndexPage = ({data}) => {
                 <h3>Silvertip Advisory</h3>
                 <h4>April 2017 - January 2020</h4>
                 <ul>
-                    <li>Designing a series of smart documents for estate planning and organization (Javascript and G-Suite)</li>
-                    <li>Advising on governance and transition planning</li>
+                    <li>Designed a series of estate planning smart documents (Javascript and G-Suite)</li>
                     <li>Graphic design, responsive corporate branding</li>
                 </ul>
             </WorkContainer>
@@ -402,6 +421,13 @@ export const query = graphql`
             }
         }
         dip: file(relativePath: { eq: "dip-logo.png" }) {
+            childImageSharp {
+                fluid(quality:100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        creologic: file(relativePath: { eq: "creologic-logo.jpg" }) {
             childImageSharp {
                 fluid(quality:100) {
                     ...GatsbyImageSharpFluid

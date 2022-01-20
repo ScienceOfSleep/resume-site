@@ -37,7 +37,7 @@ const ExperiencePage = ({data}) => {
         <Header pageColor="var(--experience-red)"/>
         <SEO
             title="Experience"
-            description="The different places I've worked, as well as a sample of significant contracts I've gotten over the course of my career."
+            description="The different places Josh Steele has been employed, as well as a sample of significant contract work he's done."
             image="/Bunicula.png"
         />
         <main
@@ -105,7 +105,7 @@ const ExperiencePage = ({data}) => {
                         Web Developer
                     </h3>
                     <h3 css={css`text-align: center`}>
-                        February 2020 - Present
+                        February 2020 - March 2021
                     </h3>
                     <p css={css`margin: 5px 0 10px`}>
                         Returned to Edmonton and started work at Draw It Paint just as covid-19 was really starting to take off. There were plenty of interesting challenges of both traditional and new varieties. My first day was spent evaluating a stereotypical WordPress behemoth, with page load times stretching into the 20+ second range.
@@ -305,6 +305,13 @@ export const query = graphql`
             }
         }
         dip: file(relativePath: { eq: "dip-logo.png" }) {
+            childImageSharp {
+                fluid(quality:100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        creologic: file(relativePath: { eq: "creologic-logo.jpg" }) {
             childImageSharp {
                 fluid(quality:100) {
                     ...GatsbyImageSharpFluid

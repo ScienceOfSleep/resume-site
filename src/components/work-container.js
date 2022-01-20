@@ -22,7 +22,7 @@ const WorkContainer = styled.div`
     margin-left: 20px;
   }
   @media screen and (min-width: 1120px){
-    width: 55%;
+    width: 30%;
   }
 `
 
