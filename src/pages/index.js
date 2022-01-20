@@ -64,9 +64,9 @@ const IndexPage = ({data}) => {
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
-                Hi! I know you’ve got to kiss a lot of frogs to find your metaphorical prince so I’ll keep things concise here. This site is designed to both show and tell; the art is by me and it’s coded with my favorite tech.
+                Hi! I know you've got to kiss a lot of frogs to find your metaphorical prince so I'll keep things concise here. This site is designed to both show and tell; the art is by me and it's coded with my favorite tech.
                 <br/> <br/>
-                After skimming the home page you should have a general idea what I like to do and where I’ve done it in the past. For more detail you can check out each section’s dedicated page where I dig into the topic.
+                After skimming the home page you should have a general idea what I like to do and where I've done it in the past. For more detail you can check out each section's dedicated page where I dig into the topic.
             </p>
             <Img
                 fluid={data.hero.childImageSharp.fluid}
@@ -140,7 +140,7 @@ const IndexPage = ({data}) => {
             <p>
                 These are the tools I reach for first when digging into a project. I consider them my “core competencies”, aka what I count on to bring home the (vegetarian) bacon.
                 <br/><br/>
-                It’s fairly common that I won’t have a complete stack of my choosing to work with, and as a result I’ve worked with many other languages/frameworks/tools over my career.
+                It's fairly common that I won't have a complete stack of my choosing to work with, and as a result I've worked with many other languages/frameworks/tools over my career.
                 <br/><br/>
                 For more detail on my core and supporting skills checkout my Skills Breakdown page!
             </p>
@@ -169,7 +169,7 @@ const IndexPage = ({data}) => {
             <p>
                 Initially self-educated on everything tech related, I got my start in 2016 through freelance marketing and graphic design contracts. One of those turned into a full time position at Silvertip, a consultancy startup focusing on family business and estate transfers.
                 <br/> <br/>
-                Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP’s no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
+                Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP's no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
                 <br/> <br/>
                 I've also done quite a few short term contracts over the course of my career. To read about those or to get more details on my full time work check out my dedicated Career Timeline page!
             </p>
@@ -232,9 +232,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="Recent Projects"/>
                 <p>
-                    Personal projects help me stay sharp while at the same time, ideally, producing something useful. I haven’t run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
+                    Personal projects help me stay sharp while at the same time, ideally, producing something useful. I haven't run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
                     <br/> <br/>
-                    To deal with the time bottleneck I sort projects by utility, and try to chip in at least five minutes of work every day. This lets me tackle goals over weeks or months that I wouldn’t be able to approach in a couple sessions. Even on days when I’m not able to sit down at a computer, a bit of time visualizing problems keeps the project present, and on a good day can even lead to a breakthrough.
+                    To deal with the time bottleneck I sort projects by utility, and try to chip in at least five minutes of work every day. This lets me tackle goals over weeks or months that I wouldn't be able to approach in a couple sessions. Even on days when I'm not able to sit down at a computer, a bit of time visualizing problems keeps the project present, and on a good day can even lead to a breakthrough.
                 </p>
               </div>
               <CardContainer>
@@ -325,9 +325,9 @@ const IndexPage = ({data}) => {
               >
                 <SectionHeading title="About Me"/>
                 <p>
-                    Big fan of politics, but not in the way that I want to debate my coworkers don’t worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I’ll be able to use the skills I've acquired to support all sorts of interesting organizations.
+                    Big fan of politics, but not in the way that I want to debate my coworkers don't worry. I fell in love with code as a way to increase my positive impact, and the shape of my career reflects that. Being able to pump out a quick, low upkeep site on the side of my full time job is my current focus. As I learn my approach will evolve, so ideally by the time I hit retirement I'll be able to use the skills I've acquired to support all sorts of interesting organizations.
                     <br/> <br/>
-                    Outside the deep stuff I’m super into fantasy and sci-fi novels; we’re living in a golden age for them. I’ll typically polish off a book a month with my trusty ereader / public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we’re spreading out across the world, and it’s a nice competitive outlet as well.
+                    Outside the deep stuff I'm super into fantasy and sci-fi novels; we're living in a golden age for them. I'll typically polish off a book a month with my trusty ereader / public library setup. Also very into a few fantasy football leagues every fall. They help me keep in touch with friends now that we're spreading out across the world, and it's a nice competitive outlet as well.
                 </p>
               </div>
           </BodyFold>

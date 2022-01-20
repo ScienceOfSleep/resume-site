@@ -110,9 +110,9 @@ const ExperiencePage = ({data}) => {
                     <p css={css`margin: 5px 0 10px`}>
                         Returned to Edmonton and started work at Draw It Paint just as covid-19 was really starting to take off. There were plenty of interesting challenges of both traditional and new varieties. My first day was spent evaluating a stereotypical WordPress behemoth, with page load times stretching into the 20+ second range.
                         <br/><br/>
-                        I proposed rebuilding the site in GatsbyJS, keeping the blog and store as a backend CMS. The transition went well, and we were able to hit the 2 second target I’d set for initial load time. though the blog ended up not being a priority moving forward. This was one of the less serious issues that could’ve been solved by more thoroughly exploring our business needs before starting.
+                        I proposed rebuilding the site in GatsbyJS, keeping the blog and store as a backend CMS. The transition went well, and we were able to hit the 2 second target I'd set for initial load time. though the blog ended up not being a priority moving forward. This was one of the less serious issues that could've been solved by more thoroughly exploring our business needs before starting.
                         <br/><br/>
-                        About 6 months into the new setup, concerns were raised about the experience required to modify and maintain a site written in React. It’s a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. I coordinated work for this project with my boss as well as our marketing team and video editor / graphic designer.
+                        About 6 months into the new setup, concerns were raised about the experience required to modify and maintain a site written in React. It's a small shop and ideally anyone would be able to hop on and make changes when needed. So we decided to rebuild the site again this time on Shopify. I coordinated work for this project with my boss as well as our marketing team and video editor / graphic designer.
                     </p>
                 </div>
             </BodyFold>
