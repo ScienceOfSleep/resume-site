@@ -17,6 +17,14 @@ import PulmanairSVG from "../components/svgs/pulmanair-svg";
 import SEO from "../components/seo";
 
 const ExperiencePage = ({data}) => {
+    const dipDivider = [
+        data.dipDividerMobile.childImageSharp.fluid,
+        {
+            ...data.dipDivider.childImageSharp.fluid,
+            media: `(min-width: 1120px)`,
+        },
+    ]
+
     const silvertipDivider = [
         data.silvertipDividerMobile.childImageSharp.fluid,
         {
@@ -77,7 +85,7 @@ const ExperiencePage = ({data}) => {
                     fluid={data.creologic.childImageSharp.fluid}
                     alt="Creologic logo"
                     css={css`
-                      width: 350px;
+                      width: 320px;
                       height: fit-content;
                       justify-self: center;
                       @media screen and (min-width: 1120px){
@@ -114,7 +122,7 @@ const ExperiencePage = ({data}) => {
             </BodyFold>
             <BodyFold>
                 <Img
-                    fluid={silvertipDivider}
+                    fluid={dipDivider}
                     className="full-bleed"
                     alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
                 />
@@ -315,6 +323,20 @@ export const query = graphql`
             }
         }
         landingDividerMobile: file(relativePath: { eq: "experience-circle-divider-mobile-0.26409089864366986.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        dipDivider: file(relativePath: { eq: "experience-circle-divider-0.9069536057991057.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        dipDividerMobile: file(relativePath: { eq: "experience-circle-divider-mobile0.4431490064535335.png" }) {
             childImageSharp {
                 fluid(quality: 100) {
                     ...GatsbyImageSharpFluid
