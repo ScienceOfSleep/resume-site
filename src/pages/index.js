@@ -168,13 +168,14 @@ const IndexPage = ({data}) => {
             >
             <SectionHeading title="Work Experience"/>
             <p>
-                Initially self-educated on everything tech related, I got my start in 2016 through freelance marketing and graphic design contracts. One of those turned into a full time position at Silvertip, a consultancy startup focusing on family business and estate transfers.
+                I transitioned into tech in 2017, coming from marketing and graphic design. One of my graphic design contracts turned into a catch-all IT position at Silvertip, a consultancy startup focusing on family business and estate transfers.
                 <br/> <br/>
-                Silvertip was closing up in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. It was a tough year for lots of firms, and DIP's no exception. We managed to work through the worst of it though, and even grew some aspects of the business.
+                Silvertip was closing up shop in 2020, but I was lucky enough to land a job at Draw It Paint right before Covid kicked off. DIP managed to work through some of the scariest parts of the pandemic and into early 2021, at which point the web & marketing team was liquidated.
                 <br/> <br/>
+                The writing had been on the (whiteboard) wall at DIP for a long time, so I was ready to hit the ground running when word finally came that we were being let go. A month later (April 2021) I started my current role at Creologic Design inc. 
+                <br/><br/> 
                 I've also done quite a few short term contracts over the course of my career. To read about those or to get more details on my full time work check out my dedicated Career Timeline page!
             </p>
-            {/*Expand on contract work experience?*/}
             <LinkButton to="/experience">Career Timeline</LinkButton>
             </div>
             <div
@@ -223,7 +224,7 @@ const IndexPage = ({data}) => {
                     css={css`
                       width: 80%;
                       @media screen and (min-width: 1120px){
-                        width: 70%;
+                        width: 68%;
                       }
                     `}
                 />
@@ -253,7 +254,7 @@ const IndexPage = ({data}) => {
                 <p>
                     Personal projects help me stay sharp while at the same time, ideally, producing something useful. I haven't run out of ideas yet, the main bottleneck I deal with is finding time to do them all.
                     <br/> <br/>
-                    To deal with the time bottleneck I sort projects by utility, and try to chip in at least five minutes of work every day. This lets me tackle goals over weeks or months that I wouldn't be able to approach in a couple sessions. Even on days when I'm not able to sit down at a computer, a bit of time visualizing problems keeps the project present, and on a good day can even lead to a breakthrough.
+                    Volunteering, art, and other hobbies are all areas that motivate me to put time into a project and stay up to date on important tech.                    
                 </p>
               </div>
               <CardContainer>

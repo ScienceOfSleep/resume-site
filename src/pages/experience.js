@@ -73,6 +73,51 @@ const ExperiencePage = ({data}) => {
                     `}
             />
             <BodyFold>
+                <Img
+                    fluid={data.creologic.childImageSharp.fluid}
+                    alt="Creologic logo"
+                    css={css`
+                      width: 350px;
+                      height: fit-content;
+                      justify-self: center;
+                      @media screen and (min-width: 1120px){
+                        grid-column: 3 !important;
+                        grid-row: 3/5;
+                        align-self: center;
+                      }
+                    `}
+                />
+                <div
+                    css={css`
+                      @media screen and (min-width: 1120px){
+                        min-height: 65vh;
+                        grid-row: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                      }
+                    `}
+                >
+                    <SectionHeading title="Creologic Design Inc."/>
+                    <h3 css={css`text-align: center`}>
+                        Web Developer
+                    </h3>
+                    <h3 css={css`text-align: center`}>
+                        April 2021 - Present
+                    </h3>
+                    <p css={css`margin: 5px 0 10px`}>
+                      A traditional agency job where I develop sites for clients. We work with a very wide range of tech at Creologic, everything from classic ASP to Node.js depending on the project.
+                      <br/><br/>
+                      I'm proud of my contributions to the firm's dev infrastructure, particularly the testing system that I proposed and developed. I juggle 25-35 clients of varying sizes. As a result, there's frequently repetition in the tasks I'm performing. Counter-intuitively, this is one of the fun parts for me. I really enjoy optimizing workflows and automating tasks where appropriate (a.k.a. when developing them <i>atually</i> saves time)
+                    </p>
+                </div>
+            </BodyFold>
+            <BodyFold>
+                <Img
+                    fluid={silvertipDivider}
+                    className="full-bleed"
+                    alt="Generative art of overlapping orange circles. Made by Josh Steele using Canvas."
+                />
                 <div
                     css={css`
                       width: 250px;
@@ -321,6 +366,13 @@ export const query = graphql`
         silvertip: file(relativePath: { eq: "Silvertip-Logo-with-text.jpg" }) {
             childImageSharp {
                 fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        creologic: file(relativePath: { eq: "creologic-logo.jpg" }) {
+            childImageSharp {
+                fluid(quality:100) {
                     ...GatsbyImageSharpFluid
                 }
             }
