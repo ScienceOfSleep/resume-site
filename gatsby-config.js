@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Josh Steele's Resume`,
-    description: `Welcome to Josh Steele's resume website. Find out all the things Josh has done for money, all the things he'd do for money, and even a few things that he does for free.`,
+    title: `Josh Steele's Resume Site`,
+    description: `Welcome to Josh Steele's resume website. Find out the things Josh has done for money, the things he'd do for money, and a few things that he does for free`,
     author: `Josh Steele`,
     siteUrl: `https://www.jjsteele.ca`,
     siteLanguage: `en`,

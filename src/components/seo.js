@@ -61,7 +61,7 @@ const SEO = ({ title, description, image }) => {
   }
 
 
-  return <Helmet title={seo.title} titleTemplate={`${site.siteMetadata.defaultTitle} | %s`}>
+  return <Helmet title={seo.title} titleTemplate={`%s | ${site.siteMetadata.defaultTitle}`}>
     <html lang={siteLanguage} />
     <meta name="description" content={seo.description}/>
     <meta name="image" content={seo.image}/>

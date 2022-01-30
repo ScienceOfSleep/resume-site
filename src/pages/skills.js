@@ -33,7 +33,7 @@ const SkillsPage = ({data}) => {
         <Header pageColor="var(--skills-green)"/>
         <SEO
             title="Skills"
-            description="The different tools at I have experience with, as well as how they fit into my workflow as a whole. Sprinkled in some of my guiding philosophy for making decisions too."
+            description="The different tools that Josh Steele has experience with, how they fit into his workflow, and some decision making philosophy to tie it all together."
             image="/Frog.png"
         />
         <main

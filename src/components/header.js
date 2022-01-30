@@ -45,6 +45,7 @@ const Header = (props) => {
         >
             <Img
                 fixed={data.logo.childImageSharp.fixed}
+                alt="Josh Steele's logo, a play on the JS logo sharing his initials"
                 css={css`
                   width: 60px;
               `}

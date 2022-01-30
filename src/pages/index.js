@@ -51,7 +51,11 @@ const IndexPage = ({data}) => {
     return <Layout>
 
       <Header pageColor="var(--landing-blue)"/>
-      <SEO title="Home" />
+      <SEO 
+        title="Home" 
+        description="Welcome to Josh Steele's resume website. Find out the things Josh has done for money, the things he'd do for money, and a few things that he does for free"
+        image="/Albertasaurus.png"
+      />
       <main
         css={css`
           --page-color: var(--landing-blue);
@@ -60,7 +64,7 @@ const IndexPage = ({data}) => {
         <LandingFold>
             <Img
                 fluid={data.albertasaurus.childImageSharp.fluid}
-                alt="Happy Albertosaurus vector graphic. By yours truly, Josh Steele."
+                alt="Happy Albertosaurus vector graphic. By Josh Steele."
             />
             <PageHeading title="Welcome to my CV"/>
             <p>
@@ -193,6 +197,7 @@ const IndexPage = ({data}) => {
             <WorkContainer>
             <Img
                     fluid={data.creologic.childImageSharp.fluid}
+                    alt="Creologic Design Inc. logo"
                     css={css`
                       width: 80%;
                       @media screen and (min-width: 1120px){
@@ -221,6 +226,7 @@ const IndexPage = ({data}) => {
             <WorkContainer>
                 <Img
                     fluid={data.silvertip.childImageSharp.fluid}
+                    alt="Silvertip Family Enterprise logo, by Josh Steele"
                     css={css`
                       width: 80%;
                       @media screen and (min-width: 1120px){
