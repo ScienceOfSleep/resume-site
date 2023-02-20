@@ -206,7 +206,7 @@ const IndexPage = ({data}) => {
                     `}
                 />
                 <h3>Creologic Design Inc.</h3>
-                <h4>April 2021 - Present</h4>
+                <h4>March 2021 - Present</h4>
                 <ul>
                     <li>Developing & maintaining a group of 30+ websites</li>
                     <li>Proposed, designed, and developed testing infrastructure</li>
